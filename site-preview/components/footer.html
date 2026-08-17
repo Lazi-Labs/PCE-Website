@@ -1,0 +1,61 @@
+<!-- @dsCard group="Components" name="Footer" subtitle="Navy footer — Burbank Big column heads in teal, Sofia Sans links, kit-spec call CTA" -->
+<!doctype html><html><head><meta charset="utf-8">
+<link href="https://fonts.googleapis.com/css2?family=Sofia+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+  @font-face{font-family:'Burbank Big';src:url('../assets/fonts/BurbankBig-Bold.woff2') format('woff2');font-weight:700;font-style:normal}
+  body{margin:0;font-family:'Sofia Sans',Arial,sans-serif;background:#fff}
+  .wave{line-height:0}
+  .wave svg{width:100%;height:60px;display:block}
+  footer{background:linear-gradient(180deg,#003D6A,#052B49);color:#fff;padding:20px 32px 24px}
+  .cols{display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr;gap:32px;max-width:1180px;margin:0 auto 28px}
+  @media(max-width:800px){.cols{grid-template-columns:1fr 1fr}}
+  .logo-tile{background:#fff;border-radius:12px;padding:12px;display:inline-block;margin-bottom:14px}
+  .logo-tile img{height:60px;display:block}
+  h4{font-family:'Burbank Big',Impact,sans-serif;font-weight:700;font-size:15px;text-transform:uppercase;letter-spacing:1px;color:#42BE9F;margin:0 0 12px}
+  ul{list-style:none;margin:0;padding:0}
+  li{margin-bottom:9px;font-size:14px}
+  a{color:#DAE6EF;text-decoration:none}
+  a:hover{color:#fff;text-decoration:underline}
+  .fact{font-size:14px;line-height:1.6;color:#DAE6EF}
+  .fact b{color:#fff}
+  .call{
+    display:inline-block;margin-top:10px;font-family:'Burbank Big',Impact,sans-serif;font-weight:700;
+    font-size:16px;line-height:1;text-transform:uppercase;background:#F24E45;color:#fff;
+    padding:13px 22px 10px;border-radius:12px;border:1px solid #A7130C;border-bottom-width:4px;text-decoration:none;
+  }
+  .call:hover{background:#A7130C;border-color:#F24E45;text-decoration:none;color:#fff}
+  .bar{border-top:1px solid rgba(255,255,255,.18);padding-top:16px;display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;max-width:1180px;margin:0 auto;font-size:12.5px;color:#9DB4C6}
+  .bar a{color:#9DB4C6}
+  .soc{display:flex;gap:12px}
+  .soc a{width:30px;height:30px;border-radius:50%;background:rgba(255,255,255,.12);display:flex;align-items:center;justify-content:center;color:#fff;text-decoration:none;font-size:13px}
+</style></head><body>
+<div class="wave"><svg viewBox="0 0 1440 90" preserveAspectRatio="none"><path d="M0,55 C240,20 480,80 720,50 C960,20 1200,70 1440,35 L1440,90 L0,90 Z" fill="#003D6A"/></svg></div>
+<footer>
+  <div class="cols">
+    <div>
+      <div class="logo-tile"><img src="../assets/logo-full.webp" alt="Perfect Catch"></div>
+      <p class="fact"><b>Perfect Catch — Swimming Pool Repair, Gas &amp; Electric</b><br>
+      13932 Walsingham Rd, STE A<br>Largo, FL 33774<br>
+      Mon–Fri 8:00am–5:00pm</p>
+      <a class="call" href="tel:7273165206">&#9742; 727-316-5206</a>
+    </div>
+    <div>
+      <h4>Pool Repair</h4>
+      <ul><li><a href="#">Pool Pump Repair</a></li><li><a href="#">Pool Light Repair</a></li><li><a href="#">Heater Installation</a></li><li><a href="#">Salt System Service</a></li></ul>
+    </div>
+    <div>
+      <h4>Electric &amp; Gas</h4>
+      <ul><li><a href="#">Panel Upgrades</a></li><li><a href="#">EV Chargers</a></li><li><a href="#">Gas Line Installation</a></li><li><a href="#">Whole-Home Rewiring</a></li></ul>
+    </div>
+    <div>
+      <h4>Company</h4>
+      <ul><li><a href="#">About Us</a></li><li><a href="#">Reviews</a></li><li><a href="#">Service Areas</a></li><li><a href="#">Specials</a></li><li><a href="#">Blog</a></li></ul>
+    </div>
+  </div>
+  <div class="bar">
+    <span>&copy; 2026 Perfect Catch. All rights reserved.</span>
+    <span><a href="#">Privacy Policy</a> · <a href="#">Terms of Service</a> · <a href="#">Cookie Policy</a></span>
+    <span class="soc"><a href="#">f</a><a href="#">G</a><a href="#">in</a><a href="#">&#9733;</a></span>
+  </div>
+</footer>
+</body></html>

@@ -1,0 +1,352 @@
+<!doctype html><html><head><meta charset="utf-8">
+<title>Pentair MasterTemp Error Codes: Service Heater Light, ERR &amp; E-Codes</title>
+<meta name="description" content="Every verified Pentair MasterTemp error code explained — Service Heater light, ERR PS/HLS/AFS/AGS/SFS/IGN and E01–E06 — with safe homeowner checks from Pinellas County's licensed pool, electrical & gas contractor.">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<link href="https://fonts.googleapis.com/css2?family=Sofia+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+  @font-face{font-family:'Burbank Big';src:url('../../assets/fonts/BurbankBig-Bold.woff2') format('woff2');font-weight:700;font-style:normal}
+  :root{
+    --coral:#F24E45;--red-deep:#A7130C;--navy:#003D6A;--navy-deep:#052B49;--text:#001E33;
+    --teal:#42BE9F;--cream:#FEDFAE;--sky:#E6F4FF;--sand:#FFF5E6;--muted:#3F444B;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;font-family:'Sofia Sans',Arial,sans-serif;font-size:16px;line-height:1.7;color:var(--text);background:#fff}
+  .disp{font-family:'Burbank Big',Impact,sans-serif;font-weight:700;text-transform:uppercase;line-height:1.05}
+  .wrap{max-width:1180px;margin:0 auto;padding:0 24px}
+  .btn{
+    display:inline-block;font-family:'Burbank Big',Impact,sans-serif;font-weight:700;font-size:17px;line-height:1;
+    text-transform:uppercase;text-decoration:none;padding:15px 26px 12px;border-radius:12px;letter-spacing:.5px;
+    border:1px solid;border-bottom-width:4px;transition:background .15s,border-color .15s;
+  }
+  .btn-primary{background:var(--coral);color:#fff;border-color:var(--red-deep)}
+  .btn-primary:hover{background:var(--red-deep);border-color:var(--coral)}
+  .btn-white{background:#fff;color:var(--navy);border-color:var(--teal)}
+  .btn-white:hover{background:var(--sky)}
+
+  /* ── Header (compact pill) ── */
+  .hdr-zone{background:linear-gradient(160deg,#57C8F2,#0A4A7A);padding:16px 24px}
+  .pill{background:#fff;border-radius:16px;box-shadow:0 6px 24px rgba(0,20,40,.18);display:flex;align-items:center;gap:18px;padding:8px 16px;max-width:1180px;margin:0 auto}
+  .pill img{height:52px}
+  .pill nav{display:flex;gap:20px;flex:1;justify-content:center}
+  .pill nav a{font-family:'Burbank Big',Impact,sans-serif;font-size:14px;text-transform:uppercase;color:var(--navy);text-decoration:none}
+  .pill nav a:hover{color:var(--coral)}
+  .pill .btn{font-size:13px;padding:11px 18px 9px}
+
+  /* ── Post title band ── */
+  .post-hero{background:linear-gradient(165deg,#0A5285,var(--navy-deep));color:#fff;padding:36px 24px 42px;text-align:center}
+  .crumb{font-size:13px;color:#BFD9EC;margin-bottom:14px}
+  .crumb a{color:#BFD9EC;text-decoration:none}
+  .crumb a:hover{color:#fff}
+  .post-hero h1{font-size:clamp(28px,4vw,46px);margin:0;text-shadow:3px 3px 0 var(--coral);max-width:860px;margin:0 auto}
+
+  /* ── Article ── */
+  .post{max-width:860px;margin:0 auto;padding:48px 24px}
+  .byline{font-size:14px;color:var(--muted);border-bottom:1px solid #DCE8F1;padding-bottom:18px;margin-bottom:28px}
+  .byline b{color:var(--navy)}
+  article h2{font-family:'Burbank Big',Impact,sans-serif;font-weight:700;font-size:clamp(22px,2.8vw,30px);text-transform:uppercase;line-height:1.05;color:var(--text);margin:38px 0 14px}
+  article h2 em{color:var(--coral);font-style:normal}
+  article p{margin:0 0 16px;color:var(--muted)}
+  ul.checks{list-style:none;margin:0 0 16px;padding:0}
+  ul.checks li{position:relative;padding:0 0 10px 32px;color:var(--muted)}
+  ul.checks li::before{content:'✓';position:absolute;left:0;top:-1px;width:22px;height:22px;border-radius:50%;background:var(--teal);color:#fff;font-size:13px;font-weight:700;display:flex;align-items:center;justify-content:center}
+  ul.checks.warn li::before{content:'!';background:var(--coral)}
+  .callout{background:var(--sand);border-left:4px solid var(--cream);border-radius:0 12px 12px 0;padding:16px 20px;color:#653F01;margin:0 0 16px;font-size:15px}
+
+  /* ── Service CTA box ── */
+  .svc-cta{background:linear-gradient(180deg,var(--navy),var(--navy-deep));color:#fff;border-radius:14px;padding:26px;margin:40px 0 0;box-shadow:0 8px 26px rgba(0,40,70,.2);text-align:center}
+  .svc-cta h3{font-family:'Burbank Big',Impact,sans-serif;font-size:22px;text-transform:uppercase;margin:0 0 8px;color:#fff}
+  .svc-cta p{color:#C9DCEA;font-size:15px;margin:0 0 16px}
+
+  /* ── CTA band ── */
+  .cta-band{background:linear-gradient(165deg,#0A5285,var(--navy-deep));color:#fff;text-align:center;padding:52px 24px}
+  .cta-band h2{font-size:clamp(26px,3.6vw,42px);margin:0 0 8px;text-shadow:3px 3px 0 var(--coral)}
+  .cta-band p{color:#C9DCEA;margin:0 0 22px}
+  /* ── Sticky mobile call bar ── */
+  .sticky-call{position:fixed;bottom:0;left:0;right:0;z-index:50;display:none;grid-template-columns:1fr 1fr;gap:1px;background:var(--red-deep)}
+  .sticky-call a{display:flex;align-items:center;justify-content:center;gap:8px;padding:15px 8px 13px;font-family:'Burbank Big',Impact,sans-serif;font-size:16px;line-height:1;text-transform:uppercase;text-decoration:none;color:#fff}
+  .sticky-call .sc-call{background:var(--navy)}
+  .sticky-call .sc-req{background:var(--coral)}
+  @media(max-width:920px){.sticky-call{display:grid}body{padding-bottom:52px}}
+  /* ── Footer stub ── */
+  .ftr{background:var(--navy-deep);color:#9DB4C6;text-align:center;font-size:12.5px;padding:18px}
+
+  /* ── Help-guide additions ── */
+  .jump{background:var(--sky);border-radius:14px;padding:18px 22px;margin:0 0 28px}
+  .jump b{font-family:'Burbank Big',Impact,sans-serif;text-transform:uppercase;font-size:14px;letter-spacing:.05em;color:var(--navy);display:block;margin-bottom:8px}
+  .jump a{display:inline-block;margin:3px 12px 3px 0;font-size:14.5px;font-weight:600;color:var(--navy);text-decoration:none;border-bottom:1px dashed var(--teal)}
+  .jump a:hover{color:var(--coral)}
+  article h3{font-family:'Burbank Big',Impact,sans-serif;font-weight:700;font-size:20px;text-transform:uppercase;line-height:1.1;color:var(--navy);margin:34px 0 10px;scroll-margin-top:20px}
+  .stop{background:#FDECEA;border-left:4px solid var(--coral);border-radius:0 12px 12px 0;padding:14px 18px;color:#7A1410;margin:0 0 22px;font-size:15px}
+  .urgent{background:#FDECEA;border-left:4px solid var(--red-deep);border-radius:0 12px 12px 0;padding:14px 18px;color:#7A1410;margin:0 0 14px;font-size:15px;font-weight:700}
+/* full footer */
+.fmap{line-height:0;background:#052B49;margin-top:56px}
+.fmap iframe{width:100%;height:320px;border:0;display:block}
+footer.site{background:linear-gradient(180deg,#003D6A,#052B49);color:#fff;padding:54px 24px 30px;text-align:left}
+.f-cols{display:grid;grid-template-columns:1.5fr .7fr .7fr 1.15fr;gap:44px;max-width:1120px;margin:0 auto 38px;align-items:start}
+.f-brand img{width:225px;max-width:100%;height:auto;display:block;margin:-8px 0 22px -6px}
+footer.site h4{font-family:'Burbank Big',Impact,sans-serif;font-weight:700;font-size:18px;text-transform:uppercase;letter-spacing:1px;color:#FEDFAE;margin:0 0 14px}
+.lic{font-size:13.5px;color:#EAF4FB;margin:0;display:flex;flex-wrap:wrap;gap:4px 7px;white-space:nowrap}
+.lic span+span::before{content:"·";margin-right:7px;color:#7FA6C4}
+footer.site ul{list-style:none;margin:0;padding:0}
+footer.site li{margin-bottom:12px;font-size:14.5px}
+footer.site a{color:#fff;text-decoration:none;font-weight:400}
+footer.site a:hover{color:#FEDFAE;text-decoration:underline}
+.cl{display:flex;gap:11px;align-items:flex-start;margin-bottom:12px;font-size:14.5px;line-height:1.55}
+.cl svg{width:17px;height:17px;flex:0 0 auto;fill:#F24E45;margin-top:2px}
+.soc{display:flex;gap:7px;flex-wrap:wrap;margin-top:18px}
+.soc a{width:34px;height:34px;border-radius:50%;background:#F24E45;display:inline-flex;align-items:center;justify-content:center;color:#fff;transition:background .2s}
+.soc a:hover{background:#A7130C;color:#fff;text-decoration:none}
+.soc svg{width:14px;height:14px;fill:#fff}
+.f-bar{max-width:1180px;margin:0 auto;font-size:14px;color:#DAE6EF;padding-top:8px}
+@media(max-width:920px){.f-cols{grid-template-columns:1fr 1fr;gap:36px}}
+@media(max-width:560px){.f-cols{grid-template-columns:1fr}}
+/* dropdown menu */
+  .hdr-zone{position:relative;z-index:60}
+  .pill nav .has-mega>a::after{content:' \25BE';font-size:9px;color:#F24E45}
+  .pill nav .has-mega .mega{position:absolute;left:24px;right:24px;top:calc(100% - 6px);background:radial-gradient(680px 320px at 82% 0%,rgba(87,200,242,.18),transparent 62%),linear-gradient(160deg,#0A4A7A,#003D6A 55%,#052B49);border-radius:18px;box-shadow:0 20px 46px rgba(0,20,40,.38);padding:24px 30px 26px;display:none;z-index:99;text-align:left}
+  .pill nav .has-mega:hover .mega,.pill nav .has-mega:focus-within .mega{display:block}
+  .pill nav .mega h4{font-family:'Burbank Big',Impact,sans-serif;font-weight:700;font-size:19px;letter-spacing:.6px;text-transform:uppercase;color:#FEDFAE;margin:0 0 14px}
+  .pill nav .mega-in{display:grid;grid-template-columns:1fr 1fr minmax(210px,.85fr);gap:2px 40px;align-items:center}
+  .pill nav .mega-col{display:flex;flex-direction:column}
+  .pill nav .mega a{display:flex;align-items:flex-start;gap:10px;font-family:'Sofia Sans',Arial,sans-serif;font-size:14.5px;font-weight:500;color:#fff;text-transform:none;text-decoration:none;padding:6px 8px;border-radius:8px}
+  .pill nav .mega a::before{content:"";flex:none;width:7px;height:7px;background:#F24E45;margin-top:7px}
+  .pill nav .mega a:hover{background:rgba(255,255,255,.08);color:#FEDFAE}
+  .pill nav .mvan{width:100%;height:auto;display:block;filter:drop-shadow(0 14px 22px rgba(0,10,25,.45))}
+  @media(max-width:1180px){.pill nav .mega-in{grid-template-columns:1fr 1fr}.pill nav .mvan{display:none}}
+  .pill nav{position:relative}
+  .pill nav .dd{position:relative;display:inline-block}
+  .pill nav .dd>a::after{content:' \25BE';font-size:9px;color:#F24E45}
+  .pill nav .dd-menu{display:none;position:absolute;top:100%;left:50%;transform:translateX(-50%);background:#fff;border:1px solid #DCE8F1;border-radius:12px;box-shadow:0 14px 34px rgba(0,20,40,.22);padding:0;z-index:99;min-width:470px;overflow:hidden}
+  .pill nav .dd-links{flex:1;min-width:255px;padding:10px 0;max-height:64vh;overflow-y:auto}
+  .pill nav .dd:hover .dd-menu,.pill nav .dd:focus-within .dd-menu{display:flex}
+  .pill nav .dd-art{width:225px;background:linear-gradient(180deg,#E6F4FF 0%,#9FD4F5 100%);display:flex;flex-direction:column;justify-content:space-between;align-items:center;padding:16px 10px 0}
+  .pill nav .dd-cta{text-align:center;font-family:'Burbank Big',Impact,sans-serif;text-transform:uppercase;color:#003D6A;font-size:13px;line-height:1.25}
+  .pill nav .dd-cta a{display:block;margin-top:6px;padding:7px 10px 5px;background:#F24E45;color:#fff!important;border-radius:9px;font-size:14px;text-decoration:none}
+  .pill nav .dd-cta a:hover{background:#A7130C}
+  .pill nav .dd-art img{width:150%;max-width:none;display:block;margin:8px 0 -6px}
+  .pill nav .dd:hover .dd-menu,.pill nav .dd:focus-within .dd-menu{display:block}
+  .pill nav .dd-menu a{display:block;padding:7px 18px;font-family:'Sofia Sans',Arial,sans-serif;font-size:14px;font-weight:600;text-transform:none;color:#001E33;white-space:nowrap}
+  .pill nav .dd-menu a:hover{background:#E6F4FF;color:#A7130C}
+  .pill nav .dd-menu .dd-head{display:block;padding:8px 18px 3px;font-family:'Burbank Big',Impact,sans-serif;font-size:11px;text-transform:uppercase;letter-spacing:.08em;color:#3F444B}
+  @media(max-width:920px){.pill nav{display:none}}
+</style></head><body>
+
+<!-- HEADER -->
+<div class="hdr-zone"><header class="pill">
+  <a href="../../index.html"><img src="../../assets/logo-full.webp" alt="Perfect Catch"></a>
+  <!--NAV--><nav><span class="has-mega"><a href="../services/index.html#pool">Pool Repair</a><div class="mega"><h4>Pool Repair Services</h4><div class="mega-in"><div class="mega-col"><a href="../services/swimming-pool-repair.html">Pool Repair</a><a href="../services/pool-pump-repair-installation.html">Pool Pump Repair &amp; Installation</a><a href="../services/pool-heater-repair-installation.html">Pool Heater &amp; Heat Pump Repair</a><a href="../services/pool-cleaning.html">Pool Cleaning Service</a><a href="../services/pool-leak-detection.html">Pool Leak Detection</a><a href="../services/pool-filter-repair-and-installation.html">Pool Filter Repair &amp; Replacement</a><a href="../services/salt-water-chlorinator-installation-repair.html">Salt System &amp; Salt Cell Repair</a><a href="../services/pool-automation-systems-installation-upgrades.html">Pool Automation</a><a href="../services/pool-light-repair.html">Pool Light Replacement &amp; Repair</a></div><div class="mega-col"><a href="../services/pool-electrical-repair-installation.html">Pool Electrician</a><a href="../services/pool-equipment-installation-upgrades.html">Pool Equipment Installation &amp; Upgrades</a><a href="../services/pool-resurfacing.html">Pool Resurfacing</a><a href="../services/pool-remodeling.html">Pool Remodeling</a><a href="../services/pool-acid-wash.html">Pool Acid Wash</a><a href="../services/emergency-pool-service.html">Emergency Pool Repair</a><a href="../services/pool-care-memberships.html">Pool Maintenance Plans</a><a href="../services/pool-builders.html">For Pool Builders</a><a href="../../pages/help/index.html">Troubleshooting Guides</a></div><img class="mvan" src="../../assets/van-side.png" alt="" loading="lazy"></div></div></span><span class="has-mega"><a href="../services/index.html#electric">Electrical</a><div class="mega"><h4>Electrical Services</h4><div class="mega-in"><div class="mega-col"><a href="../services/electrician.html">Electrician</a><a href="../services/electrical-panel-upgrade-replacement.html">Panel Upgrades &amp; Replacement</a><a href="../services/surge-protection.html">Surge Protection</a><a href="../services/emergency-electrician.html">Emergency Electrician</a><a href="../services/lighting-ceiling-fan-installation.html">Lighting &amp; Ceiling Fans</a><a href="../services/smoke-detector-installation.html">Smoke Detector Installation</a></div><div class="mega-col"><a href="../services/house-rewiring.html">House Rewiring</a><a href="../services/electrical-safety-inspection.html">Electrical Safety Inspection</a><a href="../services/ev-charger-installation.html">EV Charger Installation</a><a href="../services/whole-house-generator-installation-repair.html">Whole House Generators</a><a href="../services/commercial-electrician.html">Commercial Electrician</a><a href="../services/marine-electricians.html">Marine &amp; Dock Electrician</a></div><img class="mvan" src="../../assets/van-side.png" alt="" loading="lazy"></div></div></span><span class="has-mega"><a href="../services/index.html#gas">Gas</a><div class="mega"><h4>Gas Services</h4><div class="mega-in"><div class="mega-col"><a href="../services/gas-services.html">Gas Services</a><a href="../services/gas-leak-detection-repair.html">Gas Leak Detection &amp; Repair</a><a href="../services/gas-line-installation.html">Gas Line Installation &amp; Hookups</a><a href="../services/propane-tank-installation.html">Propane Tank Installation</a><a href="../services/pool-heater-repair-installation.html">Gas Pool Heaters</a></div><div class="mega-col"><a href="../services/whole-house-generator-installation-repair.html">Generators + Gas Line</a><a href="../services/outdoor-kitchens.html">Outdoor Kitchen Gas Lines</a><a href="../services/gas-line-installation.html">Fire Pits &amp; Grill Hookups</a><a href="../services/propane-tank-installation.html">Whole-Home Propane</a></div><img class="mvan" src="../../assets/van-side.png" alt="" loading="lazy"></div></div></span><span class="dd"><a href="../services/index.html#outdoor">Outdoor</a><div class="dd-menu"><div class="dd-links"><a href="../services/outdoor-landscape-lighting-installation.html">Landscape Lighting</a><a href="../services/outdoor-living.html">Outdoor Living</a><a href="../services/pavers-and-driveways.html">Pavers &amp; Driveways</a><a href="../services/outdoor-kitchens.html">Outdoor Kitchens</a><a href="../services/pool-fence.html">Pool Fence</a><a href="../services/artificial-turf.html">Artificial Turf</a></div></div></span><span class="dd"><a href="../../about-us.html">About</a><div class="dd-menu"><div class="dd-links"><a href="../../about-us.html">About Us</a><a href="../../reviews.html">Reviews</a><a href="../../specials.html">Specials</a><a href="../../referral-program.html">Referral Program</a><a href="../../giving-back.html">Giving Back</a><a href="../../pages/blog/index.html">Blog</a></div></div></span><a href="../../pages/areas/index.html">Service Areas</a><a href="../../contact-us.html">Contact</a></nav><!--/NAV-->
+  <a class="btn btn-primary" href="../../contact-us.html">Request Service</a>
+</header></div>
+
+<!-- TITLE BAND -->
+<section class="post-hero">
+  <div class="crumb"><a href="../../index.html">Home</a> / <a href="index.html">Troubleshooting</a> / Pentair MasterTemp Error Codes</div>
+  <h1 class="disp">Pentair MasterTemp Error Codes: Service Heater Light, ERR &amp; E-Codes</h1>
+</section>
+
+<!-- ARTICLE -->
+<div class="post">
+  <div class="byline">By <b>Yanni Ramos</b>, Licensed Pool, Electrical &amp; Gas Contractor</div>
+  <article>
+    <p>This guide explains every verified Pentair MasterTemp error code and service light — what each one means, the most likely cause, and the checks that are safe to try yourself. We're Perfect Catch in Largo, the Pinellas County company licensed for both the electrical and gas sides of these heater repairs (EC13011994, LI4527, CPC1459998).</p>
+
+    <div class="jump"><b>Jump to a code</b>
+      <a href="#service-system">Service System light</a>
+      <a href="#service-heater">Service Heater light</a>
+      <a href="#err-ps">ERR PS</a>
+      <a href="#err-hls">ERR HLS</a>
+      <a href="#err-afs">ERR AFS</a>
+      <a href="#err-ags">ERR AGS</a>
+      <a href="#err-sfs">ERR SFS</a>
+      <a href="#err-ign">ERR IGN</a>
+      <a href="#e01">E01</a>
+      <a href="#e02">E02 / 126</a>
+      <a href="#e05">E05</a>
+      <a href="#e06">E06</a>
+      <a href="#thermal-regulator">Thermal regulator</a>
+    </div>
+
+    <h2 class="disp">How the MasterTemp <em>Tells You What's Wrong</em></h2>
+    <p>The membrane pad on the front of a MasterTemp 125, 200, 250, 300 or 400 has two service lights — <b>Service System</b> and <b>Service Heater</b> — plus a digital display that can show <b>ERR</b> codes and <b>E</b>-codes. Per Pentair's service documentation, "Service Heater" faults are pinpointed by diagnostic LEDs on the control board behind the access panel — reading those requires removing panels, which is professional territory. Everything you need for a phone call is right on the front display.</p>
+
+    <h3 id="service-system">Service System — no water flow detected</h3>
+    <p>The heater's water-side safety chain is open, almost always because the water pressure switch isn't detecting enough flow. The heater won't fire until flow is restored. Common triggers: a dirty filter, a closed or misaligned valve, the pump off or running on low speed, or an air lock after cleaning.</p>
+    <p><b>Try this first:</b></p>
+    <ul class="checks">
+      <li>Confirm the pump is running at its normal (high) speed</li>
+      <li>Check the filter pressure gauge and clean or backwash a dirty filter</li>
+      <li>Empty the skimmer and pump baskets</li>
+      <li>Confirm the valves feeding the heater are open</li>
+      <li>Check the pool water level and top off if low</li>
+    </ul>
+    <div class="stop">If flow is confirmed good and the light stays on: this is a sealed-component repair inside the cabinet — stop here.</div>
+
+    <h3 id="service-heater">Service Heater — combustion/safety chain fault</h3>
+    <p>The control detected a fault in the combustion or safety chain and locked the heater out. A specific board LED or display code identifies which safety tripped — the codes below cover each one.</p>
+    <p><b>Try this first:</b></p>
+    <ul class="checks">
+      <li>Note the exact code on the display (a phone photo helps our tech)</li>
+      <li>Power-cycle the heater <b>once</b> at the breaker or timer</li>
+      <li>If the light returns, stop and call</li>
+    </ul>
+    <div class="stop">If that doesn't clear it: diagnosing which safety tripped means panel removal and testing gas-side and 240V components — this is a gas/electrical repair, stop here.</div>
+
+    <h3 id="err-ps">ERR PS — water pressure switch open</h3>
+    <p>The pressure switch doesn't see enough water flow for the heater to fire safely, so it refuses to light. It clears itself automatically once flow is restored. Usual suspects: dirty filter, low pump speed, closed valves, clogged baskets, or low water level.</p>
+    <p><b>Try this first:</b></p>
+    <ul class="checks">
+      <li>Clean the filter and watch the pressure gauge come down</li>
+      <li>Empty the skimmer and pump baskets</li>
+      <li>Verify the pump is on high speed</li>
+      <li>Top off the pool water level</li>
+    </ul>
+    <div class="stop">If it persists with good flow: pressure-switch calibration or replacement happens inside the cabinet next to hot exchanger plumbing — a sealed-component repair, stop here.</div>
+
+    <h3 id="err-hls">ERR HLS — high limit switch tripped (overheat)</h3>
+    <p>Water leaving the first pass of the heat exchanger exceeded roughly 135&deg;F and the overheat safety opened. The cause is usually low flow through the heater, a scaled or sooted heat exchanger, or a stuck thermal regulator.</p>
+    <p><b>Try this first:</b></p>
+    <ul class="checks">
+      <li>Run the same flow checks as ERR PS — filter, baskets, valves</li>
+      <li>Allow the heater to cool before it retries</li>
+    </ul>
+    <div class="stop">If it trips repeatedly: exchanger scaling, thermal regulator, or switch replacement — and some models need a manual reset inside the cabinet. This is a sealed-component repair, stop here.</div>
+
+    <h3 id="err-afs">ERR AFS — air flow switch (combustion air not proven)</h3>
+    <p>The blower's vacuum switch didn't prove combustion air, so the heater refuses to release gas — exactly what it's designed to do. Causes include a blocked exhaust vent, debris or an animal nest in the air intake, a weak blower motor, or a cracked vacuum tube. It auto-clears once airflow is restored.</p>
+    <p><b>Try this first:</b></p>
+    <ul class="checks">
+      <li>Look at the top vent from outside and clear leaves or debris off the exterior grille only</li>
+      <li>Make sure nothing is stacked around the heater blocking airflow</li>
+    </ul>
+    <div class="stop">If that doesn't clear it: blower, vacuum tubing, and switch work are combustion-side components — this is a gas repair, stop here.</div>
+
+    <h3 id="err-ags">ERR AGS — automatic gas shutoff (redundant overheat)</h3>
+    <div class="urgent">This code disables the front panel and means a backup safety had to cut the gas. If it comes back after one power cycle, shut the heater off and call — don't keep resetting it.</div>
+    <p>Water temperature after the second exchanger pass exceeded roughly 140&deg;F, so the redundant overheat safety cut the gas supply. A tripping AGS suggests the primary safeties may also be compromised — a serious flow restriction, failed thermal regulator, or scaled exchanger is usually behind it.</p>
+    <p><b>Try this first:</b></p>
+    <ul class="checks">
+      <li>Confirm the flow basics only (pump on, filter clean, valves open)</li>
+      <li>Power-cycle <b>once</b>. If AGS returns, turn the heater off and call</li>
+    </ul>
+    <div class="stop">If it recurs: gas-side safety diagnosis is licensed-gas work — stop here.</div>
+
+    <h3 id="err-sfs">ERR SFS — stack flue sensor over-temperature</h3>
+    <div class="urgent">Stop-now code. Exhaust stack temperature exceeded roughly 480&deg;F — combustion is running dangerously hot, a fire and carbon-monoxide risk indicator. Turn the heater off and call.</div>
+    <p>Per Pentair's documentation the front panel is disabled and a power cycle is required, but the underlying causes — a sooted heat exchanger, poor combustion, a blocked flue, or low water flow — all need professional combustion analysis. There are no safe homeowner checks for this one.</p>
+    <div class="stop">This is a gas repair — stop here.</div>
+
+    <h3 id="err-ign">ERR IGN — ignition failure lockout</h3>
+    <p>The ignition module tried to light the burner three times and never proved flame, so it locked out. The simplest causes are on the supply side: a closed gas valve to the heater or, on propane systems, an empty LP tank. Beyond that it's a fouled igniter, bad flame sensor, or failed gas valve.</p>
+    <p><b>Try this first:</b></p>
+    <ul class="checks">
+      <li>Confirm the gas supply valve to the heater is on</li>
+      <li>On propane, confirm the tank isn't empty</li>
+      <li>Press "Heater Off" then back on <b>once</b> to reset</li>
+    </ul>
+    <div class="stop">If it locks out again: igniter, flame-rectification, and gas-valve work require a gas license — stop here.</div>
+
+    <div class="svc-cta">
+      <h3 class="disp">Pentair MasterTemp Repair in Pinellas</h3>
+      <p>Pentair heater repair in Largo, St. Pete, Clearwater &amp; all of Pinellas — we service the gas and electrical sides under our own licenses (LI4527, EC13011994, CPC1459998). Priority dispatch: 727-316-5206.</p>
+      <a class="btn btn-primary" href="../services/pool-heater-repair-installation.html">Pool Heater Repair</a>
+      <a class="btn btn-white" href="../areas/index.html" style="margin-left:10px">Service Areas</a>
+    </div>
+
+    <h2 class="disp">E-Codes: <em>Sensor Circuit Faults</em></h2>
+    <p>E-codes point at the heater's temperature sensors rather than the safety chain. Sensor and wiring inspection happens inside the cabinet, so homeowner options are limited — but knowing the code before you call speeds up the repair.</p>
+
+    <h3 id="e01">E01 — water temperature sensor open</h3>
+    <p>The water thermistor circuit is open — typically a disconnected or broken sensor wire, or a failed thermistor.</p>
+    <p><b>Try this first:</b></p>
+    <ul class="checks">
+      <li>Press "Heater Off" to reset <b>once</b></li>
+    </ul>
+    <div class="stop">If E01 returns: sensor and wiring inspection is inside the cabinet — a sealed-component repair, stop here.</div>
+
+    <h3 id="e02">E02 / code 126 — water temperature sensor shorted</h3>
+    <p>The water temperature sensor circuit is shorted, usually from water intrusion into the sensor or a failed thermistor. Some displays show this as code "126." There are no safe homeowner checks.</p>
+    <div class="stop">Sensor replacement is a sealed-component repair — stop here.</div>
+
+    <h3 id="e05">E05 — stack flue sensor open</h3>
+    <p>The flue sensor that reads exhaust temperature has an open circuit — a broken wire or failed sensor. Because this sensor often fails alongside a clogged exhaust, sooted exchanger, or low flow, it deserves a real diagnosis rather than just a part swap.</p>
+    <div class="stop">This is a flue-side component — a gas repair, stop here.</div>
+
+    <h3 id="e06">E06 — stack flue sensor shorted</h3>
+    <p>The flue sensor circuit is shorted, typically a water-damaged or failed sensor element. No safe homeowner checks.</p>
+    <div class="stop">Flue-side sensor replacement is a gas repair — stop here.</div>
+
+    <h3 id="thermal-regulator">The thermal regulator — the no-code repeat offender</h3>
+    <p>The internal thermal regulator meters water through the heat exchanger to keep it at operating temperature. When it sticks closed, water overheats inside the exchanger and you get recurring HLS and AGS trips — and phantom Service System lights — even with a clean filter. When it sticks open, the heater runs cool, condenses, and soots up, setting the stage for SFS and E05 faults later. It lives inside the heater's water manifold; there's nothing homeowner-serviceable here, but replacing it (often together with the thermistor, HLS and AGS sensors) is a common, permanent fix for heaters that keep throwing service lights.</p>
+
+    <h2 class="disp">Why Homeowners Across Pinellas <em>Call Us for Pentair Heaters</em></h2>
+    <ul class="checks">
+      <li><b>Gas-licensed in-house (LI4527):</b> ignition lockouts, AGS gas shutoffs, and flue-temperature faults are gas-train diagnoses — in Florida that's licensed-gas work, and we don't sub it out.</li>
+      <li><b>Electrical-licensed too (EC13011994):</b> MasterTemps run on 240V with safety circuits throughout — one truck handles the wiring side as well as the burner side.</li>
+      <li><b>Root-cause repairs:</b> we chase the thermal regulator and flow problems behind repeat HLS/AGS trips instead of resetting the same code every month — important with Florida heaters running most of the year.</li>
+    </ul>
+  </article>
+</div>
+
+<!-- CTA BAND -->
+<section class="cta-band">
+  <h2 class="disp">Heater Locked Out?</h2>
+  <p>Licensed pool, electrical &amp; gas — one company, zero subs · Upfront pricing</p>
+  <div style="display:flex;gap:14px;justify-content:center;flex-wrap:wrap">
+    <a class="btn btn-primary" href="../../contact-us.html">Request Service</a>
+    <a class="btn btn-white" href="tel:7273165206">☎ Call 727-316-5206</a>
+  </div>
+</section>
+<!--FOOT--><div class="fmap"><iframe title="Perfect Catch location — 13932 Walsingham Rd STE A, Largo, FL" src="https://www.google.com/maps?q=13932%20Walsingham%20Rd%20STE%20A%20Largo%20FL%2033774&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+<footer class="site">
+<div class="f-cols">
+<div class="f-brand">
+<img src="../../assets/logo-full.webp" alt="Perfect Catch — Swimming Pool Repair, Gas &amp; Electric" loading="lazy" decoding="async">
+<h4>License Numbers:</h4>
+<p class="lic"><span>CPC1459998</span><span>CGC1531306</span><span>EC13011994</span><span>LI4527</span></p>
+</div>
+<div><h4>Navigation</h4><ul><li><a href="../../index.html">Home</a></li><li><a href="../../about-us.html">About Us</a></li><li><a href="../../pages/blog/index.html">Blog</a></li><li><a href="../../pages/help/index.html">Troubleshooting</a></li><li><a href="../../pages/areas/index.html">Service Areas</a></li><li><a href="../../contact-us.html">Contact Us</a></li></ul></div>
+<div><h4>Useful Links</h4><ul><li><a href="../../pages/services/index.html">All Services</a></li><li><a href="../../reviews.html">Reviews</a></li><li><a href="../../specials.html">Specials</a></li><li><a href="../../privacy-policy.html">Privacy Policy</a></li><li><a href="../../terms-of-service.html">Terms of Service</a></li><li><a href="../../cookie-policy.html">Cookie Policy</a></li></ul></div>
+<div><h4>Contact</h4>
+<div class="cl"><svg viewBox="0 0 24 24"><path d="M6.62 10.79a15.05 15.05 0 0 0 6.59 6.59l2.2-2.2a1 1 0 0 1 1.02-.24c1.12.37 2.33.57 3.57.57a1 1 0 0 1 1 1V20a1 1 0 0 1-1 1C10.61 21 3 13.39 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.24.2 2.45.57 3.57a1 1 0 0 1-.25 1.02l-2.2 2.2z"/></svg><a href="tel:7273165206">727-316-5206</a></div>
+<div class="cl"><svg viewBox="0 0 24 24"><path d="M12 2a7 7 0 0 0-7 7c0 5.25 7 13 7 13s7-7.75 7-13a7 7 0 0 0-7-7zm0 9.5a2.5 2.5 0 1 1 0-5 2.5 2.5 0 0 1 0 5z"/></svg><span>13932 Walsingham Rd, STE A, Largo, FL, 33774</span></div>
+<div class="cl"><svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20zm1 10.6 4.2 2.5-.8 1.3L11 13V7h2v5.6z"/></svg><span>Monday — Friday: 8:00 AM — 5:00 PM</span></div>
+<div class="soc">
+<a href="https://www.facebook.com/people/Perfect-Catch/61570828732967/" target="_blank" rel="noopener" aria-label="Facebook"><svg viewBox="0 0 24 24"><path d="M13.5 21v-7h2.4l.45-3H13.5V9.1c0-.87.29-1.6 1.62-1.6h1.53V4.85c-.27-.04-1.2-.12-2.28-.12-2.26 0-3.87 1.38-3.87 3.9V11H8.1v3h2.4v7h3z"/></svg></a>
+<a href="https://www.instagram.com/callperfectcatch" target="_blank" rel="noopener" aria-label="Instagram"><svg viewBox="0 0 24 24"><rect x="3.5" y="3.5" width="17" height="17" rx="4.5" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="12" r="4" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="17.2" cy="6.8" r="1.3"/></svg></a>
+<a href="https://www.youtube.com/@Perfectcatchelectric" target="_blank" rel="noopener" aria-label="YouTube"><svg viewBox="0 0 24 24"><path d="M21.58 7.19a2.5 2.5 0 0 0-1.76-1.77C18.25 5 12 5 12 5s-6.25 0-7.82.42A2.5 2.5 0 0 0 2.42 7.2 26.2 26.2 0 0 0 2 12c0 1.62.14 3.23.42 4.81a2.5 2.5 0 0 0 1.76 1.77C5.75 19 12 19 12 19s6.25 0 7.82-.42a2.5 2.5 0 0 0 1.76-1.77c.28-1.58.42-3.19.42-4.81s-.14-3.23-.42-4.81zM10 15.5v-7l5.75 3.5z"/></svg></a>
+<a href="https://www.linkedin.com/company/call-perfect-catch-electric" target="_blank" rel="noopener" aria-label="LinkedIn"><svg viewBox="0 0 24 24"><path d="M4.98 3.5a2.49 2.49 0 1 1 0 4.98 2.49 2.49 0 0 1 0-4.98zM3 9.75h4V21H3zM9.5 9.75h3.83v1.54h.06a4.2 4.2 0 0 1 3.78-2.08c4.04 0 4.78 2.66 4.78 6.12V21H18v-5.06c0-1.21-.02-2.76-1.68-2.76-1.68 0-1.94 1.31-1.94 2.67V21H10.5z"/></svg></a>
+</div>
+</div>
+</div>
+<div class="f-bar">©2026 Perfect Catch Swimming Pool Repair, Gas, &amp; Electric. All rights reserved.</div>
+</footer><!--/FOOT-->
+
+<!-- Sticky mobile call bar -->
+<div class="sticky-call">
+  <a class="sc-call" href="tel:7273165206">☎ 727-316-5206</a>
+  <a class="sc-req" href="../../contact-us.html">Request Service</a>
+</div>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Article",
+      "headline": "Pentair MasterTemp Error Codes: Service Heater Light, ERR & E-Codes",
+      "author": { "@type": "Person", "name": "Yanni Ramos", "url": "https://callperfectcatch.com/about-us/" },
+      "publisher": { "@id": "https://callperfectcatch.com/#organization" },
+      "mainEntityOfPage": "https://callperfectcatch.com/help/pentair-mastertemp-error-codes/"
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://callperfectcatch.com/" },
+        { "@type": "ListItem", "position": 2, "name": "Troubleshooting", "item": "https://callperfectcatch.com/help/" },
+        { "@type": "ListItem", "position": 3, "name": "Pentair MasterTemp Error Codes: Service Heater Light, ERR & E-Codes", "item": "https://callperfectcatch.com/help/pentair-mastertemp-error-codes/" }
+      ]
+    }
+  ]
+}
+</script>
+</body></html>

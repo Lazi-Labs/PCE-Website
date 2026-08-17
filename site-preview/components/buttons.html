@@ -1,0 +1,73 @@
+<!-- @dsCard group="Components" name="Buttons" subtitle="Kit spec: coral fill, deep-red 4px bottom edge, 12px radius, Burbank Big — plus site variants" -->
+<!doctype html><html><head><meta charset="utf-8">
+<link href="https://fonts.googleapis.com/css2?family=Sofia+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+  @font-face{font-family:'Burbank Big';src:url('../assets/fonts/BurbankBig-Bold.woff2') format('woff2');font-weight:700;font-style:normal}
+  body{margin:0;padding:28px;font-family:'Sofia Sans',Arial,sans-serif;background:#fff;color:#001E33}
+  .label{font-size:12px;text-transform:uppercase;letter-spacing:1px;color:#706F6F;margin:26px 0 12px}
+  .label:first-child{margin-top:0}
+  .row{display:flex;gap:16px;flex-wrap:wrap;align-items:center}
+  .on-navy{background:linear-gradient(160deg,#0A4A7A,#003D6A);padding:22px;border-radius:14px}
+  .btn{
+    display:inline-flex;align-items:center;gap:8px;cursor:pointer;text-decoration:none;
+    font-family:'Burbank Big',Impact,sans-serif;font-weight:700;font-size:18px;line-height:1;
+    text-transform:uppercase;
+    padding:16px 28px 13px;border-radius:12px;
+    border:1px solid;border-bottom-width:4px;
+    transition:background .15s,border-color .15s;
+  }
+  /* Kit default: coral fill, deep-red border; hover inverts to deep-red fill, coral border */
+  .btn-primary{background:#F24E45;color:#fff;border-color:#A7130C}
+  .btn-primary:hover{background:#A7130C;border-color:#F24E45}
+  .btn-primary.state-hover{background:#A7130C;border-color:#F24E45}
+  /* Site variants (observed on homepage) */
+  .btn-call{background:#003D6A;color:#fff;border-color:#062F4F}
+  .btn-call:hover{background:#062F4F;border-color:#003D6A}
+  .btn-call-onwhite{background:#fff;color:#003D6A;border-color:#003D6A}
+  .btn-call-onwhite:hover{background:#E6F4FF}
+  .btn-ghost-onnavy{background:transparent;color:#fff;border-color:#fff}
+  .btn-ghost-onnavy:hover{background:rgba(255,255,255,.12)}
+  .badge{
+    display:inline-flex;align-items:center;gap:8px;
+    font-family:'Burbank Big',Impact,sans-serif;font-weight:700;font-size:14px;text-transform:uppercase;
+    color:#fff;background:#003D6A;border-radius:999px;padding:10px 18px 8px;letter-spacing:.5px;
+  }
+  .badge .fish{color:#42BE9F;font-size:15px}
+  input.field{
+    font-family:'Sofia Sans',sans-serif;font-size:18px;line-height:1.9;color:#001E33;
+    border:1px solid #42BE9F;border-bottom-width:4px;border-radius:12px;padding:10px 16px;outline:none;width:260px;
+  }
+  .phone-ico{font-size:16px}
+</style></head><body>
+<div class="label">Primary — kit button spec: coral, deep-red 1/1/4/1 border, 12px radius, Burbank Big 20px, padding 16/28/13</div>
+<div class="row">
+  <a class="btn btn-primary" href="#">Request Service</a>
+  <a class="btn btn-primary state-hover" href="#">Hover — inverts to deep red</a>
+</div>
+
+<div class="label">Call CTA — navy variant, always shows the number</div>
+<div class="row">
+  <a class="btn btn-call" href="tel:7273165206"><span class="phone-ico">&#9742;</span> Call 727-316-5206</a>
+  <a class="btn btn-call-onwhite" href="tel:7273165206"><span class="phone-ico">&#9742;</span> Call 727-316-5206</a>
+</div>
+
+<div class="label">On navy backgrounds (hero / footer)</div>
+<div class="on-navy row">
+  <a class="btn btn-primary" href="#">Request Service</a>
+  <a class="btn btn-call-onwhite" href="#"><span class="phone-ico">&#9742;</span> Call 727-316-5206</a>
+  <a class="btn btn-ghost-onnavy" href="#">View Services</a>
+</div>
+
+<div class="label">Form inputs — kit spec mirrors the button edge: teal border 1/1/4/1, 12px radius, Sofia Sans 18/1.9</div>
+<div class="row">
+  <input class="field" placeholder="Full name">
+  <input class="field" placeholder="Phone number">
+</div>
+
+<div class="label">Value badge pills — teal fish icon, navy pill (hero trust bar)</div>
+<div class="row">
+  <span class="badge"><span class="fish">&#128031;</span> Upfront Pricing</span>
+  <span class="badge"><span class="fish">&#128031;</span> Four Licenses, Zero Subs</span>
+  <span class="badge"><span class="fish">&#128031;</span> Best in Class Warranty</span>
+</div>
+</body></html>

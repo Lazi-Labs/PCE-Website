@@ -1,0 +1,46 @@
+/* Perfect Catch Electric — design tokens
+   Source of truth: Elementor kit-7 from the WordPress export (see reference/elementor-kit.css).
+   Display font is Burbank Big (custom, self-hosted); body is Sofia Sans. Roboto is NOT used. */
+@import url('https://fonts.googleapis.com/css2?family=Sofia+Sans:ital,wght@0,400;0,500;0,700;1,400&display=swap');
+@font-face{
+  font-family:'Burbank Big';
+  src:url('assets/fonts/BurbankBig-Bold.woff2') format('woff2');
+  font-weight:700;font-style:normal;font-display:swap;
+}
+:root{
+/* Elementor kit-7 globals */
+--pce-coral:#F24E45;        /* primary — buttons, links, offset shadows */
+--pce-coral-dark:#DD4A43;   /* observed hover tint on homepage */
+--pce-red-deep:#A7130C;     /* button bottom border + button hover fill */
+--pce-navy:#003D6A;         /* secondary */
+--pce-text:#001E33;         /* kit text color (h2/h3/body headings) */
+--pce-teal:#42BE9F;         /* accent — form input borders, logo mark */
+--pce-teal-dark:#143930;
+--pce-cream:#FEDFAE;        /* h6 / accent headings */
+--pce-sky:#E6F4FF;
+--pce-sand:#FFF5E6;
+--pce-brown:#653F01;        /* text on cream */
+--pce-white:#FFFFFF;
+--pce-ink:#0C0D0E;
+/* Type — Burbank Big 700 uppercase for ALL headings & buttons; Sofia Sans body */
+--pce-font-display:'Burbank Big',Impact,'Arial Black',sans-serif;
+--pce-font-body:'Sofia Sans',Arial,sans-serif;
+--pce-h1:90px;   /* kit primary   — white, on imagery */
+--pce-h2:47px;   /* kit secondary — #001E33 */
+--pce-h3:28px;   /* kit text      */
+--pce-h6:24px;   /* kit accent    — cream #FEDFAE */
+--pce-body-size:18px;--pce-body-lh:1.9;
+/* Buttons & inputs (kit spec) */
+--pce-radius:12px;          /* buttons AND form inputs */
+--pce-radius-card:14px;
+--pce-btn-border:1px 1px 4px 1px;  /* thick bottom edge */
+--pce-btn-pad:16px 28px 13px 28px;
+--pce-btn-font:700 20px/1 var(--pce-font-display);
+}
+body{font-family:var(--pce-font-body);font-size:var(--pce-body-size);line-height:var(--pce-body-lh);color:var(--pce-text);margin:0}
+h1,h2,h3,h4,h5,h6{font-family:var(--pce-font-display);font-weight:700;text-transform:uppercase;line-height:1em}
+h1{font-size:var(--pce-h1);color:var(--pce-white)}
+h2{font-size:var(--pce-h2);color:var(--pce-text)}
+h3{font-size:var(--pce-h3);color:var(--pce-text)}
+h6{font-size:var(--pce-h6);color:var(--pce-cream)}
+a{color:var(--pce-coral);font-weight:500}

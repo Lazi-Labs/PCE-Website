@@ -1,0 +1,198 @@
+{
+  "block_count": 1,
+  "processed_count": 1,
+  "total_bytes": 5680,
+  "truncated": false,
+  "blocks": [
+    {
+      "index": 1,
+      "size_bytes": 5680,
+      "valid": true,
+      "types": [
+        "AggregateRating",
+        "BlogPosting",
+        "ContactPoint",
+        "Electrician",
+        "ImageObject",
+        "ItemPage",
+        "LocalBusiness",
+        "OpeningHoursSpecification",
+        "Organization",
+        "Person",
+        "PostalAddress",
+        "Product",
+        "WebSite"
+      ],
+      "types_truncated": false,
+      "data": {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "Organization",
+            "name": "Perfect Catch Swimming Pool Repair, Gas, &amp; Electric",
+            "url": "https://callperfectcatch.com/",
+            "logo": "https://callperfectcatch.com/wp-content/uploads/2026/05/updated-logo.webp",
+            "contactPoint": {
+              "@type": "ContactPoint",
+              "telephone": "+17277884086",
+              "contactType": "customer service",
+              "areaServed": "US",
+              "availableLanguage": "en"
+            },
+            "sameAs": [
+              "https://www.facebook.com/people/Perfect-Catch/61570828732967/",
+              "https://www.instagram.com/callperfectcatch",
+              "https://www.youtube.com/@Perfectcatchelectric",
+              "https://www.linkedin.com/company/call-perfect-catch-electric",
+              "https://www.pinterest.com/perfectcatchelectric/"
+            ]
+          },
+          {
+            "@type": "LocalBusiness",
+            "@id": "https://callperfectcatch.com/#localbusiness",
+            "name": "Perfect Catch Swimming Pool Repair, Gas, &amp; Electric",
+            "url": "https://callperfectcatch.com/",
+            "image": "https://callperfectcatch.com/wp-content/uploads/2026/05/updated-logo.webp",
+            "logo": "https://callperfectcatch.com/wp-content/uploads/2026/05/updated-logo.webp",
+            "telephone": "+1-727-788-4086",
+            "priceRange": "Varies",
+            "address": {
+              "@type": "PostalAddress",
+              "streetAddress": "13932 Walsingham Rd Ste A",
+              "addressLocality": "Largo",
+              "addressRegion": "FL",
+              "postalCode": "33774",
+              "addressCountry": "US"
+            },
+            "openingHoursSpecification": {
+              "@type": "OpeningHoursSpecification",
+              "dayOfWeek": [
+                "Monday",
+                "Tuesday",
+                "Wednesday",
+                "Thursday",
+                "Friday"
+              ],
+              "opens": "08:00",
+              "closes": "17:00"
+            }
+          },
+          {
+            "@type": "Product",
+            "name": "Perfect Catch Swimming Pool Repair, Gas, &amp; Electric",
+            "image": "https://callperfectcatch.com/wp-content/uploads/2026/05/updated-logo.webp",
+            "url": "https://callperfectcatch.com/",
+            "aggregateRating": {
+              "@type": "AggregateRating",
+              "ratingValue": "5",
+              "bestRating": "5",
+              "worstRating": "2",
+              "ratingCount": "216"
+            }
+          },
+          {
+            "@type": [
+              "Electrician",
+              "Organization"
+            ],
+            "@id": "https://callperfectcatch.com/#organization",
+            "name": "Perfect Catch Swimming Pool Repair, Gas, &amp; Electric",
+            "url": "https://callperfectcatch.com",
+            "logo": {
+              "@type": "ImageObject",
+              "@id": "https://callperfectcatch.com/#logo",
+              "url": "https://callperfectcatch.com/wp-content/uploads/2026/05/updated-logo.webp",
+              "contentUrl": "https://callperfectcatch.com/wp-content/uploads/2026/05/updated-logo.webp",
+              "caption": "Perfect Catch Swimming Pool Repair, Gas, &amp; Electric",
+              "inLanguage": "en-US",
+              "width": "900",
+              "height": "498"
+            },
+            "openingHours": [
+              "Monday,Tuesday,Wednesday,Thursday,Friday,Saturday,Sunday 09:00-17:00"
+            ],
+            "image": {
+              "@id": "https://callperfectcatch.com/#logo"
+            }
+          },
+          {
+            "@type": "WebSite",
+            "@id": "https://callperfectcatch.com/#website",
+            "url": "https://callperfectcatch.com",
+            "name": "Perfect Catch Swimming Pool Repair, Gas, &amp; Electric",
+            "alternateName": "Perfect Catch Swimming Pool Repair, Gas, &amp; Electric",
+            "publisher": {
+              "@id": "https://callperfectcatch.com/#organization"
+            },
+            "inLanguage": "en-US"
+          },
+          {
+            "@type": "ImageObject",
+            "@id": "https://callperfectcatch.com/wp-content/uploads/2026/06/pool_pump_maintenance_outdoors_technician_leaves.jpg",
+            "url": "https://callperfectcatch.com/wp-content/uploads/2026/06/pool_pump_maintenance_outdoors_technician_leaves.jpg",
+            "width": "900",
+            "height": "600",
+            "inLanguage": "en-US"
+          },
+          {
+            "@type": "ItemPage",
+            "@id": "https://callperfectcatch.com/blog/pool-heater-not-working-troubleshooting-tips-for-largo-fl-homeowners/#webpage",
+            "url": "https://callperfectcatch.com/blog/pool-heater-not-working-troubleshooting-tips-for-largo-fl-homeowners/",
+            "name": "Pool Heater Not Working? Troubleshooting Tips for Largo, FL Homeowners - Perfect Catch Swimming Pool Repair, Gas, &amp; Electric",
+            "datePublished": "2026-08-01T07:22:00+00:00",
+            "dateModified": "2026-08-01T07:22:00+00:00",
+            "isPartOf": {
+              "@id": "https://callperfectcatch.com/#website"
+            },
+            "primaryImageOfPage": {
+              "@id": "https://callperfectcatch.com/wp-content/uploads/2026/06/pool_pump_maintenance_outdoors_technician_leaves.jpg"
+            },
+            "inLanguage": "en-US"
+          },
+          {
+            "@type": "Person",
+            "@id": "https://callperfectcatch.com/blog/pool-heater-not-working-troubleshooting-tips-for-largo-fl-homeowners/#author",
+            "name": "sitemanagerwpmanagerio",
+            "image": {
+              "@type": "ImageObject",
+              "@id": "https://secure.gravatar.com/avatar/d53324679735e68f41cf76afa127cbb5e637dc7a7cb66e105971cd4d67dea5bb?s=96&amp;d=mm&amp;r=g",
+              "url": "https://secure.gravatar.com/avatar/d53324679735e68f41cf76afa127cbb5e637dc7a7cb66e105971cd4d67dea5bb?s=96&amp;d=mm&amp;r=g",
+              "caption": "sitemanagerwpmanagerio",
+              "inLanguage": "en-US"
+            },
+            "worksFor": {
+              "@id": "https://callperfectcatch.com/#organization"
+            }
+          },
+          {
+            "@type": "BlogPosting",
+            "headline": "Pool Heater Not Working? Troubleshooting Tips for Largo, FL Homeowners - Perfect Catch Swimming Pool Repair,",
+            "datePublished": "2026-08-01T07:22:00+00:00",
+            "dateModified": "2026-08-01T07:22:00+00:00",
+            "articleSection": "Uncategorized",
+            "author": {
+              "@id": "https://callperfectcatch.com/blog/pool-heater-not-working-troubleshooting-tips-for-largo-fl-homeowners/#author",
+              "name": "sitemanagerwpmanagerio"
+            },
+            "publisher": {
+              "@id": "https://callperfectcatch.com/#organization"
+            },
+            "description": "A pool heater that will not fire usually comes down to a short list of causes: a tripped breaker, a faulty thermostat, a clogged filter restricting water",
+            "name": "Pool Heater Not Working? Troubleshooting Tips for Largo, FL Homeowners - Perfect Catch Swimming Pool Repair,",
+            "@id": "https://callperfectcatch.com/blog/pool-heater-not-working-troubleshooting-tips-for-largo-fl-homeowners/#richSnippet",
+            "isPartOf": {
+              "@id": "https://callperfectcatch.com/blog/pool-heater-not-working-troubleshooting-tips-for-largo-fl-homeowners/#webpage"
+            },
+            "image": {
+              "@id": "https://callperfectcatch.com/wp-content/uploads/2026/06/pool_pump_maintenance_outdoors_technician_leaves.jpg"
+            },
+            "inLanguage": "en-US",
+            "mainEntityOfPage": {
+              "@id": "https://callperfectcatch.com/blog/pool-heater-not-working-troubleshooting-tips-for-largo-fl-homeowners/#webpage"
+            }
+          }
+        ]
+      }
+    }
+  ]
+}

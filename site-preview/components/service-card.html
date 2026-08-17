@@ -1,0 +1,56 @@
+<!-- @dsCard group="Components" name="Service cards" subtitle="Service grid card with real photography + local service-area card — Burbank Big heads" -->
+<!doctype html><html><head><meta charset="utf-8">
+<link href="https://fonts.googleapis.com/css2?family=Sofia+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+  @font-face{font-family:'Burbank Big';src:url('../assets/fonts/BurbankBig-Bold.woff2') format('woff2');font-weight:700;font-style:normal}
+  body{margin:0;padding:28px;font-family:'Sofia Sans',Arial,sans-serif;background:#E6F4FF}
+  .disp{font-family:'Burbank Big',Impact,sans-serif;font-weight:700;text-transform:uppercase}
+  .label{font-size:12px;text-transform:uppercase;letter-spacing:1px;color:#003D6A;margin:0 0 12px;font-weight:700}
+  .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:18px;margin-bottom:30px}
+  .card{background:#fff;border-radius:14px;overflow:hidden;box-shadow:0 4px 16px rgba(0,40,70,.10);display:flex;flex-direction:column}
+  .card .ph{height:140px;background:#0A5285 center/cover no-repeat}
+  .card .bd{padding:18px;flex:1;display:flex;flex-direction:column;gap:8px}
+  .card h3{font-family:'Burbank Big',Impact,sans-serif;font-weight:700;font-size:19px;line-height:1.05;text-transform:uppercase;color:#001E33;margin:0}
+  .card p{font-size:14px;line-height:1.55;color:#3F444B;margin:0;flex:1}
+  .card a{font-family:'Burbank Big',Impact,sans-serif;font-weight:700;font-size:14px;text-transform:uppercase;color:#F24E45;text-decoration:none;letter-spacing:.5px}
+  .card a:hover{color:#A7130C}
+  .area{background:#003D6A;color:#fff;border-radius:14px;padding:18px;display:flex;align-items:center;gap:14px;text-decoration:none;box-shadow:0 4px 16px rgba(0,40,70,.18)}
+  .area .pin{color:#42BE9F;font-size:24px}
+  .area b{font-family:'Burbank Big',Impact,sans-serif;font-weight:700;font-size:17px;text-transform:uppercase;display:block}
+  .area span{font-size:12.5px;color:#C2CBD2}
+</style></head><body>
+<div class="label">Service cards (services index &amp; homepage grid — 27 service detail pages, real photography from the export)</div>
+<div class="grid">
+  <div class="card">
+    <div class="ph" style="background-image:url('../assets/photo-pool-repair.webp')"></div>
+    <div class="bd">
+      <h3>Pool Pump Repair</h3>
+      <p>Variable-speed and single-speed pump diagnosis, repair, and replacement with upfront pricing.</p>
+      <a href="#">Learn more &#8594;</a>
+    </div>
+  </div>
+  <div class="card">
+    <div class="ph" style="background-image:url('../assets/photo-ev-charger.jpg')"></div>
+    <div class="bd">
+      <h3>EV Charger Installation</h3>
+      <p>Level 2 charger installs, panel capacity checks, and dedicated circuits by licensed in-house electricians.</p>
+      <a href="#">Learn more &#8594;</a>
+    </div>
+  </div>
+  <div class="card">
+    <div class="ph" style="background-image:url('../assets/photo-gas-heater.webp')"></div>
+    <div class="bd">
+      <h3>Gas Pool Heater Install</h3>
+      <p>NG and LP heater installation with gas line runs, pressure verification, and full startup.</p>
+      <a href="#">Learn more &#8594;</a>
+    </div>
+  </div>
+</div>
+
+<div class="label">Service-area cards (30 local landing pages)</div>
+<div class="grid">
+  <a class="area" href="#"><span class="pin">&#128205;</span><span><b>Largo, FL</b><span>Pool · Electrical · Gas</span></span></a>
+  <a class="area" href="#"><span class="pin">&#128205;</span><span><b>Clearwater, FL</b><span>Pool · Electrical · Gas</span></span></a>
+  <a class="area" href="#"><span class="pin">&#128205;</span><span><b>Seminole, FL</b><span>Pool · Electrical · Gas</span></span></a>
+</div>
+</body></html>

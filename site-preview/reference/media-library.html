@@ -1,0 +1,47 @@
+<!-- @dsCard group="Reference" name="Media library (WordPress export)" subtitle="610 original assets, custom fonts, and the Elementor design kit — where they live and how to use them" -->
+<!doctype html><html><head><meta charset="utf-8">
+<link href="https://fonts.googleapis.com/css2?family=Sofia+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+  @font-face{font-family:'Burbank Big';src:url('../assets/fonts/BurbankBig-Bold.woff2') format('woff2');font-weight:700}
+  body{margin:0;padding:28px;font-family:'Sofia Sans',Arial,sans-serif;background:#fff;color:#001E33;font-size:15px;line-height:1.6}
+  h1{font-family:'Burbank Big',Impact,sans-serif;font-weight:700;font-size:26px;text-transform:uppercase;margin:0 0 4px}
+  h2{font-family:'Burbank Big',Impact,sans-serif;font-weight:700;font-size:16px;text-transform:uppercase;color:#003D6A;margin:24px 0 8px}
+  p.sub{margin:0 0 18px;color:#706F6F;font-size:13px}
+  code{font-family:ui-monospace,monospace;font-size:12.5px;background:#F4F4F2;padding:1px 6px;border-radius:4px}
+  table{border-collapse:collapse;width:100%;max-width:680px}
+  td,th{text-align:left;padding:6px 12px 6px 0;border-bottom:1px solid #EEE;font-size:14px;vertical-align:top}
+  th{font-size:12px;text-transform:uppercase;letter-spacing:.5px;color:#706F6F}
+  ul{margin:6px 0;padding-left:20px}
+  li{margin:3px 0}
+  .warn{background:#FFF5E6;border-left:4px solid #FEDFAE;padding:10px 14px;border-radius:0 8px 8px 0;color:#653F01;max-width:650px}
+</style></head><body>
+<h1>WordPress export — media &amp; design source</h1>
+<p class="sub">Full wp-content export of callperfectcatch.com, pulled 2026-08-13. Local path: <code>~/yr/10-active/pce/pce-website/</code></p>
+
+<h2>What the export contains</h2>
+<table>
+  <tr><th>Item</th><th>Location (local)</th></tr>
+  <tr><td><b>610 original media files</b> (WP size-variants excluded)</td><td><code>extracted/wp-content/uploads/20*/</code> — index at <code>media-originals.txt</code></td></tr>
+  <tr><td><b>Elementor design kit</b> (global colors, type, buttons, forms)</td><td><code>extracted/.../uploads/elementor/css/post-7.css</code> → copied here as <code>reference/elementor-kit.css</code></td></tr>
+  <tr><td><b>Burbank Big Bold</b> — custom display font (woff2)</td><td>synced to <code>assets/fonts/BurbankBig-Bold.woff2</code></td></tr>
+  <tr><td><b>Full-res logo</b> 900×498</td><td>synced to <code>assets/logo-full.webp</code></td></tr>
+  <tr><td>Per-page Elementor CSS (~120 pages, layout specs)</td><td><code>extracted/.../uploads/elementor/css/post-*.css</code></td></tr>
+  <tr><td>Theme (Hello Elementor) + plugins</td><td><code>extracted/wp-content/themes|plugins/</code></td></tr>
+</table>
+
+<h2>Media highlights (originals, by subject)</h2>
+<ul>
+  <li>~180 pool-service photos, ~185 electrical-service photos (keyword counts overlap)</li>
+  <li>22 professional <code>DSC*</code> photo-shoot frames (team, vans, job sites)</li>
+  <li>Service niches: lights (19), panels (15), pumps (9), filters (5), heaters (4), marine/dock (5), EV (2)</li>
+  <li>Brand: <code>2026/05/updated-logo.webp</code> (900×498), partner logos (Hayward, Pentair, Jandy, Gulfstream, AMP), 14 SVG icons</li>
+  <li>Hero: <code>2026/05/final-hero-2-scaled.avif</code></li>
+</ul>
+
+<h2>Not in the export</h2>
+<div class="warn">
+The export is <b>wp-content only</b> — the database dump inside (<code>clean.sql</code>) is a fresh-install seed with no posts,
+so Elementor page JSON is not recoverable from it. Page structure comes from the separate 133-page HTML/Markdown archive at
+<code>~/yr/00-storage/pce/PCE-Website/callperfectcatch_public_rebuild_handoff_2026-08-08/</code> plus the per-page CSS above.
+</div>
+</body></html>

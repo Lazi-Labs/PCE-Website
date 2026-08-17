@@ -1,0 +1,217 @@
+<!-- @dsCard group="Service pages" name="Services hub" subtitle="/service/ index — all 39 services in four license-backed categories" -->
+<!doctype html><html><head><meta charset="utf-8">
+<link href="https://fonts.googleapis.com/css2?family=Sofia+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+  @font-face{font-family:'Burbank Big';src:url('../../assets/fonts/BurbankBig-Bold.woff2') format('woff2');font-weight:700;font-style:normal}
+  :root{--coral:#F24E45;--red-deep:#A7130C;--navy:#003D6A;--navy-deep:#052B49;--text:#001E33;--teal:#42BE9F;--cream:#FEDFAE;--sky:#E6F4FF;--muted:#3F444B}
+  *{box-sizing:border-box}
+  body{margin:0;font-family:'Sofia Sans',Arial,sans-serif;font-size:16px;line-height:1.65;color:var(--text);background:#fff}
+  .disp{font-family:'Burbank Big',Impact,sans-serif;font-weight:700;text-transform:uppercase;line-height:1.05}
+  .wrap{max-width:1180px;margin:0 auto;padding:0 24px}
+  .hdr-zone{background:linear-gradient(160deg,#57C8F2,#0A4A7A);padding:16px 24px}
+  .pill{background:#fff;border-radius:16px;box-shadow:0 6px 24px rgba(0,20,40,.18);display:flex;align-items:center;gap:18px;padding:8px 16px;max-width:1180px;margin:0 auto}
+  .pill img{height:52px}
+  .pill nav{display:flex;gap:20px;flex:1;justify-content:center}
+  .pill nav a{font-family:'Burbank Big',Impact,sans-serif;font-size:14px;text-transform:uppercase;color:var(--navy);text-decoration:none}
+  .pill nav a:hover{color:var(--coral)}
+  .btn{display:inline-block;font-family:'Burbank Big',Impact,sans-serif;font-weight:700;font-size:16px;line-height:1;text-transform:uppercase;text-decoration:none;padding:14px 24px 11px;border-radius:12px;border:1px solid;border-bottom-width:4px}
+  .btn-primary{background:var(--coral);color:#fff;border-color:var(--red-deep)}
+  .btn-primary:hover{background:var(--red-deep);border-color:var(--coral)}
+  .btn-white{background:#fff;color:var(--navy);border-color:var(--teal)}
+  .hero{background:linear-gradient(165deg,rgba(10,82,133,.85),rgba(5,43,73,.92)),url('../../uploads/imgi_1_final-hero-2-scaled.avif') center/cover;color:#fff;text-align:center;padding:52px 24px 58px}
+  .hero h1{font-size:clamp(30px,4.5vw,48px);margin:0 0 12px;text-shadow:3px 3px 0 var(--coral)}
+  .hero p{max-width:720px;margin:0 auto 22px;color:#EAF4FB}
+  .cat-head{display:flex;align-items:baseline;gap:14px;margin:44px 0 6px}
+  .cat-head h2{font-size:clamp(24px,3vw,34px);margin:0}
+  .cat-head span{font-size:13.5px;color:var(--muted)}
+  .cat-sub{color:var(--muted);font-size:14.5px;margin:0 0 18px}
+  .cat-sub code{font-family:ui-monospace,monospace;font-size:12.5px;background:var(--sky);padding:1px 6px;border-radius:4px}
+  .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(255px,1fr));gap:16px;margin:0 0 12px}
+  .card{background:#fff;border:1px solid #DCE8F1;border-radius:14px;padding:18px;display:flex;flex-direction:column;gap:6px;text-decoration:none;color:var(--text);box-shadow:0 3px 12px rgba(0,40,70,.06);transition:transform .12s,box-shadow .12s}
+  .card:hover{transform:translateY(-2px);box-shadow:0 10px 24px rgba(0,40,70,.14)}
+  .card h3{font-family:'Burbank Big',Impact,sans-serif;font-weight:700;font-size:17px;line-height:1.1;text-transform:uppercase;color:var(--navy);margin:0}
+  .card p{font-size:13.5px;color:var(--muted);margin:0;flex:1}
+  .card b{font-family:'Burbank Big',Impact,sans-serif;font-size:13px;text-transform:uppercase;color:var(--coral)}
+  .cta-band{background:linear-gradient(165deg,#0A5285,var(--navy-deep));color:#fff;text-align:center;padding:44px 24px;margin-top:44px}
+  .cta-band h2{font-size:clamp(24px,3.4vw,38px);margin:0 0 8px;text-shadow:3px 3px 0 var(--coral)}
+  .cta-band p{color:#C9DCEA;margin:0 0 20px}
+  .sticky-call{position:fixed;bottom:0;left:0;right:0;z-index:50;display:none;grid-template-columns:1fr 1fr;gap:1px;background:var(--red-deep)}
+  .sticky-call a{display:flex;align-items:center;justify-content:center;gap:8px;padding:15px 8px 13px;font-family:'Burbank Big',Impact,sans-serif;font-size:16px;line-height:1;text-transform:uppercase;text-decoration:none;color:#fff}
+  .sticky-call .sc-call{background:var(--navy)}
+  .sticky-call .sc-req{background:var(--coral)}
+  @media(max-width:920px){.sticky-call{display:grid}body{padding-bottom:52px}}
+  .ftr{background:var(--navy-deep);color:#9DB4C6;text-align:center;font-size:12.5px;padding:16px;margin-top:0}
+/* full footer */
+.fmap{line-height:0;background:#052B49;margin-top:56px}
+.fmap iframe{width:100%;height:320px;border:0;display:block}
+footer.site{background:linear-gradient(180deg,#003D6A,#052B49);color:#fff;padding:54px 24px 30px;text-align:left}
+.f-cols{display:grid;grid-template-columns:1.5fr .7fr .7fr 1.15fr;gap:44px;max-width:1120px;margin:0 auto 38px;align-items:start}
+.f-brand img{width:225px;max-width:100%;height:auto;display:block;margin:-8px 0 22px -6px}
+footer.site h4{font-family:'Burbank Big',Impact,sans-serif;font-weight:700;font-size:18px;text-transform:uppercase;letter-spacing:1px;color:#FEDFAE;margin:0 0 14px}
+.lic{font-size:13.5px;color:#EAF4FB;margin:0;display:flex;flex-wrap:wrap;gap:4px 7px;white-space:nowrap}
+.lic span+span::before{content:"·";margin-right:7px;color:#7FA6C4}
+footer.site ul{list-style:none;margin:0;padding:0}
+footer.site li{margin-bottom:12px;font-size:14.5px}
+footer.site a{color:#fff;text-decoration:none;font-weight:400}
+footer.site a:hover{color:#FEDFAE;text-decoration:underline}
+.cl{display:flex;gap:11px;align-items:flex-start;margin-bottom:12px;font-size:14.5px;line-height:1.55}
+.cl svg{width:17px;height:17px;flex:0 0 auto;fill:#F24E45;margin-top:2px}
+.soc{display:flex;gap:7px;flex-wrap:wrap;margin-top:18px}
+.soc a{width:34px;height:34px;border-radius:50%;background:#F24E45;display:inline-flex;align-items:center;justify-content:center;color:#fff;transition:background .2s}
+.soc a:hover{background:#A7130C;color:#fff;text-decoration:none}
+.soc svg{width:14px;height:14px;fill:#fff}
+.f-bar{max-width:1180px;margin:0 auto;font-size:14px;color:#DAE6EF;padding-top:8px}
+@media(max-width:920px){.f-cols{grid-template-columns:1fr 1fr;gap:36px}}
+@media(max-width:560px){.f-cols{grid-template-columns:1fr}}
+/* dropdown menu */
+  .hdr-zone{position:relative;z-index:60}
+  .pill nav .has-mega>a::after{content:' \25BE';font-size:9px;color:#F24E45}
+  .pill nav .has-mega .mega{position:absolute;left:24px;right:24px;top:calc(100% - 6px);background:radial-gradient(680px 320px at 82% 0%,rgba(87,200,242,.18),transparent 62%),linear-gradient(160deg,#0A4A7A,#003D6A 55%,#052B49);border-radius:18px;box-shadow:0 20px 46px rgba(0,20,40,.38);padding:24px 30px 26px;display:none;z-index:99;text-align:left}
+  .pill nav .has-mega:hover .mega,.pill nav .has-mega:focus-within .mega{display:block}
+  .pill nav .mega h4{font-family:'Burbank Big',Impact,sans-serif;font-weight:700;font-size:19px;letter-spacing:.6px;text-transform:uppercase;color:#FEDFAE;margin:0 0 14px}
+  .pill nav .mega-in{display:grid;grid-template-columns:1fr 1fr minmax(210px,.85fr);gap:2px 40px;align-items:center}
+  .pill nav .mega-col{display:flex;flex-direction:column}
+  .pill nav .mega a{display:flex;align-items:flex-start;gap:10px;font-family:'Sofia Sans',Arial,sans-serif;font-size:14.5px;font-weight:500;color:#fff;text-transform:none;text-decoration:none;padding:6px 8px;border-radius:8px}
+  .pill nav .mega a::before{content:"";flex:none;width:7px;height:7px;background:#F24E45;margin-top:7px}
+  .pill nav .mega a:hover{background:rgba(255,255,255,.08);color:#FEDFAE}
+  .pill nav .mvan{width:100%;height:auto;display:block;filter:drop-shadow(0 14px 22px rgba(0,10,25,.45))}
+  @media(max-width:1180px){.pill nav .mega-in{grid-template-columns:1fr 1fr}.pill nav .mvan{display:none}}
+  .pill nav{position:relative}
+  .pill nav .dd{position:relative;display:inline-block}
+  .pill nav .dd>a::after{content:' \25BE';font-size:9px;color:#F24E45}
+  .pill nav .dd-menu{display:none;position:absolute;top:100%;left:50%;transform:translateX(-50%);background:#fff;border:1px solid #DCE8F1;border-radius:12px;box-shadow:0 14px 34px rgba(0,20,40,.22);padding:0;z-index:99;min-width:470px;overflow:hidden}
+  .pill nav .dd-links{flex:1;min-width:255px;padding:10px 0;max-height:64vh;overflow-y:auto}
+  .pill nav .dd:hover .dd-menu,.pill nav .dd:focus-within .dd-menu{display:flex}
+  .pill nav .dd-art{width:225px;background:linear-gradient(180deg,#E6F4FF 0%,#9FD4F5 100%);display:flex;flex-direction:column;justify-content:space-between;align-items:center;padding:16px 10px 0}
+  .pill nav .dd-cta{text-align:center;font-family:'Burbank Big',Impact,sans-serif;text-transform:uppercase;color:#003D6A;font-size:13px;line-height:1.25}
+  .pill nav .dd-cta a{display:block;margin-top:6px;padding:7px 10px 5px;background:#F24E45;color:#fff!important;border-radius:9px;font-size:14px;text-decoration:none}
+  .pill nav .dd-cta a:hover{background:#A7130C}
+  .pill nav .dd-art img{width:150%;max-width:none;display:block;margin:8px 0 -6px}
+  .pill nav .dd:hover .dd-menu,.pill nav .dd:focus-within .dd-menu{display:block}
+  .pill nav .dd-menu a{display:block;padding:7px 18px;font-family:'Sofia Sans',Arial,sans-serif;font-size:14px;font-weight:600;text-transform:none;color:#001E33;white-space:nowrap}
+  .pill nav .dd-menu a:hover{background:#E6F4FF;color:#A7130C}
+  .pill nav .dd-menu .dd-head{display:block;padding:8px 18px 3px;font-family:'Burbank Big',Impact,sans-serif;font-size:11px;text-transform:uppercase;letter-spacing:.08em;color:#3F444B}
+  @media(max-width:920px){.pill nav{display:none}}
+</style></head><body>
+
+<div class="hdr-zone"><header class="pill">
+  <a href="../../index.html"><img src="../../assets/logo-full.webp" alt="Perfect Catch"></a>
+  <!--NAV--><nav><span class="has-mega"><a href="index.html#pool">Pool Repair</a><div class="mega"><h4>Pool Repair Services</h4><div class="mega-in"><div class="mega-col"><a href="swimming-pool-repair.html">Pool Repair</a><a href="pool-pump-repair-installation.html">Pool Pump Repair &amp; Installation</a><a href="pool-heater-repair-installation.html">Pool Heater &amp; Heat Pump Repair</a><a href="pool-cleaning.html">Pool Cleaning Service</a><a href="pool-leak-detection.html">Pool Leak Detection</a><a href="pool-filter-repair-and-installation.html">Pool Filter Repair &amp; Replacement</a><a href="salt-water-chlorinator-installation-repair.html">Salt System &amp; Salt Cell Repair</a><a href="pool-automation-systems-installation-upgrades.html">Pool Automation</a><a href="pool-light-repair.html">Pool Light Replacement &amp; Repair</a></div><div class="mega-col"><a href="pool-electrical-repair-installation.html">Pool Electrician</a><a href="pool-equipment-installation-upgrades.html">Pool Equipment Installation &amp; Upgrades</a><a href="pool-resurfacing.html">Pool Resurfacing</a><a href="pool-remodeling.html">Pool Remodeling</a><a href="pool-acid-wash.html">Pool Acid Wash</a><a href="emergency-pool-service.html">Emergency Pool Repair</a><a href="pool-care-memberships.html">Pool Maintenance Plans</a><a href="pool-builders.html">For Pool Builders</a><a href="../../pages/help/index.html">Troubleshooting Guides</a></div><img class="mvan" src="../../assets/van-side.png" alt="" loading="lazy"></div></div></span><span class="has-mega"><a href="index.html#electric">Electrical</a><div class="mega"><h4>Electrical Services</h4><div class="mega-in"><div class="mega-col"><a href="electrician.html">Electrician</a><a href="electrical-panel-upgrade-replacement.html">Panel Upgrades &amp; Replacement</a><a href="surge-protection.html">Surge Protection</a><a href="emergency-electrician.html">Emergency Electrician</a><a href="lighting-ceiling-fan-installation.html">Lighting &amp; Ceiling Fans</a><a href="smoke-detector-installation.html">Smoke Detector Installation</a></div><div class="mega-col"><a href="house-rewiring.html">House Rewiring</a><a href="electrical-safety-inspection.html">Electrical Safety Inspection</a><a href="ev-charger-installation.html">EV Charger Installation</a><a href="whole-house-generator-installation-repair.html">Whole House Generators</a><a href="commercial-electrician.html">Commercial Electrician</a><a href="marine-electricians.html">Marine &amp; Dock Electrician</a></div><img class="mvan" src="../../assets/van-side.png" alt="" loading="lazy"></div></div></span><span class="has-mega"><a href="index.html#gas">Gas</a><div class="mega"><h4>Gas Services</h4><div class="mega-in"><div class="mega-col"><a href="gas-services.html">Gas Services</a><a href="gas-leak-detection-repair.html">Gas Leak Detection &amp; Repair</a><a href="gas-line-installation.html">Gas Line Installation &amp; Hookups</a><a href="propane-tank-installation.html">Propane Tank Installation</a><a href="pool-heater-repair-installation.html">Gas Pool Heaters</a></div><div class="mega-col"><a href="whole-house-generator-installation-repair.html">Generators + Gas Line</a><a href="outdoor-kitchens.html">Outdoor Kitchen Gas Lines</a><a href="gas-line-installation.html">Fire Pits &amp; Grill Hookups</a><a href="propane-tank-installation.html">Whole-Home Propane</a></div><img class="mvan" src="../../assets/van-side.png" alt="" loading="lazy"></div></div></span><span class="dd"><a href="index.html#outdoor">Outdoor</a><div class="dd-menu"><div class="dd-links"><a href="outdoor-landscape-lighting-installation.html">Landscape Lighting</a><a href="outdoor-living.html">Outdoor Living</a><a href="pavers-and-driveways.html">Pavers &amp; Driveways</a><a href="outdoor-kitchens.html">Outdoor Kitchens</a><a href="pool-fence.html">Pool Fence</a><a href="artificial-turf.html">Artificial Turf</a></div></div></span><span class="dd"><a href="../../about-us.html">About</a><div class="dd-menu"><div class="dd-links"><a href="../../about-us.html">About Us</a><a href="../../reviews.html">Reviews</a><a href="../../specials.html">Specials</a><a href="../../referral-program.html">Referral Program</a><a href="../../giving-back.html">Giving Back</a><a href="../../pages/blog/index.html">Blog</a></div></div></span><a href="../../pages/areas/index.html">Service Areas</a><a href="../../contact-us.html">Contact</a></nav><!--/NAV-->
+  <a class="btn btn-primary" href="../../index.html#contact">Request Service</a>
+</header></div>
+
+<section class="hero">
+  <h1 class="disp">Pool, Electrical &amp; Gas Services<br>in Largo, FL</h1>
+  <p>One company, four licenses, zero subcontractors. Every repair and installation is performed by our own technicians under Perfect Catch's pool (CPC1459998), electrical (EC13011994), gas (LI4527), and general contractor (CGC1531306) licenses — with upfront pricing before any work starts.</p>
+  <a class="btn btn-primary" href="../../index.html#contact">Request Service</a>
+  <a class="btn btn-white" href="tel:7273165206">☎ 727-316-5206</a>
+</section>
+
+<div class="wrap">
+  <div class="cat-head" id="pool"><h2 class="disp">Pool Repair &amp; Equipment</h2><span>17 services</span></div>
+  <p class="cat-sub">Licensed pool contractor <code>CPC1459998</code> + electrical <code>EC13011994</code> + gas <code>LI4527</code> — the full equipment pad, one crew.</p>
+  <div class="grid">
+    <a class="card" href="swimming-pool-repair.html"><h3>Pool Repair</h3><p>Full-scope diagnosis, repair, and inspections — residential and commercial.</p><b>View service →</b></a>
+    <a class="card" href="pool-pump-repair-installation.html"><h3>Pool Pump Repair &amp; Installation</h3><p>All pump types — repair, replacement, and variable-speed upgrades.</p><b>View service →</b></a>
+    <a class="card" href="pool-heater-repair-installation.html"><h3>Pool Heater &amp; Heat Pump Repair</h3><p>Gas, electric, and heat pumps — with in-house gas licensing.</p><b>View service →</b></a>
+    <a class="card" href="pool-cleaning.html"><h3>Pool Cleaning Service</h3><p>Weekly cleaning with chemistry balancing and equipment inspection.</p><b>View service →</b></a>
+    <a class="card" href="pool-leak-detection.html"><h3>Pool Leak Detection</h3><p>Pressure, dye, and electronic testing — then the repair.</p><b>View service →</b></a>
+    <a class="card" href="pool-filter-repair-and-installation.html"><h3>Pool Filter Repair &amp; Replacement</h3><p>Cartridge, DE, and sand filter service.</p><b>View service →</b></a>
+    <a class="card" href="salt-water-chlorinator-installation-repair.html"><h3>Salt System &amp; Salt Cell Repair</h3><p>Salt system install, cell service, repair.</p><b>View service →</b></a>
+    <a class="card" href="pool-automation-systems-installation-upgrades.html"><h3>Pool Automation Installation &amp; Repair</h3><p>Automation install, upgrades, programming, app setup.</p><b>View service →</b></a>
+    <a class="card" href="pool-light-repair.html"><h3>Pool Light Replacement &amp; Repair</h3><p>Diagnosis, repair, and LED upgrades.</p><b>View service →</b></a>
+    <a class="card" href="pool-electrical-repair-installation.html"><h3>Pool Electrician</h3><p>Wiring, rewiring, bonding, NEC 680 — under both licenses.</p><b>View service →</b></a>
+    <a class="card" href="pool-equipment-installation-upgrades.html"><h3>Pool Equipment Installation &amp; Upgrades</h3><p>New equipment and energy-efficient upgrades that cut costs.</p><b>View service →</b></a>
+    <a class="card" href="pool-resurfacing.html"><h3>Pool Resurfacing</h3><p>Quartz, pebble, and polished finishes — with equipment inspection during the drain.</p><b>View service →</b></a>
+    <a class="card" href="pool-remodeling.html"><h3>Pool Remodeling</h3><p>Tile, lighting, water features, and equipment modernization.</p><b>View service →</b></a>
+    <a class="card" href="pool-acid-wash.html"><h3>Pool Acid Wash</h3><p>Stain, scale, and green-pool recovery.</p><b>View service →</b></a>
+    <a class="card" href="emergency-pool-service.html"><h3>Emergency Pool Repair</h3><p>Priority urgent dispatch for electrical, gas, and equipment hazards.</p><b>View service →</b></a>
+    <a class="card" href="pool-care-memberships.html"><h3>Pool Maintenance Plans</h3><p>Twice-a-year equipment service, priority dispatch, 6% off — three tiers.</p><b>View service →</b></a>
+    <a class="card" href="pool-builders.html"><h3>For Pool Builders</h3><p>Bond, electrical, automation, and gas — one licensed sub, inspection-ready.</p><b>View service →</b></a>
+  </div>
+
+  <div class="cat-head" id="electric"><h2 class="disp">Electrical</h2><span>12 services</span></div>
+  <p class="cat-sub">Licensed electrical contractor <code>EC13011994</code> + LP gas <code>LI4527</code> — residential, marine, and outdoor.</p>
+  <div class="grid">
+    <a class="card" href="electrician.html"><h3>Electrician</h3><p>Repairs, upgrades, and whole-home electrical by our own licensed techs.</p><b>View service →</b></a>
+    <a class="card" href="surge-protection.html"><h3>Surge Protection</h3><p>Whole-home surge protection for the lightning capital of America.</p><b>View service →</b></a>
+    <a class="card" href="emergency-electrician.html"><h3>Emergency Electrician</h3><p>Priority urgent dispatch for sparking, burning smells, and outages.</p><b>View service →</b></a>
+    <a class="card" href="lighting-ceiling-fan-installation.html"><h3>Lighting &amp; Ceiling Fans</h3><p>Fans, fixtures, recessed lighting, dimmers, smart switches.</p><b>View service →</b></a>
+    <a class="card" href="smoke-detector-installation.html"><h3>Smoke Detector Installation</h3><p>Hardwired, interconnected, code-compliant — plus CO detectors.</p><b>View service →</b></a>
+    <a class="card" href="house-rewiring.html"><h3>House Rewiring</h3><p>Aluminum and knob-and-tube remediation for older Pinellas homes.</p><b>View service →</b></a>
+    <a class="card" href="electrical-safety-inspection.html"><h3>Electrical Safety Inspection</h3><p>Whole-home inspection with a written, priority-ranked report.</p><b>View service →</b></a>
+    <a class="card" href="commercial-electrician.html"><h3>Commercial Electrician</h3><p>Offices, retail, restaurants, HOA common areas, marinas.</p><b>View service →</b></a>
+    <a class="card" href="electrical-panel-upgrade-replacement.html"><h3>Panel Upgrades &amp; Replacement</h3><p>100A→200A upgrades, breaker service.</p><b>View service →</b></a>
+    <a class="card" href="ev-charger-installation.html"><h3>EV Charger Installation</h3><p>Level 2 chargers, dedicated circuits.</p><b>View service →</b></a>
+    <a class="card" href="whole-house-generator-installation-repair.html"><h3>Whole House Generators</h3><p>Standby generator install with gas lines.</p><b>View service →</b></a>
+    <a class="card" href="marine-electricians.html"><h3>Marine &amp; Dock Electrician</h3><p>Dock and boat lift electrical service.</p><b>View service →</b></a>
+  </div>
+
+  <div class="cat-head" id="gas"><h2 class="disp">Gas</h2><span>4 services</span></div>
+  <p class="cat-sub">Licensed LP gas contractor <code>LI4527</code> — the only local electrician who also runs gas.</p>
+  <div class="grid">
+    <a class="card" href="gas-services.html"><h3>Gas Services</h3><p>Licensed gas contractor — lines, leaks, tanks, and appliance hookups.</p><b>View service →</b></a>
+    <a class="card" href="gas-leak-detection-repair.html"><h3>Gas Leak Detection &amp; Repair</h3><p>Electronic detection, pressure testing, repair and re-test.</p><b>View service →</b></a>
+    <a class="card" href="gas-line-installation.html"><h3>Gas Line Installation &amp; Hookups</h3><p>Ranges, dryers, grills, fire pits, tankless heaters, pool heaters.</p><b>View service →</b></a>
+    <a class="card" href="propane-tank-installation.html"><h3>Propane Tank Installation</h3><p>Tank sizing, siting, regulators, and whole-home conversions.</p><b>View service →</b></a>
+  </div>
+
+  <div class="cat-head" id="outdoor"><h2 class="disp">Outdoor Living</h2><span>6 services</span></div>
+  <p class="cat-sub">Backyard projects under general contractor <code>CGC1531306</code> — powered, lit, and plumbed for gas by the same crew.</p>
+  <div class="grid">
+    <a class="card" href="outdoor-landscape-lighting-installation.html"><h3>Landscape Lighting</h3><p>Low-voltage landscape lighting design.</p><b>View service →</b></a>
+    <a class="card" href="outdoor-living.html"><h3>Outdoor Living</h3><p>Outdoor kitchens, audio, fencing, turf — the licensed-trades side of the backyard.</p><b>View service →</b></a>
+    <a class="card" href="pavers-and-driveways.html"><h3>Pavers &amp; Driveways</h3><p>Pool decks, driveways, and walkways in travertine, brick, and pavers.</p><b>View service →</b></a>
+    <a class="card" href="outdoor-kitchens.html"><h3>Outdoor Kitchens</h3><p>Grills, fridges, and hoods — gas and electric run by our own licensed crew.</p><b>View service →</b></a>
+    <a class="card" href="pool-fence.html"><h3>Pool Fence</h3><p>Child-safety barriers and gates, inspection-ready.</p><b>View service →</b></a>
+    <a class="card" href="artificial-turf.html"><h3>Artificial Turf</h3><p>Poolside and full-yard turf with proper drainage.</p><b>View service →</b></a>
+  </div>
+</div>
+
+<section class="cta-band">
+  <h2 class="disp">Not Sure Which Service You Need?</h2>
+  <p>Describe the problem — we'll diagnose it under the right license.</p>
+  <a class="btn btn-primary" href="../../index.html#contact">Request Service</a>
+  <a class="btn btn-white" href="tel:7273165206">☎ Call 727-316-5206</a>
+</section>
+<!--FOOT--><div class="fmap"><iframe title="Perfect Catch location — 13932 Walsingham Rd STE A, Largo, FL" src="https://www.google.com/maps?q=13932%20Walsingham%20Rd%20STE%20A%20Largo%20FL%2033774&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+<footer class="site">
+<div class="f-cols">
+<div class="f-brand">
+<img src="../../assets/logo-full.webp" alt="Perfect Catch — Swimming Pool Repair, Gas &amp; Electric" loading="lazy" decoding="async">
+<h4>License Numbers:</h4>
+<p class="lic"><span>CPC1459998</span><span>CGC1531306</span><span>EC13011994</span><span>LI4527</span></p>
+</div>
+<div><h4>Navigation</h4><ul><li><a href="../../index.html">Home</a></li><li><a href="../../about-us.html">About Us</a></li><li><a href="../../pages/blog/index.html">Blog</a></li><li><a href="../../pages/help/index.html">Troubleshooting</a></li><li><a href="../../pages/areas/index.html">Service Areas</a></li><li><a href="../../contact-us.html">Contact Us</a></li></ul></div>
+<div><h4>Useful Links</h4><ul><li><a href="../../pages/services/index.html">All Services</a></li><li><a href="../../reviews.html">Reviews</a></li><li><a href="../../specials.html">Specials</a></li><li><a href="../../privacy-policy.html">Privacy Policy</a></li><li><a href="../../terms-of-service.html">Terms of Service</a></li><li><a href="../../cookie-policy.html">Cookie Policy</a></li></ul></div>
+<div><h4>Contact</h4>
+<div class="cl"><svg viewBox="0 0 24 24"><path d="M6.62 10.79a15.05 15.05 0 0 0 6.59 6.59l2.2-2.2a1 1 0 0 1 1.02-.24c1.12.37 2.33.57 3.57.57a1 1 0 0 1 1 1V20a1 1 0 0 1-1 1C10.61 21 3 13.39 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.24.2 2.45.57 3.57a1 1 0 0 1-.25 1.02l-2.2 2.2z"/></svg><a href="tel:7273165206">727-316-5206</a></div>
+<div class="cl"><svg viewBox="0 0 24 24"><path d="M12 2a7 7 0 0 0-7 7c0 5.25 7 13 7 13s7-7.75 7-13a7 7 0 0 0-7-7zm0 9.5a2.5 2.5 0 1 1 0-5 2.5 2.5 0 0 1 0 5z"/></svg><span>13932 Walsingham Rd, STE A, Largo, FL, 33774</span></div>
+<div class="cl"><svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20zm1 10.6 4.2 2.5-.8 1.3L11 13V7h2v5.6z"/></svg><span>Monday — Friday: 8:00 AM — 5:00 PM</span></div>
+<div class="soc">
+<a href="https://www.facebook.com/people/Perfect-Catch/61570828732967/" target="_blank" rel="noopener" aria-label="Facebook"><svg viewBox="0 0 24 24"><path d="M13.5 21v-7h2.4l.45-3H13.5V9.1c0-.87.29-1.6 1.62-1.6h1.53V4.85c-.27-.04-1.2-.12-2.28-.12-2.26 0-3.87 1.38-3.87 3.9V11H8.1v3h2.4v7h3z"/></svg></a>
+<a href="https://www.instagram.com/callperfectcatch" target="_blank" rel="noopener" aria-label="Instagram"><svg viewBox="0 0 24 24"><rect x="3.5" y="3.5" width="17" height="17" rx="4.5" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="12" r="4" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="17.2" cy="6.8" r="1.3"/></svg></a>
+<a href="https://www.youtube.com/@Perfectcatchelectric" target="_blank" rel="noopener" aria-label="YouTube"><svg viewBox="0 0 24 24"><path d="M21.58 7.19a2.5 2.5 0 0 0-1.76-1.77C18.25 5 12 5 12 5s-6.25 0-7.82.42A2.5 2.5 0 0 0 2.42 7.2 26.2 26.2 0 0 0 2 12c0 1.62.14 3.23.42 4.81a2.5 2.5 0 0 0 1.76 1.77C5.75 19 12 19 12 19s6.25 0 7.82-.42a2.5 2.5 0 0 0 1.76-1.77c.28-1.58.42-3.19.42-4.81s-.14-3.23-.42-4.81zM10 15.5v-7l5.75 3.5z"/></svg></a>
+<a href="https://www.linkedin.com/company/call-perfect-catch-electric" target="_blank" rel="noopener" aria-label="LinkedIn"><svg viewBox="0 0 24 24"><path d="M4.98 3.5a2.49 2.49 0 1 1 0 4.98 2.49 2.49 0 0 1 0-4.98zM3 9.75h4V21H3zM9.5 9.75h3.83v1.54h.06a4.2 4.2 0 0 1 3.78-2.08c4.04 0 4.78 2.66 4.78 6.12V21H18v-5.06c0-1.21-.02-2.76-1.68-2.76-1.68 0-1.94 1.31-1.94 2.67V21H10.5z"/></svg></a>
+</div>
+</div>
+</div>
+<div class="f-bar">©2026 Perfect Catch Swimming Pool Repair, Gas, &amp; Electric. All rights reserved.</div>
+</footer><!--/FOOT-->
+
+<div class="sticky-call">
+  <a class="sc-call" href="tel:7273165206">☎ 727-316-5206</a>
+  <a class="sc-req" href="../../index.html#contact">Request Service</a>
+</div>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://callperfectcatch.com/" },
+    { "@type": "ListItem", "position": 2, "name": "Services", "item": "https://callperfectcatch.com/service/" }
+  ]
+}
+</script>
+</body></html>

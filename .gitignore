@@ -1,0 +1,4 @@
+# WordPress export — 700MB, lives locally only
+archive.tar.gz
+extracted/
+.DS_Store

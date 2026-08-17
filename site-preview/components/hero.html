@@ -1,0 +1,68 @@
+<!-- @dsCard group="Components" name="Hero" subtitle="Photographic hero on real site imagery — Burbank Big headline with coral offset, badge bar, kit CTAs, wave divider" -->
+<!doctype html><html><head><meta charset="utf-8">
+<link href="https://fonts.googleapis.com/css2?family=Sofia+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+  @font-face{font-family:'Burbank Big';src:url('../assets/fonts/BurbankBig-Bold.woff2') format('woff2');font-weight:700;font-style:normal}
+  body{margin:0;font-family:'Sofia Sans',Arial,sans-serif}
+  .hero{
+    position:relative;overflow:hidden;text-align:center;
+    background:
+      linear-gradient(165deg,rgba(10,82,133,.82) 0%,rgba(0,61,106,.86) 60%,rgba(5,43,73,.92) 100%),
+      url('../uploads/imgi_1_final-hero-2-scaled.avif') center/cover no-repeat;
+    padding:64px 24px 120px;color:#fff;
+  }
+  .disp{font-family:'Burbank Big',Impact,sans-serif;font-weight:700;text-transform:uppercase;line-height:1em}
+  .ratings{display:flex;gap:14px;justify-content:center;margin-bottom:28px;flex-wrap:wrap}
+  .rchip{background:#fff;border-radius:8px;padding:8px 14px;display:flex;align-items:center;gap:8px;color:#001E33;box-shadow:0 4px 12px rgba(0,0,0,.2)}
+  .rchip b{font-family:'Burbank Big',Impact,sans-serif;font-size:18px}
+  .rchip .stars{color:#F5A623;font-size:13px;letter-spacing:1px}
+  .rchip .src{font-size:10px;color:#706F6F;text-align:left;line-height:1.2}
+  h1{
+    font-size:clamp(38px,6vw,72px);margin:0 0 14px;letter-spacing:.5px;color:#fff;
+    text-shadow:3px 3px 0 #F24E45;-webkit-text-stroke:1px #06263f;
+  }
+  .sub{font-weight:700;font-size:18px;margin-bottom:26px}
+  .badges{display:inline-flex;gap:0;background:#003D6A;border:1px solid rgba(255,255,255,.25);border-radius:12px;padding:12px 8px;flex-wrap:wrap;justify-content:center;margin-bottom:26px;box-shadow:0 6px 18px rgba(0,0,0,.25)}
+  .badges span{font-family:'Burbank Big',Impact,sans-serif;font-weight:700;font-size:14px;text-transform:uppercase;letter-spacing:.5px;padding:4px 18px;display:inline-flex;align-items:center;gap:8px}
+  .badges .fish{color:#42BE9F}
+  .tag{font-size:22px;color:#FEDFAE;margin-bottom:24px}
+  .ctas{display:flex;gap:16px;justify-content:center;flex-wrap:wrap}
+  .btn{
+    font-family:'Burbank Big',Impact,sans-serif;font-weight:700;font-size:18px;line-height:1;text-transform:uppercase;
+    text-decoration:none;padding:16px 28px 13px;border-radius:12px;letter-spacing:.5px;
+    border:1px solid;border-bottom-width:4px;transition:background .15s,border-color .15s;
+  }
+  .btn-primary{background:#F24E45;color:#fff;border-color:#A7130C;box-shadow:0 4px 14px rgba(0,0,0,.3)}
+  .btn-primary:hover{background:#A7130C;border-color:#F24E45}
+  .btn-call{background:#fff;color:#003D6A;border-color:#42BE9F}
+  .btn-call:hover{background:#E6F4FF}
+  .wave{position:absolute;bottom:-2px;left:0;width:100%;line-height:0}
+  .wave svg{width:100%;height:70px;display:block}
+</style></head><body>
+<section class="hero">
+  <div class="ratings">
+    <div class="rchip"><b>5.0</b><div><div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div><div class="src">Average Rating · Google</div></div></div>
+    <div class="rchip"><b>5.0</b><div><div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div><div class="src">Average Rating · Facebook</div></div></div>
+    <div class="rchip"><b>5.0</b><div><div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div><div class="src">Average Rating · Yelp</div></div></div>
+  </div>
+  <h1 class="disp">Swimming Pool Repair<br>Services Largo, FL</h1>
+  <div class="sub">Licensed Pool, Electrical &amp; Gas Contractor</div>
+  <div class="badges">
+    <span><span class="fish">&#128031;</span> Upfront Pricing</span>
+    <span><span class="fish">&#128031;</span> Four Licenses, Zero Subs</span>
+    <span><span class="fish">&#128031;</span> Best in Class Warranty</span>
+  </div>
+  <div class="tag disp">On the line. Just in time.</div>
+  <div class="ctas">
+    <a class="btn btn-primary" href="#">Request Service</a>
+    <a class="btn btn-call" href="tel:7273165206">&#9742; Call 727-316-5206</a>
+  </div>
+  <div class="wave">
+    <svg viewBox="0 0 1440 90" preserveAspectRatio="none"><path d="M0,50 C240,90 480,10 720,40 C960,70 1200,20 1440,55 L1440,90 L0,90 Z" fill="#ffffff"/></svg>
+  </div>
+</section>
+<p style="font-size:12px;color:#706F6F;padding:10px 24px;margin:0">
+Background is the site's real hero image (<code>uploads/imgi_1_final-hero-2-scaled.avif</code>) under the navy gradient scrim.
+Tagline uses cream #FEDFAE per the kit's h6 accent. Full media library indexed in reference/media-library.
+</p>
+</body></html>

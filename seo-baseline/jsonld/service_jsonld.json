@@ -1,0 +1,154 @@
+{
+  "block_count": 1,
+  "processed_count": 1,
+  "total_bytes": 3572,
+  "truncated": false,
+  "blocks": [
+    {
+      "index": 1,
+      "size_bytes": 3572,
+      "valid": true,
+      "types": [
+        "AggregateRating",
+        "ContactPoint",
+        "Electrician",
+        "ImageObject",
+        "ItemPage",
+        "LocalBusiness",
+        "OpeningHoursSpecification",
+        "Organization",
+        "PostalAddress",
+        "Product",
+        "WebSite"
+      ],
+      "types_truncated": false,
+      "data": {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "Organization",
+            "name": "Perfect Catch Swimming Pool Repair, Gas, &amp; Electric",
+            "url": "https://callperfectcatch.com/",
+            "logo": "https://callperfectcatch.com/wp-content/uploads/2026/05/updated-logo.webp",
+            "contactPoint": {
+              "@type": "ContactPoint",
+              "telephone": "+17277884086",
+              "contactType": "customer service",
+              "areaServed": "US",
+              "availableLanguage": "en"
+            },
+            "sameAs": [
+              "https://www.facebook.com/people/Perfect-Catch/61570828732967/",
+              "https://www.instagram.com/callperfectcatch",
+              "https://www.youtube.com/@Perfectcatchelectric",
+              "https://www.linkedin.com/company/call-perfect-catch-electric",
+              "https://www.pinterest.com/perfectcatchelectric/"
+            ]
+          },
+          {
+            "@type": "LocalBusiness",
+            "@id": "https://callperfectcatch.com/#localbusiness",
+            "name": "Perfect Catch Swimming Pool Repair, Gas, &amp; Electric",
+            "url": "https://callperfectcatch.com/",
+            "image": "https://callperfectcatch.com/wp-content/uploads/2026/05/updated-logo.webp",
+            "logo": "https://callperfectcatch.com/wp-content/uploads/2026/05/updated-logo.webp",
+            "telephone": "+1-727-788-4086",
+            "priceRange": "Varies",
+            "address": {
+              "@type": "PostalAddress",
+              "streetAddress": "13932 Walsingham Rd Ste A",
+              "addressLocality": "Largo",
+              "addressRegion": "FL",
+              "postalCode": "33774",
+              "addressCountry": "US"
+            },
+            "openingHoursSpecification": {
+              "@type": "OpeningHoursSpecification",
+              "dayOfWeek": [
+                "Monday",
+                "Tuesday",
+                "Wednesday",
+                "Thursday",
+                "Friday"
+              ],
+              "opens": "08:00",
+              "closes": "17:00"
+            }
+          },
+          {
+            "@type": "Product",
+            "name": "Perfect Catch Swimming Pool Repair, Gas, &amp; Electric",
+            "image": "https://callperfectcatch.com/wp-content/uploads/2026/05/updated-logo.webp",
+            "url": "https://callperfectcatch.com/",
+            "aggregateRating": {
+              "@type": "AggregateRating",
+              "ratingValue": "5",
+              "bestRating": "5",
+              "worstRating": "2",
+              "ratingCount": "216"
+            }
+          },
+          {
+            "@type": [
+              "Electrician",
+              "Organization"
+            ],
+            "@id": "https://callperfectcatch.com/#organization",
+            "name": "Perfect Catch Swimming Pool Repair, Gas, &amp; Electric",
+            "url": "https://callperfectcatch.com",
+            "logo": {
+              "@type": "ImageObject",
+              "@id": "https://callperfectcatch.com/#logo",
+              "url": "https://callperfectcatch.com/wp-content/uploads/2026/05/updated-logo.webp",
+              "contentUrl": "https://callperfectcatch.com/wp-content/uploads/2026/05/updated-logo.webp",
+              "caption": "Perfect Catch Swimming Pool Repair, Gas, &amp; Electric",
+              "inLanguage": "en-US",
+              "width": "900",
+              "height": "498"
+            },
+            "openingHours": [
+              "Monday,Tuesday,Wednesday,Thursday,Friday,Saturday,Sunday 09:00-17:00"
+            ],
+            "image": {
+              "@id": "https://callperfectcatch.com/#logo"
+            }
+          },
+          {
+            "@type": "WebSite",
+            "@id": "https://callperfectcatch.com/#website",
+            "url": "https://callperfectcatch.com",
+            "name": "Perfect Catch Swimming Pool Repair, Gas, &amp; Electric",
+            "alternateName": "Perfect Catch Swimming Pool Repair, Gas, &amp; Electric",
+            "publisher": {
+              "@id": "https://callperfectcatch.com/#organization"
+            },
+            "inLanguage": "en-US"
+          },
+          {
+            "@type": "ImageObject",
+            "@id": "https://callperfectcatch.com/wp-content/uploads/2026/05/google-ratings-1024x109.webp",
+            "url": "https://callperfectcatch.com/wp-content/uploads/2026/05/google-ratings-1024x109.webp",
+            "width": "200",
+            "height": "200",
+            "inLanguage": "en-US"
+          },
+          {
+            "@type": "ItemPage",
+            "@id": "https://callperfectcatch.com/service/pool-pump-repair-installation/#webpage",
+            "url": "https://callperfectcatch.com/service/pool-pump-repair-installation/",
+            "name": "Pool Pump Repair &amp; Installation in Largo, FL | Perfect Catch Electric",
+            "datePublished": "2026-06-04T14:07:19+00:00",
+            "dateModified": "2026-06-26T15:24:37+00:00",
+            "isPartOf": {
+              "@id": "https://callperfectcatch.com/#website"
+            },
+            "primaryImageOfPage": {
+              "@id": "https://callperfectcatch.com/wp-content/uploads/2026/05/google-ratings-1024x109.webp"
+            },
+            "inLanguage": "en-US"
+          }
+        ]
+      }
+    }
+  ]
+}

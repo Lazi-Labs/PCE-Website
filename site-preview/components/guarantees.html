@@ -1,0 +1,153 @@
+<!-- @dsCard group="Components" name="Guarantees grid" subtitle="8 pool-repair guarantee cards with line icons, POOL badge stickers, dual kit CTAs" -->
+<!doctype html><html><head><meta charset="utf-8">
+<link href="https://fonts.googleapis.com/css2?family=Sofia+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+  @font-face{font-family:'Burbank Big';src:url('../assets/fonts/BurbankBig-Bold.woff2') format('woff2');font-weight:700;font-style:normal}
+  body{margin:0;padding:56px 24px 64px;font-family:'Sofia Sans',Arial,sans-serif;background:linear-gradient(180deg,#fff 0%,#E6F4FF 100%);color:#001E33}
+  .disp{font-family:'Burbank Big',Impact,sans-serif;font-weight:700;text-transform:uppercase;line-height:1em}
+  .head{text-align:center;margin-bottom:38px}
+  .eyebrow{font-size:15px;font-weight:700;letter-spacing:4px;text-transform:uppercase;color:#42BE9F;margin:0 0 10px}
+  h2{font-size:clamp(30px,4.5vw,47px);color:#001E33;margin:0}
+  h2 .coral{color:#F24E45}
+  .grid{display:grid;grid-template-columns:repeat(4,1fr);gap:20px;max-width:1180px;margin:0 auto 44px}
+  @media(max-width:980px){.grid{grid-template-columns:repeat(2,1fr)}}
+  @media(max-width:520px){.grid{grid-template-columns:1fr}}
+  .card{
+    position:relative;background:#fff;border-radius:14px;padding:34px 20px 26px;text-align:center;
+    box-shadow:0 10px 28px rgba(0,40,70,.10);border:1px solid rgba(0,61,106,.06);
+    transition:transform .15s,box-shadow .15s;
+  }
+  .card:hover{transform:translateY(-3px);box-shadow:0 16px 36px rgba(0,40,70,.16)}
+  .ico{width:64px;height:64px;margin:0 auto 16px;display:block}
+  .card h3{font-family:'Burbank Big',Impact,sans-serif;font-weight:700;font-size:19px;line-height:1.1;text-transform:uppercase;color:#001E33;margin:0 0 8px}
+  .card p{font-size:13.5px;line-height:1.55;color:#3F444B;margin:0}
+  .sticker{
+    position:absolute;top:-14px;right:-12px;width:54px;height:54px;display:flex;align-items:center;justify-content:center;
+    font-family:'Burbank Big',Impact,sans-serif;font-weight:700;font-size:12px;color:#fff;text-transform:uppercase;
+    background:#F24E45;
+    clip-path:polygon(50% 0%,61% 9%,75% 5%,81% 18%,95% 20%,94% 34%,100% 44%,92% 55%,97% 68%,85% 74%,84% 88%,70% 87%,61% 98%,50% 91%,39% 98%,30% 87%,16% 88%,15% 74%,3% 68%,8% 55%,0% 44%,6% 34%,5% 20%,19% 18%,25% 5%,39% 9%);
+    transform:rotate(12deg);
+  }
+  .ctas{display:flex;gap:16px;justify-content:center;flex-wrap:wrap}
+  .btn{
+    font-family:'Burbank Big',Impact,sans-serif;font-weight:700;font-size:18px;line-height:1;text-transform:uppercase;
+    text-decoration:none;padding:16px 28px 13px;border-radius:12px;letter-spacing:.5px;
+    border:1px solid;border-bottom-width:4px;transition:background .15s,border-color .15s;
+  }
+  .btn-primary{background:#F24E45;color:#fff;border-color:#A7130C}
+  .btn-primary:hover{background:#A7130C;border-color:#F24E45}
+  .btn-navy{background:#003D6A;color:#fff;border-color:#062F4F}
+  .btn-navy:hover{background:#062F4F;border-color:#003D6A}
+</style></head><body>
+
+<div class="head">
+  <p class="eyebrow">Our Commitment To You</p>
+  <h2 class="disp">Backed By Our <span class="coral">Guarantees</span></h2>
+</div>
+
+<div class="grid">
+  <!-- Peace of Mind -->
+  <div class="card">
+    <svg class="ico" viewBox="0 0 64 64" fill="none" stroke="#003D6A" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M32 6 L52 13 V30 C52 44 43 53 32 58 C21 53 12 44 12 30 V13 Z"/>
+      <path d="M32 22 c3-5 11-4 11 2 c0 5-7 9-11 12 c-4-3-11-7-11-12 c0-6 8-7 11-2 z" fill="#F24E45" stroke="#F24E45" stroke-width="1"/>
+    </svg>
+    <h3>Peace of Mind</h3>
+    <p>Licensed pool, electrical &amp; gas — one in-house crew handles the whole repair.</p>
+  </div>
+
+  <!-- Property Protection -->
+  <div class="card">
+    <svg class="ico" viewBox="0 0 64 64" fill="none" stroke="#003D6A" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M8 30 L32 12 L56 30"/>
+      <path d="M14 28 V52 H50 V28"/>
+      <rect x="25" y="34" width="14" height="12" rx="2" fill="#42BE9F" stroke="#003D6A"/>
+      <path d="M28 34 v-3 a4 4 0 0 1 8 0 v3"/>
+    </svg>
+    <h3>Property Protection</h3>
+    <p>Deck, pavers, and equipment pad left exactly as we found them — or better.</p>
+  </div>
+
+  <!-- No Frustration -->
+  <div class="card">
+    <svg class="ico" viewBox="0 0 64 64" fill="none" stroke="#003D6A" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+      <circle cx="32" cy="32" r="20"/>
+      <circle cx="32" cy="32" r="26" stroke-dasharray="4 6"/>
+      <path d="M23 33 l6 6 l12 -13" stroke="#F24E45" stroke-width="4"/>
+    </svg>
+    <h3>No Frustration</h3>
+    <p>Real communication: appointment windows, tech on the way texts, and answers.</p>
+  </div>
+
+  <!-- No Surprises -->
+  <div class="card">
+    <svg class="ico" viewBox="0 0 64 64" fill="none" stroke="#003D6A" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M18 8 H46 L52 14 V56 H18 Z"/>
+      <path d="M25 22 h18 M25 30 h18 M25 38 h10"/>
+      <circle cx="42" cy="44" r="9" fill="#42BE9F" stroke="#003D6A"/>
+      <path d="M42 40 v8 M39 42.5 c0-3 6-3 6 0 c0 2.5-6 2.5-6 3.5 c0 3 6 3 6 0" stroke="#fff" stroke-width="2.2"/>
+    </svg>
+    <h3>No Surprises</h3>
+    <p>Upfront flat-rate pricing approved before any work starts. The quote is the price.</p>
+  </div>
+
+  <!-- On-Time Arrival -->
+  <div class="card">
+    <svg class="ico" viewBox="0 0 64 64" fill="none" stroke="#003D6A" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+      <rect x="10" y="14" width="44" height="40" rx="4"/>
+      <path d="M10 24 H54 M20 9 v9 M44 9 v9"/>
+      <circle cx="40" cy="40" r="9" fill="#F24E45" stroke="#F24E45"/>
+      <path d="M40 35 v5 l4 3" stroke="#fff" stroke-width="2.5"/>
+    </svg>
+    <h3>On-Time Arrival</h3>
+    <p>We show up in the window we promised — on the line, just in time.</p>
+  </div>
+
+  <!-- Swim-Ready -->
+  <div class="card">
+    <span class="sticker">Pool</span>
+    <svg class="ico" viewBox="0 0 64 64" fill="none" stroke="#003D6A" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+      <circle cx="32" cy="32" r="22"/>
+      <path d="M12 36 q5-4 10 0 q5 4 10 0 q5-4 10 0 q5 4 10 0" stroke="#42BE9F"/>
+      <path d="M12 44 q5-4 10 0 q5 4 10 0 q5-4 10 0 q5 4 10 0" stroke="#42BE9F"/>
+      <circle cx="26" cy="22" r="4" fill="#F24E45" stroke="#F24E45"/>
+      <path d="M30 24 l10 4 M30 26 l8 8"/>
+    </svg>
+    <h3>Swim-Ready</h3>
+    <p>Repairs finished with your water balanced, equipment running, and pool safe to swim.</p>
+  </div>
+
+  <!-- Fixed Right -->
+  <div class="card">
+    <span class="sticker">Pool</span>
+    <svg class="ico" viewBox="0 0 64 64" fill="none" stroke="#003D6A" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M40 10 a12 12 0 1 0 10 10 L38 32 L32 26 L44 14 Z" fill="#E6F4FF"/>
+      <path d="M14 50 L28 36" stroke-width="5"/>
+      <circle cx="46" cy="46" r="10" fill="#42BE9F" stroke="#003D6A"/>
+      <path d="M41 46 l4 4 l7 -8" stroke="#fff" stroke-width="2.5"/>
+    </svg>
+    <h3>Fixed Right</h3>
+    <p>If the same repair fails, we come back and make it right — no repeat service fee.</p>
+  </div>
+
+  <!-- No-Risk Warranty -->
+  <div class="card">
+    <span class="sticker">Pool</span>
+    <svg class="ico" viewBox="0 0 64 64" fill="none" stroke="#003D6A" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M16 8 H48 V56 H16 Z"/>
+      <path d="M23 18 h18 M23 26 h18 M23 34 h10"/>
+      <path d="M36 48 l8 -14 l8 6" stroke="#F24E45"/>
+      <circle cx="30" cy="46" r="8" fill="#F24E45" stroke="#F24E45"/>
+      <path d="M27 46 l2.5 2.5 l4.5 -5" stroke="#fff" stroke-width="2.5"/>
+    </svg>
+    <h3>No-Risk Warranty</h3>
+    <p>Best-in-class 1-year parts &amp; labor warranty in writing on every repair.</p>
+  </div>
+</div>
+
+<div class="ctas">
+  <a class="btn btn-navy" href="#">View Guarantees</a>
+  <a class="btn btn-primary" href="#">Request Service</a>
+</div>
+
+</body></html>

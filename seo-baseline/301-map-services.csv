@@ -1,0 +1,20 @@
+old_url,new_url,reason
+/service/pool-equipment-repair/,/service/swimming-pool-repair/,merged into pillar
+/service/pool-system-inspection/,/service/swimming-pool-repair/,merged into pillar
+/service/commercial-pool-services-repair/,/service/swimming-pool-repair/,folded into pillar
+/service/variable-speed-pool-pump-installation/,/service/pool-pump-repair-installation/,VSP folded into pump page
+/service/gas-pool-heater-installation-repair/,/service/pool-heater-repair-installation/,gas heater folded into heater page
+/service/pool-heat-pump-repair-in-largo-fl/,/service/pool-heater-repair-installation/,heat pump folded into heater page
+/service/pool-light-replacement-installation/,/service/pool-light-repair/,light pages merged
+/service/pool-wiring-rewiring/,/service/pool-electrical-repair-installation/,wiring merged into pool electrical & bonding
+/service/energy-efficient-pool-equipment-upgrades/,/service/pool-equipment-installation-upgrades/,efficiency folded into equipment upgrades
+/service/electrical-repair/,/service/electrician/,merged into electric pillar
+/service/residential-electrical-services/,/service/electrician/,merged into electric pillar
+/electrician/,/service/electrician/,dead 404 found in audit — fix immediately on live site
+/services/,/service/,plural namespace consolidated (audit finding)
+/services/pool-electricians/,/service/pool-electrical-repair-installation/,plural namespace consolidated
+/service-areas/pinellas-county/electrician-largo/,/service/electrician/,legacy URL still RANKING for electrician largo fl (DataForSEO 2026-08) — must 301
+/service-areas/pinellas-county/,/area/,legacy county rollup still indexed
+/service-areas/,/area/,legacy namespace still indexed per SXO+ranked-keyword data
+/services/electrical-installation/ev-charger-installation/,/service/ev-charger-installation/,legacy duplicate found in SERPs
+/electrician/ev-charger-installation-largo-fl/,/service/ev-charger-installation/,legacy duplicate found in SERPs

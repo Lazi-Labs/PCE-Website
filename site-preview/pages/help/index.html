@@ -1,0 +1,420 @@
+<!doctype html><html><head><meta charset="utf-8">
+<title>Pool Equipment Troubleshooting Guides | Perfect Catch</title>
+<meta name="description" content="Symptom-by-symptom troubleshooting guides for pool pumps, filters, heaters, salt systems, automation, lights, and pool electrical — written by Largo's licensed pool and electrical techs.">
+<link href="https://fonts.googleapis.com/css2?family=Sofia+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+  @font-face{font-family:'Burbank Big';src:url('../../assets/fonts/BurbankBig-Bold.woff2') format('woff2');font-weight:700;font-style:normal}
+  :root{--coral:#F24E45;--red-deep:#A7130C;--navy:#003D6A;--navy-deep:#052B49;--text:#001E33;--teal:#42BE9F;--cream:#FEDFAE;--sky:#E6F4FF;--muted:#3F444B}
+  *{box-sizing:border-box}
+  body{margin:0;font-family:'Sofia Sans',Arial,sans-serif;font-size:16px;line-height:1.65;color:var(--text);background:#fff}
+  .disp{font-family:'Burbank Big',Impact,sans-serif;font-weight:700;text-transform:uppercase;line-height:1.05}
+  .wrap{max-width:1180px;margin:0 auto;padding:0 24px}
+  a{color:var(--coral);font-weight:500}a:hover{color:var(--red-deep)}
+  .hdr-zone{background:linear-gradient(160deg,#57C8F2,#0A4A7A);padding:16px 24px}
+  .pill{background:#fff;border-radius:16px;box-shadow:0 6px 24px rgba(0,20,40,.18);display:flex;align-items:center;gap:18px;padding:8px 16px;max-width:1180px;margin:0 auto}
+  .pill img{height:52px}
+  .pill nav{display:flex;gap:20px;flex:1;justify-content:center}
+  .pill nav a{font-family:'Burbank Big',Impact,sans-serif;font-size:14px;text-transform:uppercase;color:var(--navy);text-decoration:none;font-weight:700}
+  .pill nav a:hover{color:var(--coral)}
+  .btn{display:inline-block;font-family:'Burbank Big',Impact,sans-serif;font-weight:700;font-size:16px;line-height:1;text-transform:uppercase;text-decoration:none;padding:14px 24px 11px;border-radius:12px;border:1px solid;border-bottom-width:4px}
+  .btn-primary{background:var(--coral);color:#fff;border-color:var(--red-deep)}
+  .btn-primary:hover{background:var(--red-deep);border-color:var(--coral);color:#fff}
+  .btn-white{background:#fff;color:var(--navy);border-color:var(--teal)}
+  .btn-white:hover{color:var(--navy);background:var(--sky)}
+  .hero{background:linear-gradient(165deg,rgba(10,82,133,.85),rgba(5,43,73,.92)),url('../../uploads/imgi_1_final-hero-2-scaled.avif') center/cover;color:#fff;text-align:center;padding:52px 24px 58px}
+  .hero h1{font-size:clamp(30px,4.5vw,48px);margin:0 0 12px;text-shadow:3px 3px 0 var(--coral)}
+  .hero p{max-width:740px;margin:0 auto 22px;color:#EAF4FB}
+  .search-band{background:var(--sky);border-bottom:1px solid #D3E6F5;padding:22px 24px}
+  .search-inner{max-width:1180px;margin:0 auto;display:flex;flex-direction:column;gap:14px}
+  .search-row{display:flex;gap:10px;flex-wrap:wrap}
+  #q{flex:1;min-width:260px;font-family:'Sofia Sans',Arial,sans-serif;font-size:16px;padding:13px 16px;border:1px solid #BBD6EA;border-radius:12px;background:#fff;color:var(--text)}
+  #q:focus{outline:2px solid var(--teal);outline-offset:-1px}
+  .chips{display:flex;flex-wrap:wrap;gap:8px}
+  .chip{font-family:'Burbank Big',Impact,sans-serif;font-size:13px;text-transform:uppercase;color:var(--navy);background:#fff;border:1px solid #BBD6EA;border-radius:999px;padding:8px 14px 6px;cursor:pointer;line-height:1}
+  .chip:hover{border-color:var(--teal)}
+  .chip[aria-pressed="true"]{background:var(--navy);border-color:var(--navy);color:#fff}
+  .count{font-size:13.5px;color:var(--muted)}
+  .triage{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:14px;margin:34px 0 8px}
+  .tri{display:flex;flex-direction:column;gap:4px;text-decoration:none;color:#fff;background:linear-gradient(165deg,#0A5285,var(--navy-deep));border-radius:14px;padding:18px 18px 16px;border-bottom:4px solid var(--coral)}
+  .tri b{font-family:'Burbank Big',Impact,sans-serif;font-size:16px;text-transform:uppercase;line-height:1.1}
+  .tri span{font-size:13.5px;color:#C9DCEA}
+  .tri:hover b{color:var(--cream)}
+  .kick{font-family:'Burbank Big',Impact,sans-serif;font-size:14px;text-transform:uppercase;color:var(--coral);margin:40px 0 0}
+  .cat-head{display:flex;align-items:baseline;gap:14px;margin:38px 0 6px}
+  .cat-head h2{font-size:clamp(22px,3vw,32px);margin:0}
+  .cat-head span{font-size:13.5px;color:var(--muted)}
+  .cat-sub{color:var(--muted);font-size:14.5px;margin:0 0 18px;max-width:820px}
+  .cat-sub a{font-weight:700}
+  .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:16px;margin:0 0 12px}
+  .card{background:#fff;border:1px solid #DCE8F1;border-radius:14px;padding:18px;display:flex;flex-direction:column;gap:8px;color:var(--text);box-shadow:0 3px 12px rgba(0,40,70,.06);transition:transform .12s,box-shadow .12s}
+  .card:hover{transform:translateY(-2px);box-shadow:0 10px 24px rgba(0,40,70,.14)}
+  .card h3{font-family:'Burbank Big',Impact,sans-serif;font-weight:700;font-size:17px;line-height:1.15;text-transform:uppercase;margin:0}
+  .card h3 a{color:var(--navy);text-decoration:none}
+  .card h3 a:hover{color:var(--coral)}
+  .card p{font-size:13.5px;color:var(--muted);margin:0;flex:1}
+  .card .sym{display:flex;flex-wrap:wrap;gap:6px}
+  .card .sym i{font-style:normal;font-size:11.5px;font-family:ui-monospace,monospace;background:var(--sky);color:var(--navy);border-radius:4px;padding:2px 7px}
+  .card .sym a{font-style:normal;font-size:11.5px;font-weight:600;font-family:ui-monospace,Menlo,monospace;background:var(--sky);color:var(--navy);border:1px solid #C9DFF0;border-radius:4px;padding:2px 7px;text-decoration:none}
+  .card .sym a:hover{background:var(--navy);border-color:var(--navy);color:#fff}
+  .card .go{font-family:'Burbank Big',Impact,sans-serif;font-size:13px;text-transform:uppercase;color:var(--coral);font-weight:700;text-decoration:none}
+  .card .go:hover{color:var(--red-deep)}
+  .safety{background:#FFF5E6;border:1px solid var(--cream);border-radius:14px;padding:20px 22px;margin:40px 0 0}
+  .safety h3{margin:0 0 6px;font-size:19px;color:var(--navy)}
+  .safety p{margin:0;font-size:14.5px;color:var(--muted)}
+  .empty{display:none;text-align:center;color:var(--muted);padding:44px 0 8px}
+  .empty b{display:block;font-family:'Burbank Big',Impact,sans-serif;font-size:20px;text-transform:uppercase;color:var(--navy);margin-bottom:6px}
+  .cta-band{background:linear-gradient(165deg,#0A5285,var(--navy-deep));color:#fff;text-align:center;padding:44px 24px;margin-top:48px}
+  .cta-band h2{font-size:clamp(24px,3.4vw,38px);margin:0 0 8px;text-shadow:3px 3px 0 var(--coral)}
+  .cta-band p{color:#C9DCEA;margin:0 0 20px}
+  .sticky-call{position:fixed;bottom:0;left:0;right:0;z-index:50;display:none;grid-template-columns:1fr 1fr;gap:1px;background:var(--red-deep)}
+  .sticky-call a{display:flex;align-items:center;justify-content:center;gap:8px;padding:15px 8px 13px;font-family:'Burbank Big',Impact,sans-serif;font-size:16px;line-height:1;text-transform:uppercase;text-decoration:none;color:#fff}
+  .sticky-call .sc-call{background:var(--navy)}
+  .sticky-call .sc-req{background:var(--coral)}
+  @media(max-width:920px){.sticky-call{display:grid}body{padding-bottom:52px}}
+  .ftr{background:var(--navy-deep);color:#9DB4C6;text-align:center;font-size:12.5px;padding:16px;margin-top:48px}
+/* full footer */
+.fmap{line-height:0;background:#052B49;margin-top:56px}
+.fmap iframe{width:100%;height:320px;border:0;display:block}
+footer.site{background:linear-gradient(180deg,#003D6A,#052B49);color:#fff;padding:54px 24px 30px;text-align:left}
+.f-cols{display:grid;grid-template-columns:1.5fr .7fr .7fr 1.15fr;gap:44px;max-width:1120px;margin:0 auto 38px;align-items:start}
+.f-brand img{width:225px;max-width:100%;height:auto;display:block;margin:-8px 0 22px -6px}
+footer.site h4{font-family:'Burbank Big',Impact,sans-serif;font-weight:700;font-size:18px;text-transform:uppercase;letter-spacing:1px;color:#FEDFAE;margin:0 0 14px}
+.lic{font-size:13.5px;color:#EAF4FB;margin:0;display:flex;flex-wrap:wrap;gap:4px 7px;white-space:nowrap}
+.lic span+span::before{content:"·";margin-right:7px;color:#7FA6C4}
+footer.site ul{list-style:none;margin:0;padding:0}
+footer.site li{margin-bottom:12px;font-size:14.5px}
+footer.site a{color:#fff;text-decoration:none;font-weight:400}
+footer.site a:hover{color:#FEDFAE;text-decoration:underline}
+.cl{display:flex;gap:11px;align-items:flex-start;margin-bottom:12px;font-size:14.5px;line-height:1.55}
+.cl svg{width:17px;height:17px;flex:0 0 auto;fill:#F24E45;margin-top:2px}
+.soc{display:flex;gap:7px;flex-wrap:wrap;margin-top:18px}
+.soc a{width:34px;height:34px;border-radius:50%;background:#F24E45;display:inline-flex;align-items:center;justify-content:center;color:#fff;transition:background .2s}
+.soc a:hover{background:#A7130C;color:#fff;text-decoration:none}
+.soc svg{width:14px;height:14px;fill:#fff}
+.f-bar{max-width:1180px;margin:0 auto;font-size:14px;color:#DAE6EF;padding-top:8px}
+@media(max-width:920px){.f-cols{grid-template-columns:1fr 1fr;gap:36px}}
+@media(max-width:560px){.f-cols{grid-template-columns:1fr}}
+/* dropdown menu */
+  .hdr-zone{position:relative;z-index:60}
+  .pill nav .has-mega>a::after{content:' \25BE';font-size:9px;color:#F24E45}
+  .pill nav .has-mega .mega{position:absolute;left:24px;right:24px;top:calc(100% - 6px);background:radial-gradient(680px 320px at 82% 0%,rgba(87,200,242,.18),transparent 62%),linear-gradient(160deg,#0A4A7A,#003D6A 55%,#052B49);border-radius:18px;box-shadow:0 20px 46px rgba(0,20,40,.38);padding:24px 30px 26px;display:none;z-index:99;text-align:left}
+  .pill nav .has-mega:hover .mega,.pill nav .has-mega:focus-within .mega{display:block}
+  .pill nav .mega h4{font-family:'Burbank Big',Impact,sans-serif;font-weight:700;font-size:19px;letter-spacing:.6px;text-transform:uppercase;color:#FEDFAE;margin:0 0 14px}
+  .pill nav .mega-in{display:grid;grid-template-columns:1fr 1fr minmax(210px,.85fr);gap:2px 40px;align-items:center}
+  .pill nav .mega-col{display:flex;flex-direction:column}
+  .pill nav .mega a{display:flex;align-items:flex-start;gap:10px;font-family:'Sofia Sans',Arial,sans-serif;font-size:14.5px;font-weight:500;color:#fff;text-transform:none;text-decoration:none;padding:6px 8px;border-radius:8px}
+  .pill nav .mega a::before{content:"";flex:none;width:7px;height:7px;background:#F24E45;margin-top:7px}
+  .pill nav .mega a:hover{background:rgba(255,255,255,.08);color:#FEDFAE}
+  .pill nav .mvan{width:100%;height:auto;display:block;filter:drop-shadow(0 14px 22px rgba(0,10,25,.45))}
+  @media(max-width:1180px){.pill nav .mega-in{grid-template-columns:1fr 1fr}.pill nav .mvan{display:none}}
+  .pill nav{position:relative}
+  .pill nav .dd{position:relative;display:inline-block}
+  .pill nav .dd>a::after{content:' \25BE';font-size:9px;color:#F24E45}
+  .pill nav .dd-menu{display:none;position:absolute;top:100%;left:50%;transform:translateX(-50%);background:#fff;border:1px solid #DCE8F1;border-radius:12px;box-shadow:0 14px 34px rgba(0,20,40,.22);padding:0;z-index:99;min-width:470px;overflow:hidden}
+  .pill nav .dd-links{flex:1;min-width:255px;padding:10px 0;max-height:64vh;overflow-y:auto}
+  .pill nav .dd:hover .dd-menu,.pill nav .dd:focus-within .dd-menu{display:flex}
+  .pill nav .dd-art{width:225px;background:linear-gradient(180deg,#E6F4FF 0%,#9FD4F5 100%);display:flex;flex-direction:column;justify-content:space-between;align-items:center;padding:16px 10px 0}
+  .pill nav .dd-cta{text-align:center;font-family:'Burbank Big',Impact,sans-serif;text-transform:uppercase;color:#003D6A;font-size:13px;line-height:1.25}
+  .pill nav .dd-cta a{display:block;margin-top:6px;padding:7px 10px 5px;background:#F24E45;color:#fff!important;border-radius:9px;font-size:14px;text-decoration:none}
+  .pill nav .dd-cta a:hover{background:#A7130C}
+  .pill nav .dd-art img{width:150%;max-width:none;display:block;margin:8px 0 -6px}
+  .pill nav .dd:hover .dd-menu,.pill nav .dd:focus-within .dd-menu{display:block}
+  .pill nav .dd-menu a{display:block;padding:7px 18px;font-family:'Sofia Sans',Arial,sans-serif;font-size:14px;font-weight:600;text-transform:none;color:#001E33;white-space:nowrap}
+  .pill nav .dd-menu a:hover{background:#E6F4FF;color:#A7130C}
+  .pill nav .dd-menu .dd-head{display:block;padding:8px 18px 3px;font-family:'Burbank Big',Impact,sans-serif;font-size:11px;text-transform:uppercase;letter-spacing:.08em;color:#3F444B}
+  @media(max-width:920px){.pill nav{display:none}}
+</style></head><body>
+<div class="hdr-zone"><header class="pill">
+  <a href="../../index.html"><img src="../../assets/logo-full.webp" alt="Perfect Catch"></a>
+  <!--NAV--><nav><span class="has-mega"><a href="../services/index.html#pool">Pool Repair</a><div class="mega"><h4>Pool Repair Services</h4><div class="mega-in"><div class="mega-col"><a href="../services/swimming-pool-repair.html">Pool Repair</a><a href="../services/pool-pump-repair-installation.html">Pool Pump Repair &amp; Installation</a><a href="../services/pool-heater-repair-installation.html">Pool Heater &amp; Heat Pump Repair</a><a href="../services/pool-cleaning.html">Pool Cleaning Service</a><a href="../services/pool-leak-detection.html">Pool Leak Detection</a><a href="../services/pool-filter-repair-and-installation.html">Pool Filter Repair &amp; Replacement</a><a href="../services/salt-water-chlorinator-installation-repair.html">Salt System &amp; Salt Cell Repair</a><a href="../services/pool-automation-systems-installation-upgrades.html">Pool Automation</a><a href="../services/pool-light-repair.html">Pool Light Replacement &amp; Repair</a></div><div class="mega-col"><a href="../services/pool-electrical-repair-installation.html">Pool Electrician</a><a href="../services/pool-equipment-installation-upgrades.html">Pool Equipment Installation &amp; Upgrades</a><a href="../services/pool-resurfacing.html">Pool Resurfacing</a><a href="../services/pool-remodeling.html">Pool Remodeling</a><a href="../services/pool-acid-wash.html">Pool Acid Wash</a><a href="../services/emergency-pool-service.html">Emergency Pool Repair</a><a href="../services/pool-care-memberships.html">Pool Maintenance Plans</a><a href="../services/pool-builders.html">For Pool Builders</a><a href="../../pages/help/index.html">Troubleshooting Guides</a></div><img class="mvan" src="../../assets/van-side.png" alt="" loading="lazy"></div></div></span><span class="has-mega"><a href="../services/index.html#electric">Electrical</a><div class="mega"><h4>Electrical Services</h4><div class="mega-in"><div class="mega-col"><a href="../services/electrician.html">Electrician</a><a href="../services/electrical-panel-upgrade-replacement.html">Panel Upgrades &amp; Replacement</a><a href="../services/surge-protection.html">Surge Protection</a><a href="../services/emergency-electrician.html">Emergency Electrician</a><a href="../services/lighting-ceiling-fan-installation.html">Lighting &amp; Ceiling Fans</a><a href="../services/smoke-detector-installation.html">Smoke Detector Installation</a></div><div class="mega-col"><a href="../services/house-rewiring.html">House Rewiring</a><a href="../services/electrical-safety-inspection.html">Electrical Safety Inspection</a><a href="../services/ev-charger-installation.html">EV Charger Installation</a><a href="../services/whole-house-generator-installation-repair.html">Whole House Generators</a><a href="../services/commercial-electrician.html">Commercial Electrician</a><a href="../services/marine-electricians.html">Marine &amp; Dock Electrician</a></div><img class="mvan" src="../../assets/van-side.png" alt="" loading="lazy"></div></div></span><span class="has-mega"><a href="../services/index.html#gas">Gas</a><div class="mega"><h4>Gas Services</h4><div class="mega-in"><div class="mega-col"><a href="../services/gas-services.html">Gas Services</a><a href="../services/gas-leak-detection-repair.html">Gas Leak Detection &amp; Repair</a><a href="../services/gas-line-installation.html">Gas Line Installation &amp; Hookups</a><a href="../services/propane-tank-installation.html">Propane Tank Installation</a><a href="../services/pool-heater-repair-installation.html">Gas Pool Heaters</a></div><div class="mega-col"><a href="../services/whole-house-generator-installation-repair.html">Generators + Gas Line</a><a href="../services/outdoor-kitchens.html">Outdoor Kitchen Gas Lines</a><a href="../services/gas-line-installation.html">Fire Pits &amp; Grill Hookups</a><a href="../services/propane-tank-installation.html">Whole-Home Propane</a></div><img class="mvan" src="../../assets/van-side.png" alt="" loading="lazy"></div></div></span><span class="dd"><a href="../services/index.html#outdoor">Outdoor</a><div class="dd-menu"><div class="dd-links"><a href="../services/outdoor-landscape-lighting-installation.html">Landscape Lighting</a><a href="../services/outdoor-living.html">Outdoor Living</a><a href="../services/pavers-and-driveways.html">Pavers &amp; Driveways</a><a href="../services/outdoor-kitchens.html">Outdoor Kitchens</a><a href="../services/pool-fence.html">Pool Fence</a><a href="../services/artificial-turf.html">Artificial Turf</a></div></div></span><span class="dd"><a href="../../about-us.html">About</a><div class="dd-menu"><div class="dd-links"><a href="../../about-us.html">About Us</a><a href="../../reviews.html">Reviews</a><a href="../../specials.html">Specials</a><a href="../../referral-program.html">Referral Program</a><a href="../../giving-back.html">Giving Back</a><a href="../../pages/blog/index.html">Blog</a></div></div></span><a href="../../pages/areas/index.html">Service Areas</a><a href="../../contact-us.html">Contact</a></nav><!--/NAV-->
+  <a class="btn btn-primary" href="../../contact-us.html">Request Service</a>
+</header></div>
+
+<section class="hero">
+  <h1 class="disp">Pool Equipment<br>Troubleshooting Guides</h1>
+  <p>Find your error code or symptom below. Every guide gives you the safe checks you can do yourself — and a straight answer about when to stop. Written by the Pinellas County contractor licensed for the pool, electrical, and gas sides of every repair.</p>
+  <a class="btn btn-primary" href="#guides">Browse Guides</a>
+  <a class="btn btn-white" href="tel:7273165206" style="margin-left:8px">☎ 727-316-5206</a>
+</section>
+
+<div class="search-band">
+  <div class="search-inner">
+    <div class="search-row">
+      <input id="q" type="search" placeholder="Search by code or symptom — LO, ERR PS, 172, won't prime, breaker trips…" aria-label="Search troubleshooting guides">
+      <a class="btn btn-primary" href="../../contact-us.html">Get a Diagnosis</a>
+    </div>
+    <div class="chips" id="chips" role="group" aria-label="Filter guides by category">
+      <button class="chip" data-cat="all" aria-pressed="true">All guides</button>
+      <button class="chip" data-cat="hayward" aria-pressed="false">Hayward</button>
+      <button class="chip" data-cat="pentair" aria-pressed="false">Pentair</button>
+      <button class="chip" data-cat="jandy" aria-pressed="false">Jandy</button>
+      <button class="chip" data-cat="heaters" aria-pressed="false">Heaters</button>
+      <button class="chip" data-cat="pumps" aria-pressed="false">Pumps</button>
+      <button class="chip" data-cat="symptoms" aria-pressed="false">Symptoms</button>
+    </div>
+    <div class="count" id="count"></div>
+  </div>
+</div>
+
+<div class="wrap">
+  <p class="kick">Most-searched problems</p>
+  <div class="triage">
+    <a class="tri" href="pool-pump-loses-prime.html"><b>Pump won't prime</b><span>Air in the basket, water level, lid o-ring — the 10-minute checklist.</span></a>
+    <a class="tri" href="pool-heater-wont-stay-lit.html"><b>Heater won't fire</b><span>Ignites then quits, or never lights at all — what to check before calling.</span></a>
+    <a class="tri" href="pool-pump-tripping-breaker.html"><b>Breaker keeps tripping</b><span>Instant trip vs. runs-then-trips — and why you should stop resetting it.</span></a>
+    <a class="tri" href="pool-light-not-working.html"><b>Pool light is out</b><span>Bulb, GFCI, or fixture? How to tell — and why this one is never DIY.</span></a>
+  </div>
+
+  <div id="guides">
+
+  <section class="cat" data-cat="hayward">
+    <div class="cat-head"><h2 class="disp">Hayward</h2><span>4 guides</span></div>
+    <p class="cat-sub">Heaters, AquaRite salt systems, variable-speed pumps, and OmniLogic automation. Need hands-on help? See our <a href="../services/pool-equipment-installation-upgrades.html">pool equipment repair service</a>.</p>
+    <div class="grid">
+      <div class="card">
+        <h3><a href="hayward-heater-error-codes.html">H-Series Heater Codes</a></h3>
+        <p>LO, IF, CE and every other display code on Hayward Universal gas heaters.</p>
+        <div class="sym"><a href="hayward-heater-error-codes.html#lo">LO</a><a href="hayward-heater-error-codes.html#if">IF</a><a href="hayward-heater-error-codes.html#io">IO</a><a href="hayward-heater-error-codes.html#ce">CE</a><a href="hayward-heater-error-codes.html#ao">AO</a><a href="hayward-heater-error-codes.html#ac">AC</a><a href="hayward-heater-error-codes.html#hf">HF</a><a href="hayward-heater-error-codes.html#sf">SF</a><a href="hayward-heater-error-codes.html#hs">HS</a></div>
+        <a class="go" href="hayward-heater-error-codes.html">Read the guide →</a>
+      </div>
+      <div class="card">
+        <h3><a href="hayward-aquarite-salt-system-codes.html">AquaRite Salt System</a></h3>
+        <p>Check Salt, Inspect Cell, No Flow — panel lights and display readings decoded.</p>
+        <div class="sym"><a href="hayward-aquarite-salt-system-codes.html#no-flow">No Flow LED</a><a href="hayward-aquarite-salt-system-codes.html#check-salt">Check Salt LED</a><a href="hayward-aquarite-salt-system-codes.html#high-salt">High Salt LED</a><a href="hayward-aquarite-salt-system-codes.html#inspect-cell">Inspect Cell LED</a><a href="hayward-aquarite-salt-system-codes.html#power-off">Power LED off</a><a href="hayward-aquarite-salt-system-codes.html#generating-flashing">Generating LED flashing</a><a href="hayward-aquarite-salt-system-codes.html#cold">Display: COLD</a><a href="hayward-aquarite-salt-system-codes.html#hot">Display: HOT</a><a href="hayward-aquarite-salt-system-codes.html#pcb">Display: -PCB-</a></div>
+        <a class="go" href="hayward-aquarite-salt-system-codes.html">Read the guide →</a>
+      </div>
+      <div class="card">
+        <h3><a href="hayward-vs-pump-error-codes.html">Variable-Speed Pumps</a></h3>
+        <p>TriStar, MaxFlo and EcoStar drive faults — including PFC-Hi voltage trips.</p>
+        <div class="sym"><a href="hayward-vs-pump-error-codes.html#prime-failed">Prime Failed</a><a href="hayward-vs-pump-error-codes.html#overheated">Drive Is Overheated</a><a href="hayward-vs-pump-error-codes.html#pfc-hi">PFC-Hi</a><a href="hayward-vs-pump-error-codes.html#stalled">Pump Has Stalled</a><a href="hayward-vs-pump-error-codes.html#phase-lost">Motor Phase Lost</a><a href="hayward-vs-pump-error-codes.html#memory">Memory Failure</a><a href="hayward-vs-pump-error-codes.html#check-system">Check System</a><a href="hayward-vs-pump-error-codes.html#no-comm">No Comm / Blank Display</a><a href="hayward-vs-pump-error-codes.html#svrs">SVRS Tripped</a></div>
+        <a class="go" href="hayward-vs-pump-error-codes.html">Read the guide →</a>
+      </div>
+      <div class="card">
+        <h3><a href="hayward-omnilogic-troubleshooting.html">OmniLogic / OmniHub</a></h3>
+        <p>Automation alarms, sensor faults, and Wi-Fi/app connection fixes.</p>
+        <div class="sym"><a href="hayward-omnilogic-troubleshooting.html#comm-loss">&quot;Comm Loss&quot; alarms</a><a href="hayward-omnilogic-troubleshooting.html#tcell-open">T-CELL cable/sensor open</a><a href="hayward-omnilogic-troubleshooting.html#flow">Flow alarm</a><a href="hayward-omnilogic-troubleshooting.html#temp-sensors">Temperature sensor faults</a><a href="hayward-omnilogic-troubleshooting.html#wifi">Wi-Fi / app won&#x27;t connect</a></div>
+        <a class="go" href="hayward-omnilogic-troubleshooting.html">Read the guide →</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="cat" data-cat="pentair">
+    <div class="cat-head"><h2 class="disp">Pentair</h2><span>4 guides</span></div>
+    <p class="cat-sub">MasterTemp heaters, IntelliFlo pumps, IntelliChlor salt cells, and ScreenLogic automation. Need hands-on help? See our <a href="../services/pool-equipment-installation-upgrades.html">pool equipment repair service</a>.</p>
+    <div class="grid">
+      <div class="card">
+        <h3><a href="pentair-mastertemp-error-codes.html">MasterTemp Heater Codes</a></h3>
+        <p>Service Heater vs Service System lights, ERR codes and E-codes explained.</p>
+        <div class="sym"><a href="pentair-mastertemp-error-codes.html#service-system">Service System light</a><a href="pentair-mastertemp-error-codes.html#service-heater">Service Heater light</a><a href="pentair-mastertemp-error-codes.html#err-ps">ERR PS</a><a href="pentair-mastertemp-error-codes.html#err-hls">ERR HLS</a><a href="pentair-mastertemp-error-codes.html#err-afs">ERR AFS</a><a href="pentair-mastertemp-error-codes.html#err-ags">ERR AGS</a><a href="pentair-mastertemp-error-codes.html#err-sfs">ERR SFS</a><a href="pentair-mastertemp-error-codes.html#err-ign">ERR IGN</a><a href="pentair-mastertemp-error-codes.html#e01">E01</a></div>
+        <a class="go" href="pentair-mastertemp-error-codes.html">Read the guide →</a>
+      </div>
+      <div class="card">
+        <h3><a href="pentair-intelliflo-error-codes.html">IntelliFlo &amp; SuperFlo Alarms</a></h3>
+        <p>Every drive alarm — including the notorious 0021 communication error.</p>
+        <div class="sym"><a href="pentair-intelliflo-error-codes.html#blocked-system">Blocked System</a><a href="pentair-intelliflo-error-codes.html#priming-failure">Priming Failure</a><a href="pentair-intelliflo-error-codes.html#overheat">Overheat</a><a href="pentair-intelliflo-error-codes.html#over-current">Over-Current</a><a href="pentair-intelliflo-error-codes.html#over-voltage">Over-Voltage</a><a href="pentair-intelliflo-error-codes.html#under-voltage">Under-Voltage</a><a href="pentair-intelliflo-error-codes.html#internal-error">Internal Error</a><a href="pentair-intelliflo-error-codes.html#derating">Derating (IntelliFlo3)</a><a href="pentair-intelliflo-error-codes.html#thermal-mode">Thermal Mode</a></div>
+        <a class="go" href="pentair-intelliflo-error-codes.html">Read the guide →</a>
+      </div>
+      <div class="card">
+        <h3><a href="pentair-intellichlor-light-codes.html">IntelliChlor Light Codes</a></h3>
+        <p>What every green, red, and flashing light combination means.</p>
+        <div class="sym"><a href="pentair-intellichlor-light-codes.html#reading-the-panel">Reading the panel</a><a href="pentair-intellichlor-light-codes.html#red-flow">Red flow light</a><a href="pentair-intellichlor-light-codes.html#solid-red-low-salt">Solid red LOW SALT</a><a href="pentair-intellichlor-light-codes.html#flashing-green-cell">Flashing green CELL light</a><a href="pentair-intellichlor-light-codes.html#cold-water">Red COLD WATER light</a><a href="pentair-intellichlor-light-codes.html#no-lights">No lights at all</a></div>
+        <a class="go" href="pentair-intellichlor-light-codes.html">Read the guide →</a>
+      </div>
+      <div class="card">
+        <h3><a href="pentair-automation-screenlogic-troubleshooting.html">Automation &amp; ScreenLogic</a></h3>
+        <p>Panel fault messages plus app and connection troubleshooting.</p>
+        <div class="sym"><a href="pentair-automation-screenlogic-troubleshooting.html#com-link-error">COM LINK ERROR</a><a href="pentair-automation-screenlogic-troubleshooting.html#comm-error">Comm Error (pump)</a><a href="pentair-automation-screenlogic-troubleshooting.html#no-comm">No Comm / Address Lock</a><a href="pentair-automation-screenlogic-troubleshooting.html#air-err">Air Err</a><a href="pentair-automation-screenlogic-troubleshooting.html#water-err">Water Err</a><a href="pentair-automation-screenlogic-troubleshooting.html#solar-err">Solar Err</a><a href="pentair-automation-screenlogic-troubleshooting.html#looking-for-controller">&quot;Looking for controller…&quot;</a><a href="pentair-automation-screenlogic-troubleshooting.html#address-invalid">&quot;Address Invalid&quot;</a><a href="pentair-automation-screenlogic-troubleshooting.html#adapter-unresponsive">Adapter unresponsive</a></div>
+        <a class="go" href="pentair-automation-screenlogic-troubleshooting.html">Read the guide →</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="cat" data-cat="jandy">
+    <div class="cat-head"><h2 class="disp">Jandy</h2><span>4 guides</span></div>
+    <p class="cat-sub">JXi/LXi heaters, AquaPure salt systems, VS pumps, and AquaLink automation. Need hands-on help? See our <a href="../services/pool-equipment-installation-upgrades.html">pool equipment repair service</a>.</p>
+    <div class="grid">
+      <div class="card">
+        <h3><a href="jandy-heater-fault-codes.html">JXi / LXi Heater Faults</a></h3>
+        <p>Check Ign, High Limit, sensor faults and ignition LED blink codes.</p>
+        <div class="sym"><a href="jandy-heater-fault-codes.html#check-flow">CHECK FLOW / FAULT-NO FLOW</a><a href="jandy-heater-fault-codes.html#fault-high-limit">FAULT-HIGH LIMIT</a><a href="jandy-heater-fault-codes.html#fault-check-ign-control">FAULT-CHECK IGN CONTROL</a><a href="jandy-heater-fault-codes.html#fault-fuselink-field">FAULT-FUSELINK/FIELD</a><a href="jandy-heater-fault-codes.html#fault-pump">FAULT-PUMP (status)</a><a href="jandy-heater-fault-codes.html#led-codes">Ignition LED blink codes</a></div>
+        <a class="go" href="jandy-heater-fault-codes.html">Read the guide →</a>
+      </div>
+      <div class="card">
+        <h3><a href="jandy-aquapure-error-codes.html">AquaPure Salt Codes 120–194</a></h3>
+        <p>Every Level 1 and Level 2 error code on Jandy salt systems.</p>
+        <div class="sym"><a href="jandy-aquapure-error-codes.html#code-120">120 / 121</a><a href="jandy-aquapure-error-codes.html#code-123">123</a><a href="jandy-aquapure-error-codes.html#code-124">124</a><a href="jandy-aquapure-error-codes.html#code-125">125</a><a href="jandy-aquapure-error-codes.html#code-126">126 / 127</a><a href="jandy-aquapure-error-codes.html#code-144">144</a><a href="jandy-aquapure-error-codes.html#code-145">145</a><a href="jandy-aquapure-error-codes.html#code-170">170</a><a href="jandy-aquapure-error-codes.html#code-171">171</a></div>
+        <a class="go" href="jandy-aquapure-error-codes.html">Read the guide →</a>
+      </div>
+      <div class="card">
+        <h3><a href="jandy-vs-pump-error-codes.html">Variable-Speed Pump Codes</a></h3>
+        <p>E22, E23 and drive faults — including the undersized-wiring trap.</p>
+        <div class="sym"><a href="jandy-vs-pump-error-codes.html#e22">E22</a><a href="jandy-vs-pump-error-codes.html#e23">E23</a><a href="jandy-vs-pump-error-codes.html#e2e">E2E</a><a href="jandy-vs-pump-error-codes.html#e2f">E2F</a><a href="jandy-vs-pump-error-codes.html#pump-not-connected">FAULT: PUMP NOT CONNECTED</a></div>
+        <a class="go" href="jandy-vs-pump-error-codes.html">Read the guide →</a>
+      </div>
+      <div class="card">
+        <h3><a href="jandy-aqualink-troubleshooting.html">AquaLink / iAquaLink</a></h3>
+        <p>Connection problems, service-mode lockouts and relay faults.</p>
+        <div class="sym"><a href="jandy-aqualink-troubleshooting.html#waiting-for-connection">&quot;Waiting for Connection&quot;</a><a href="jandy-aqualink-troubleshooting.html#frozen-display">Frozen or garbled display</a></div>
+        <a class="go" href="jandy-aqualink-troubleshooting.html">Read the guide →</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="cat" data-cat="heaters">
+    <div class="cat-head"><h2 class="disp">Raypak &amp; AquaCal</h2><span>2 guides</span></div>
+    <p class="cat-sub">Gas heater and heat pump error codes. Need hands-on help? See our <a href="../services/pool-heater-repair-installation.html">pool heater &amp; heat pump repair service</a>.</p>
+    <div class="grid">
+      <div class="card">
+        <h3><a href="raypak-heater-error-codes.html">Raypak Heater Codes</a></h3>
+        <p>All three Raypak code families — Digital, 106A/156A, and Avia.</p>
+        <div class="sym"><a href="raypak-heater-error-codes.html#prs">PRS</a><a href="raypak-heater-error-codes.html#hl1-hl2">HL1 / HL2</a><a href="raypak-heater-error-codes.html#sns">SNS</a><a href="raypak-heater-error-codes.html#ign">IGN</a><a href="raypak-heater-error-codes.html#ilo">ILO</a><a href="raypak-heater-error-codes.html#rol">ROL</a><a href="raypak-heater-error-codes.html#fan">FAN</a><a href="raypak-heater-error-codes.html#gvc-gvo">GVC / GVO</a><a href="raypak-heater-error-codes.html#ffl">FFL</a></div>
+        <a class="go" href="raypak-heater-error-codes.html">Read the guide →</a>
+      </div>
+      <div class="card">
+        <h3><a href="aquacal-heat-pump-error-codes.html">AquaCal Heat Pump Codes</a></h3>
+        <p>FS, HP, LP, defrost and pressure codes on HeatWave heat pumps.</p>
+        <div class="sym"><a href="aquacal-heat-pump-error-codes.html#flo">FLO</a><a href="aquacal-heat-pump-error-codes.html#fs">FS</a><a href="aquacal-heat-pump-error-codes.html#hp">HP</a><a href="aquacal-heat-pump-error-codes.html#hp5">HP5</a><a href="aquacal-heat-pump-error-codes.html#lp">LP</a><a href="aquacal-heat-pump-error-codes.html#lp5">LP5</a><a href="aquacal-heat-pump-error-codes.html#dpo-dpc">dPo / dPc</a><a href="aquacal-heat-pump-error-codes.html#po-pc">PO / PC</a><a href="aquacal-heat-pump-error-codes.html#cer">CEr</a></div>
+        <a class="go" href="aquacal-heat-pump-error-codes.html">Read the guide →</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="cat" data-cat="pumps">
+    <div class="cat-head"><h2 class="disp">Pump Symptoms</h2><span>4 guides</span></div>
+    <p class="cat-sub">No error code? Start with what the pump is doing. Need hands-on help? See our <a href="../services/pool-pump-repair-installation.html">pool pump repair service</a>.</p>
+    <div class="grid">
+      <div class="card">
+        <h3><a href="pool-pump-humming-not-starting.html">Pump Humming, Not Starting</a></h3>
+        <p>Hums, clicks, or buzzes but the motor never spins up — capacitor, jam, or voltage.</p>
+        <div class="sym"><i>humming</i><i>won't start</i><i>clicking</i></div>
+        <a class="go" href="pool-pump-humming-not-starting.html">Read the guide →</a>
+      </div>
+      <div class="card">
+        <h3><a href="pool-pump-tripping-breaker.html">Pump Tripping the Breaker</a></h3>
+        <p>Instant trip vs. runs-then-trips — what each pattern means and why resetting isn't a fix.</p>
+        <div class="sym"><i>breaker trips</i><i>GFCI</i><i>short</i></div>
+        <a class="go" href="pool-pump-tripping-breaker.html">Read the guide →</a>
+      </div>
+      <div class="card">
+        <h3><a href="pool-pump-loses-prime.html">Pump Losing Prime</a></h3>
+        <p>Air in the basket, falling water level, suction leaks — the 10-minute checklist.</p>
+        <div class="sym"><i>won't prime</i><i>air bubbles</i><i>low flow</i></div>
+        <a class="go" href="pool-pump-loses-prime.html">Read the guide →</a>
+      </div>
+      <div class="card">
+        <h3><a href="pool-pump-loud-grinding.html">Pump Loud or Grinding</a></h3>
+        <p>Screeching, grinding, or rattling — bearings, cavitation, or debris, and how to tell.</p>
+        <div class="sym"><i>grinding</i><i>screeching</i><i>rattling</i></div>
+        <a class="go" href="pool-pump-loud-grinding.html">Read the guide →</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="cat" data-cat="symptoms">
+    <div class="cat-head"><h2 class="disp">More Symptoms</h2><span>4 guides</span></div>
+    <p class="cat-sub">Lights, heaters, salt cells, and automation — start with what you're seeing. Need hands-on help? See our <a href="../services/swimming-pool-repair.html">pool repair service</a>.</p>
+    <div class="grid">
+      <div class="card">
+        <h3><a href="pool-light-not-working.html">Pool Light Not Working</a></h3>
+        <p>Bulb, GFCI, or fixture? How to tell — and why underwater lights are never DIY.</p>
+        <div class="sym"><i>light out</i><i>GFCI trips</i><i>dim / flickering</i></div>
+        <a class="go" href="pool-light-not-working.html">Read the guide →</a>
+      </div>
+      <div class="card">
+        <h3><a href="pool-heater-wont-stay-lit.html">Heater Won&#x27;t Stay Lit</a></h3>
+        <p>Ignites then quits, short-cycles, or never lights — what to check before calling.</p>
+        <div class="sym"><i>ignition failure</i><i>short cycling</i><i>no heat</i></div>
+        <a class="go" href="pool-heater-wont-stay-lit.html">Read the guide →</a>
+      </div>
+      <div class="card">
+        <h3><a href="salt-cell-not-generating-chlorine.html">Salt Cell Not Making Chlorine</a></h3>
+        <p>Zero chlorine reading with a "working" system — scale, salt level, or a dead cell.</p>
+        <div class="sym"><i>no chlorine</i><i>cell scaled</i><i>low salt</i></div>
+        <a class="go" href="salt-cell-not-generating-chlorine.html">Read the guide →</a>
+      </div>
+      <div class="card">
+        <h3><a href="pool-automation-wont-connect.html">Automation Won&#x27;t Connect</a></h3>
+        <p>App can't find the panel, Wi-Fi drops, or the schedule stopped running.</p>
+        <div class="sym"><i>app offline</i><i>Wi-Fi drops</i><i>no schedule</i></div>
+        <a class="go" href="pool-automation-wont-connect.html">Read the guide →</a>
+      </div>
+    </div>
+  </section>
+
+  </div>
+
+  <div class="empty" id="empty">
+    <b>No guides match that search</b>
+    Try the brand name, the exact code on the display, or call us — we'll diagnose it over the phone at <a href="tel:7273165206">727-316-5206</a>.
+  </div>
+
+  <div class="safety">
+    <h3 class="disp">Before you open anything on the pad</h3>
+    <p>Our guides only include checks that are safe without opening equipment. Anything involving gas, wiring, refrigerant, or a pool light is professional territory — that's not upsell, it's physics. When a guide says stop, stop and call 727-316-5206.</p>
+  </div>
+</div>
+
+<div class="cta-band">
+  <h2 class="disp">Tried the Guide and It's Still Broken?</h2>
+  <p>Tell us the brand, the code, and what it's doing — we'll tell you exactly what's wrong and what it costs to fix. Priority dispatch across Pinellas.</p>
+  <a class="btn btn-primary" href="../../contact-us.html">Request Service</a>
+  <a class="btn btn-primary" style="background:var(--navy);border-color:#062F4F" href="tel:7273165206">☎ 727-316-5206</a>
+</div>
+
+<!--FOOT--><div class="fmap"><iframe title="Perfect Catch location — 13932 Walsingham Rd STE A, Largo, FL" src="https://www.google.com/maps?q=13932%20Walsingham%20Rd%20STE%20A%20Largo%20FL%2033774&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+<footer class="site">
+<div class="f-cols">
+<div class="f-brand">
+<img src="../../assets/logo-full.webp" alt="Perfect Catch — Swimming Pool Repair, Gas &amp; Electric" loading="lazy" decoding="async">
+<h4>License Numbers:</h4>
+<p class="lic"><span>CPC1459998</span><span>CGC1531306</span><span>EC13011994</span><span>LI4527</span></p>
+</div>
+<div><h4>Navigation</h4><ul><li><a href="../../index.html">Home</a></li><li><a href="../../about-us.html">About Us</a></li><li><a href="../../pages/blog/index.html">Blog</a></li><li><a href="../../pages/help/index.html">Troubleshooting</a></li><li><a href="../../pages/areas/index.html">Service Areas</a></li><li><a href="../../contact-us.html">Contact Us</a></li></ul></div>
+<div><h4>Useful Links</h4><ul><li><a href="../../pages/services/index.html">All Services</a></li><li><a href="../../reviews.html">Reviews</a></li><li><a href="../../specials.html">Specials</a></li><li><a href="../../privacy-policy.html">Privacy Policy</a></li><li><a href="../../terms-of-service.html">Terms of Service</a></li><li><a href="../../cookie-policy.html">Cookie Policy</a></li></ul></div>
+<div><h4>Contact</h4>
+<div class="cl"><svg viewBox="0 0 24 24"><path d="M6.62 10.79a15.05 15.05 0 0 0 6.59 6.59l2.2-2.2a1 1 0 0 1 1.02-.24c1.12.37 2.33.57 3.57.57a1 1 0 0 1 1 1V20a1 1 0 0 1-1 1C10.61 21 3 13.39 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.24.2 2.45.57 3.57a1 1 0 0 1-.25 1.02l-2.2 2.2z"/></svg><a href="tel:7273165206">727-316-5206</a></div>
+<div class="cl"><svg viewBox="0 0 24 24"><path d="M12 2a7 7 0 0 0-7 7c0 5.25 7 13 7 13s7-7.75 7-13a7 7 0 0 0-7-7zm0 9.5a2.5 2.5 0 1 1 0-5 2.5 2.5 0 0 1 0 5z"/></svg><span>13932 Walsingham Rd, STE A, Largo, FL, 33774</span></div>
+<div class="cl"><svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20zm1 10.6 4.2 2.5-.8 1.3L11 13V7h2v5.6z"/></svg><span>Monday — Friday: 8:00 AM — 5:00 PM</span></div>
+<div class="soc">
+<a href="https://www.facebook.com/people/Perfect-Catch/61570828732967/" target="_blank" rel="noopener" aria-label="Facebook"><svg viewBox="0 0 24 24"><path d="M13.5 21v-7h2.4l.45-3H13.5V9.1c0-.87.29-1.6 1.62-1.6h1.53V4.85c-.27-.04-1.2-.12-2.28-.12-2.26 0-3.87 1.38-3.87 3.9V11H8.1v3h2.4v7h3z"/></svg></a>
+<a href="https://www.instagram.com/callperfectcatch" target="_blank" rel="noopener" aria-label="Instagram"><svg viewBox="0 0 24 24"><rect x="3.5" y="3.5" width="17" height="17" rx="4.5" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="12" r="4" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="17.2" cy="6.8" r="1.3"/></svg></a>
+<a href="https://www.youtube.com/@Perfectcatchelectric" target="_blank" rel="noopener" aria-label="YouTube"><svg viewBox="0 0 24 24"><path d="M21.58 7.19a2.5 2.5 0 0 0-1.76-1.77C18.25 5 12 5 12 5s-6.25 0-7.82.42A2.5 2.5 0 0 0 2.42 7.2 26.2 26.2 0 0 0 2 12c0 1.62.14 3.23.42 4.81a2.5 2.5 0 0 0 1.76 1.77C5.75 19 12 19 12 19s6.25 0 7.82-.42a2.5 2.5 0 0 0 1.76-1.77c.28-1.58.42-3.19.42-4.81s-.14-3.23-.42-4.81zM10 15.5v-7l5.75 3.5z"/></svg></a>
+<a href="https://www.linkedin.com/company/call-perfect-catch-electric" target="_blank" rel="noopener" aria-label="LinkedIn"><svg viewBox="0 0 24 24"><path d="M4.98 3.5a2.49 2.49 0 1 1 0 4.98 2.49 2.49 0 0 1 0-4.98zM3 9.75h4V21H3zM9.5 9.75h3.83v1.54h.06a4.2 4.2 0 0 1 3.78-2.08c4.04 0 4.78 2.66 4.78 6.12V21H18v-5.06c0-1.21-.02-2.76-1.68-2.76-1.68 0-1.94 1.31-1.94 2.67V21H10.5z"/></svg></a>
+</div>
+</div>
+</div>
+<div class="f-bar">©2026 Perfect Catch Swimming Pool Repair, Gas, &amp; Electric. All rights reserved.</div>
+</footer><!--/FOOT-->
+<div class="sticky-call"><a class="sc-call" href="tel:7273165206">☎ 727-316-5206</a><a class="sc-req" href="../../contact-us.html">Request Service</a></div>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://callperfectcatch.com/"},{"@type":"ListItem","position":2,"name":"Troubleshooting","item":"https://callperfectcatch.com/help/"}]}</script>
+<script>
+(function(){
+  var q=document.getElementById('q'),chips=document.getElementById('chips'),count=document.getElementById('count'),empty=document.getElementById('empty');
+  var cats=[].slice.call(document.querySelectorAll('.cat')),cards=[].slice.call(document.querySelectorAll('.cat .card'));
+  var total=cards.length,active='all';
+  count.textContent='Showing all '+total+' guides';
+  cards.forEach(function(c){c._t=c.textContent.toLowerCase()});
+  function apply(){
+    var term=q.value.trim().toLowerCase(),shown=0;
+    cats.forEach(function(sec){
+      var catOk=active==='all'||sec.dataset.cat===active,vis=0;
+      sec.querySelectorAll('.card').forEach(function(c){
+        var ok=catOk&&(!term||c._t.indexOf(term)>-1);
+        c.style.display=ok?'':'none';if(ok){vis++;shown++}
+      });
+      sec.style.display=vis?'':'none';
+      var s=sec.querySelector('.cat-head span');if(s)s.textContent=vis+(vis===1?' guide':' guides');
+    });
+    empty.style.display=shown?'none':'block';
+    count.textContent=(!term&&active==='all')?'Showing all '+total+' guides':'Showing '+shown+' of '+total+' guides';
+  }
+  q.addEventListener('input',apply);
+  chips.addEventListener('click',function(e){
+    var b=e.target.closest('.chip');if(!b)return;
+    active=b.dataset.cat;
+    chips.querySelectorAll('.chip').forEach(function(c){c.setAttribute('aria-pressed',String(c===b))});
+    apply();
+  });
+})();
+</script>
+</body></html>
