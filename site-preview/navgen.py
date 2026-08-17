@@ -122,4 +122,4 @@ def run():
     print('nav injected into', count, 'pages')
 
 if __name__ == '__main__':
-    run()
+    print('DEPRECATED: nav now ships inside the v2 header — run headergen.py instead.')
