@@ -14,15 +14,27 @@ ABOVE the existing city+category pages:
       -> ../services/outdoor-living.html       (silo — no city page yet)
 
 Facts come from the city's existing pages (display name, county) or are
-true company-wide (licences, 24/7 dispatch, 5.0 rating). The template's
-neighbourhood and review blocks are deliberately NOT rendered: we have no
-verified neighbourhood list or per-city review, and a hub page is a bad
-place to invent either.
+true company-wide (licences, 24/7 dispatch, 5.0 rating).
+
+Every section in the design is built here. Three of them are data-gated,
+matching the template's own showNeighborhoods / showReview / showFaq props:
+a city renders the Neighborhoods band once it has an entry in
+citydata.json, and the review band once it has a real quote there. Nothing
+is invented to fill a section — an empty one simply does not render, which
+is what the design's toggles are for.
+
+  citydata.json   { "<slug>": { "hoods": [...], "review": {...},
+                                "drive": {"miles": n, "minutes": n} } }
+  locdata.py      refreshes the drive figures from OSRM (real road miles)
 """
 import re, pathlib, html, json
 
 HERE = pathlib.Path(__file__).parent
 AREAS = HERE / 'pages' / 'areas'
+
+# Hand-maintained per-city extras. Absent keys just switch their section off.
+DATA = json.loads((HERE / 'citydata.json').read_text()) \
+    if (HERE / 'citydata.json').exists() else {}
 
 # ── per-city facts, read out of the city's own pages ─────────────────────
 def city_facts():
@@ -102,10 +114,30 @@ CSS = """/* loc */
 .loc-links a:hover{color:var(--coral)}
 .loc-all{margin-top:auto;font-family:var(--disp);font-size:13px;letter-spacing:.6px;text-transform:uppercase;color:var(--coral);text-decoration:none}
 .loc-all:hover{color:var(--navy)}
+.loc-hoods{position:relative;background:var(--cream);padding:74px 0;overflow:hidden}
+.loc-hoods::before{content:"";position:absolute;right:-120px;top:-110px;width:420px;height:420px;border-radius:50%;background:rgba(0,61,106,.1);pointer-events:none}
+.loc-hoods .wrap{position:relative;max-width:1180px;margin:0 auto;padding:0 24px}
+.loc-hoods .eyebrow{display:inline-flex;align-items:center;gap:9px;font-family:var(--disp);font-size:13px;letter-spacing:1.6px;text-transform:uppercase;color:var(--red);margin-bottom:10px}
+.loc-hoods .lede{font-size:16.5px;line-height:1.6;color:#4A3A28;margin:0 0 30px;max-width:56ch;text-wrap:pretty}
+.loc-hoodgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(210px,1fr));gap:12px}
+.loc-hoodgrid span{display:flex;align-items:center;gap:10px;background:#fff;border-radius:12px;padding:14px 16px;font-size:15px;font-weight:500;color:var(--ink);box-shadow:0 3px 10px rgba(74,58,40,.12)}
+.loc-hoodgrid span::before{content:"";flex:none;width:9px;height:9px;border-radius:50%;background:var(--teal,#42BE9F)}
+.loc-near{display:flex;flex-wrap:wrap;align-items:center;gap:6px 14px;margin:26px 0 0;font-size:15px;color:#4A3A28}
+.loc-near a{color:var(--red);font-weight:700;text-decoration:none}
+.loc-near a:hover{text-decoration:underline}
+.loc-near i{color:rgba(74,58,40,.5);font-style:normal}
+.loc-review{background:var(--navy-d);color:#fff;padding:70px 0;text-align:center}
+.loc-review .wrap{max-width:860px;margin:0 auto;padding:0 24px}
+.loc-review .stars{margin:0 0 20px;color:var(--cream);font-size:19px;letter-spacing:2px}
+.loc-review blockquote{font-family:var(--disp);font-size:clamp(21px,2.6vw,30px);line-height:1.3;text-transform:uppercase;letter-spacing:.4px;color:#fff;margin:0 0 20px;text-wrap:pretty}
+.loc-review cite{display:block;font-size:14.5px;color:#9FB9CC;font-style:normal}
+@media(max-width:640px){.loc-hoods{padding:56px 0}.loc-review{padding:54px 0}}
 /* /loc */"""
 
 def build(slug, f, facts):
     name, county = f['name'], f['county']
+    d = DATA.get(slug, {})
+    drive = d.get('drive') or {}
     cards = ''
     for c in CATS:
         # the city-specific page when one exists, else the category silo
@@ -117,11 +149,51 @@ def build(slug, f, facts):
                   f'<div class="loc-links">{links}</div>'
                   f'<a class="loc-all" href="{target}">{all_label} &rarr;</a></div>')
 
+    # The design leads on distance from the shop. Use the real road figure
+    # where locdata.py has measured one; fall back to the licence count so
+    # the panel never shows an invented number.
+    eyebrow = (f'{drive["minutes"]} Minutes From Our Largo Shop' if drive.get('minutes')
+               else f'{county} County &middot; Licensed Pool, Electric &amp; Gas')
+    lead = ((f'{drive["miles"]} mi', 'From our Largo shop — no travel surcharge')
+            if drive.get('miles')
+            else ('4', 'Active licences — pool, electric, gas, construction'))
     proof = ''.join(f'<div class="silo-stat"><b>{v}</b><span>{t}</span></div>' for v, t in [
-        ('4', 'Active licences — pool, electric, gas, construction'),
+        lead,
         ('4', 'Service lines under one roof, one invoice'),
         ('24/7', 'Emergency dispatch for power and gas calls'),
         ('5.0', 'Google rating from Pinellas homeowners')])
+
+    # ── Neighborhoods band — renders only for cities with a real list ────
+    hoods = d.get('hoods') or []
+    near = [n for n in (d.get('near') or []) if n in facts]
+    hood_html = ''
+    if hoods:
+        chips = ''.join(f'<span>{html.escape(n)}</span>' for n in hoods)
+        nearline = ''
+        if near:
+            links = '<i>&middot;</i>'.join(
+                f'<a href="{n}-fl.html">{html.escape(facts[n]["name"])}</a>' for n in near)
+            nearline = f'<p class="loc-near">Nearby cities we also cover: {links}</p>'
+        hood_html = f'''
+<section class="loc-hoods"><div class="wrap">
+<span class="eyebrow">Inside {name}</span>
+<h2 class="silo-h2">Neighborhoods We Cover</h2>
+<p class="lede">If you are inside the city limits or just over the line, you are on the route.</p>
+<div class="loc-hoodgrid">{chips}</div>{nearline}
+</div></section>
+'''
+
+    # ── Review band — a real quote or nothing at all ─────────────────────
+    rev = d.get('review') or {}
+    rev_html = ''
+    if rev.get('quote'):
+        rev_html = f'''
+<section class="loc-review"><div class="wrap">
+<p class="stars" aria-label="5 out of 5 stars">&#9733;&#9733;&#9733;&#9733;&#9733;</p>
+<blockquote>&ldquo;{html.escape(rev["quote"])}&rdquo;</blockquote>
+<cite>{html.escape(rev.get("source", f"Verified Google review — {name}, FL"))}</cite>
+</div></section>
+'''
 
     faqs = [
       (f'How soon can someone get to {name}?',
@@ -145,7 +217,7 @@ def build(slug, f, facts):
 
     return f'''<section class="silo-hero"><div class="silo-hin"><div>
 <p class="silo-crumb"><a href="../../index.html">Home</a><span>/</span><a href="index.html">Service Areas</a><span>/</span><b>{name}</b></p>
-<span class="silo-eyebrow">{county} County &middot; Licensed Pool, Electric &amp; Gas</span>
+<span class="silo-eyebrow">{eyebrow}</span>
 <h1>Pool, Electrical &amp; Gas Service in {name}, FL</h1>
 <p class="silo-lede">One licensed crew for the whole property — pool equipment, panels and
 wiring, gas lines, and outdoor living builds. {name} {ROUTE[county]}, so most calls land
@@ -181,6 +253,7 @@ contractor and a second week of waiting.</p>
 <img class="silo-photo" src="../../assets/photo-van-home.jpg" alt="Perfect Catch service van on a {name} job" loading="lazy">
 </div></section>
 
+{hood_html}{rev_html}
 <section class="silo-faq"><div class="wrap"><h2 class="silo-h2">{name} Service Questions</h2>{faq}</div></section>
 
 <section class="silo-cta" id="contact"><div class="silo-wave"><svg viewBox="0 0 1440 120" preserveAspectRatio="none"><path d="M0,14 C170,74 330,92 530,66 C710,42 870,100 1070,88 C1230,78 1350,42 1440,24 L1440,0 L0,0 Z" fill="#fff" opacity=".35"></path><path d="M0,50 C180,18 340,70 540,78 C740,86 900,48 1080,40 C1240,33 1360,58 1440,44 L1440,0 L0,0 Z" fill="#fff"></path></svg></div>

@@ -1,0 +1,66 @@
+{
+ "apollo-beach": {
+  "drive": {
+   "miles": 43,
+   "minutes": 65
+  }
+ },
+ "belleair": {
+  "drive": {
+   "miles": 4,
+   "minutes": 9
+  }
+ },
+ "belleair-bluffs": {
+  "drive": {
+   "miles": 3,
+   "minutes": 7
+  }
+ },
+ "citrus-park": {
+  "drive": {
+   "miles": 30,
+   "minutes": 47
+  }
+ },
+ "clearwater": {
+  "drive": {
+   "miles": 6,
+   "minutes": 15
+  },
+  "hoods": [
+   "Island Estates",
+   "Clearwater Beach",
+   "Sand Key",
+   "Countryside",
+   "Morningside",
+   "Feather Sound",
+   "Skycrest",
+   "Del Oro Groves"
+  ]
+ },
+ "dunedin": {
+  "drive": {
+   "miles": 10,
+   "minutes": 22
+  }
+ },
+ "east-lake": {
+  "drive": {
+   "miles": 24,
+   "minutes": 41
+  }
+ },
+ "egypt-lake-leto": {
+  "drive": {
+   "miles": 26,
+   "minutes": 42
+  }
+ },
+ "gulfport": {
+  "drive": {
+   "miles": 16,
+   "minutes": 31
+  }
+ }
+}

@@ -270,9 +270,27 @@ footer.site a:hover{color:#FEDFAE;text-decoration:underline}
 .loc-links a:hover{color:var(--coral)}
 .loc-all{margin-top:auto;font-family:var(--disp);font-size:13px;letter-spacing:.6px;text-transform:uppercase;color:var(--coral);text-decoration:none}
 .loc-all:hover{color:var(--navy)}
+.loc-hoods{position:relative;background:var(--cream);padding:74px 0;overflow:hidden}
+.loc-hoods::before{content:"";position:absolute;right:-120px;top:-110px;width:420px;height:420px;border-radius:50%;background:rgba(0,61,106,.1);pointer-events:none}
+.loc-hoods .wrap{position:relative;max-width:1180px;margin:0 auto;padding:0 24px}
+.loc-hoods .eyebrow{display:inline-flex;align-items:center;gap:9px;font-family:var(--disp);font-size:13px;letter-spacing:1.6px;text-transform:uppercase;color:var(--red);margin-bottom:10px}
+.loc-hoods .lede{font-size:16.5px;line-height:1.6;color:#4A3A28;margin:0 0 30px;max-width:56ch;text-wrap:pretty}
+.loc-hoodgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(210px,1fr));gap:12px}
+.loc-hoodgrid span{display:flex;align-items:center;gap:10px;background:#fff;border-radius:12px;padding:14px 16px;font-size:15px;font-weight:500;color:var(--ink);box-shadow:0 3px 10px rgba(74,58,40,.12)}
+.loc-hoodgrid span::before{content:"";flex:none;width:9px;height:9px;border-radius:50%;background:var(--teal,#42BE9F)}
+.loc-near{display:flex;flex-wrap:wrap;align-items:center;gap:6px 14px;margin:26px 0 0;font-size:15px;color:#4A3A28}
+.loc-near a{color:var(--red);font-weight:700;text-decoration:none}
+.loc-near a:hover{text-decoration:underline}
+.loc-near i{color:rgba(74,58,40,.5);font-style:normal}
+.loc-review{background:var(--navy-d);color:#fff;padding:70px 0;text-align:center}
+.loc-review .wrap{max-width:860px;margin:0 auto;padding:0 24px}
+.loc-review .stars{margin:0 0 20px;color:var(--cream);font-size:19px;letter-spacing:2px}
+.loc-review blockquote{font-family:var(--disp);font-size:clamp(21px,2.6vw,30px);line-height:1.3;text-transform:uppercase;letter-spacing:.4px;color:#fff;margin:0 0 20px;text-wrap:pretty}
+.loc-review cite{display:block;font-size:14.5px;color:#9FB9CC;font-style:normal}
+@media(max-width:640px){.loc-hoods{padding:56px 0}.loc-review{padding:54px 0}}
 /* /loc */
 /* v2 header */
-.topbar,.hdr,.mmenu{--coral:#F24E45;--coral-d:#DD4A43;--red:#A7130C;--navy:#003D6A;--navy-d:#052B49;--teal:#42BE9F;--teal-lt:#8FE3CC;--cream:#FEDFAE;--sky:#E6F4FF;--sand:#FFF5E6;--ink:#001E33;--body:#3F444B;--muted:#706F6F;--disp:'Burbank Big',Impact,sans-serif;--txt:'Sofia Sans',Arial,sans-serif}
+:root{--coral:#F24E45;--coral-d:#DD4A43;--red:#A7130C;--navy:#003D6A;--navy-d:#052B49;--teal:#42BE9F;--teal-lt:#8FE3CC;--cream:#FEDFAE;--sky:#E6F4FF;--sand:#FFF5E6;--ink:#001E33;--body:#3F444B;--muted:#706F6F;--disp:'Burbank Big',Impact,sans-serif;--txt:'Sofia Sans',Arial,sans-serif}
 .skip{position:fixed;top:-60px;left:16px;z-index:500;background:var(--navy);color:#fff;font-family:var(--disp);font-weight:700;text-transform:uppercase;font-size:13px;padding:12px 18px;border-radius:0 0 10px 10px;text-decoration:none;transition:top .2s}
 .skip:focus{top:0;color:#fff}
 .topbar{background:var(--navy);color:#fff}
@@ -432,7 +450,7 @@ footer.site a:hover{color:#FEDFAE;text-decoration:underline}
 <!-- HERO -->
 <section class="silo-hero"><div class="silo-hin"><div>
 <p class="silo-crumb"><a href="../../index.html">Home</a><span>/</span><a href="index.html">Service Areas</a><span>/</span><b>Dunedin</b></p>
-<span class="silo-eyebrow">Pinellas County &middot; Licensed Pool, Electric &amp; Gas</span>
+<span class="silo-eyebrow">22 Minutes From Our Largo Shop</span>
 <h1>Pool, Electrical &amp; Gas Service in Dunedin, FL</h1>
 <p class="silo-lede">One licensed crew for the whole property — pool equipment, panels and
 wiring, gas lines, and outdoor living builds. Dunedin is on our daily Pinellas route out of the Largo shop, so most calls land
@@ -441,7 +459,7 @@ same-day or next-day.</p>
 <a class="btn btn-primary" href="tel:7273165206">Call 727-316-5206</a>
 <a class="btn btn-white" href="../../index.html#contact">Request Service</a></div>
 </div>
-<div class="silo-proof"><h2>Dunedin At A Glance</h2><div><div class="silo-stat"><b>4</b><span>Active licences — pool, electric, gas, construction</span></div><div class="silo-stat"><b>4</b><span>Service lines under one roof, one invoice</span></div><div class="silo-stat"><b>24/7</b><span>Emergency dispatch for power and gas calls</span></div><div class="silo-stat"><b>5.0</b><span>Google rating from Pinellas homeowners</span></div></div></div>
+<div class="silo-proof"><h2>Dunedin At A Glance</h2><div><div class="silo-stat"><b>10 mi</b><span>From our Largo shop — no travel surcharge</span></div><div class="silo-stat"><b>4</b><span>Service lines under one roof, one invoice</span></div><div class="silo-stat"><b>24/7</b><span>Emergency dispatch for power and gas calls</span></div><div class="silo-stat"><b>5.0</b><span>Google rating from Pinellas homeowners</span></div></div></div>
 </div></section>
 
 <section class="loc-cats"><div class="wrap">
@@ -467,6 +485,7 @@ contractor and a second week of waiting.</p>
 </div>
 <img class="silo-photo" src="../../assets/photo-van-home.jpg" alt="Perfect Catch service van on a Dunedin job" loading="lazy">
 </div></section>
+
 
 <section class="silo-faq"><div class="wrap"><h2 class="silo-h2">Dunedin Service Questions</h2><details><summary>How soon can someone get to Dunedin?</summary><p>Dunedin is on our daily Pinellas route out of the Largo shop, so most calls are same-day or next-day. No power at the equipment pad, a gas smell, or a flooded pad gets dispatched after hours.</p></details><details><summary>Do you pull Pinellas County permits?</summary><p>Yes. Heater installs, panel work, gas lines and outdoor builds are permitted and inspected under our own licences, never a subcontractor&rsquo;s.</p></details><details><summary>Can one visit cover pool and electrical work?</summary><p>That is the point of holding four licences. A pump replacement plus a bonding correction or a new sub-panel happens on one visit, on one invoice.</p></details><details><summary>Do you use subcontractors?</summary><p>No. The tech who shows up works here, and the same company carries the pool, electrical, gas and construction licences the job needs.</p></details></div></section>
 

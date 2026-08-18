@@ -55,8 +55,14 @@ def extract():
 
 HEADER, MMENU, CSS, DEFS, JS = extract()
 
-# header CSS references v2 :root vars that inner pages don't define — scope them
-VARS = (".topbar,.hdr,.mmenu{--coral:#F24E45;--coral-d:#DD4A43;--red:#A7130C;--navy:#003D6A;"
+# The v2 design tokens. Inner pages carry an OLDER :root set (--text,
+# --red-deep, --muted) and are missing every new name, so these must land on
+# :root, not on the header selector — page CSS built from the design system
+# uses var(--disp)/var(--ink)/var(--body) throughout, and scoping them to
+# .topbar,.hdr,.mmenu silently dropped headings to the body font and killed
+# the design colours on all 215 inner pages. Emitted before the page's own
+# :root so anything a page redefines still wins.
+VARS = (":root{--coral:#F24E45;--coral-d:#DD4A43;--red:#A7130C;--navy:#003D6A;"
         "--navy-d:#052B49;--teal:#42BE9F;--teal-lt:#8FE3CC;--cream:#FEDFAE;--sky:#E6F4FF;"
         "--sand:#FFF5E6;--ink:#001E33;--body:#3F444B;--muted:#706F6F;"
         "--disp:'Burbank Big',Impact,sans-serif;--txt:'Sofia Sans',Arial,sans-serif}\n")

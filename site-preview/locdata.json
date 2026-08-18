@@ -1,0 +1,117 @@
+{
+ "apollo-beach": {
+  "coords": [
+   27.7741547,
+   -82.4062097
+  ],
+  "done": true,
+  "drive": {
+   "miles": 43,
+   "minutes": 65
+  },
+  "hoods": []
+ },
+ "belleair": {
+  "coords": [
+   27.9358543,
+   -82.8062139
+  ],
+  "drive": {
+   "miles": 4,
+   "minutes": 9
+  }
+ },
+ "belleair-bluffs": {
+  "coords": [
+   27.9214103,
+   -82.8170475
+  ],
+  "done": true,
+  "drive": {
+   "miles": 3,
+   "minutes": 7
+  },
+  "hoods": []
+ },
+ "citrus-park": {
+  "coords": [
+   28.0783497,
+   -82.5698192
+  ],
+  "drive": {
+   "miles": 30,
+   "minutes": 47
+  }
+ },
+ "clearwater": {
+  "coords": [
+   27.9658533,
+   -82.8001026
+  ],
+  "done": true,
+  "drive": {
+   "miles": 6,
+   "minutes": 15
+  },
+  "hoods": [
+   "Bayside Arbors",
+   "Town Place",
+   "Sunfish Bay",
+   "Harbour Towne",
+   "Avana Coachman",
+   "Sherwood Gardens",
+   "Hacienda Gardens Scientology Berthing",
+   "Imperial Pines",
+   "The Estates at Countryside"
+  ]
+ },
+ "dunedin": {
+  "coords": [
+   28.0116627,
+   -82.7893788
+  ],
+  "done": true,
+  "drive": {
+   "miles": 10,
+   "minutes": 22
+  },
+  "hoods": [
+   "Dunedin Isles",
+   "Harbor View",
+   "Golden Crest",
+   "Heath Side Villas",
+   "Highland Woods",
+   "Victoria Palms"
+  ]
+ },
+ "east-lake": {
+  "coords": [
+   28.1089,
+   -82.6877484
+  ],
+  "drive": {
+   "miles": 24,
+   "minutes": 41
+  }
+ },
+ "egypt-lake-leto": {
+  "coords": [
+   28.0167465,
+   -82.5059159
+  ],
+  "drive": {
+   "miles": 26,
+   "minutes": 42
+  }
+ },
+ "gulfport": {
+  "coords": [
+   27.7483613,
+   -82.7034334
+  ],
+  "drive": {
+   "miles": 16,
+   "minutes": 31
+  }
+ }
+}
