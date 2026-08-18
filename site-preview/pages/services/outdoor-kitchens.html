@@ -249,6 +249,55 @@ footer.site a:hover{color:#FEDFAE;text-decoration:underline}
 .mega a:hover{background:rgba(255,255,255,.08);color:var(--cream)}
 .mega .van{width:100%;height:auto;display:block;filter:drop-shadow(0 14px 22px rgba(0,10,25,.45))}
 @media (max-width:1180px){.mega{padding:22px 24px 24px}.mega-in{grid-template-columns:1fr 1fr}.mega .van{display:none}}
+/* ── mega menu v2 (design pull 2026-08-18): one continuous panel, sections
+   crossfade under a sliding indicator, persistent CTA rail ───────────── */
+.hdr.open{z-index:120}
+.mm-nav{display:flex;align-items:stretch;gap:2px;flex:0 1 auto;min-width:0;justify-content:flex-end;position:relative}
+.mm-top{appearance:none;background:none;border:0;cursor:pointer;font-family:var(--disp);font-weight:700;font-size:14.5px;letter-spacing:.5px;text-transform:uppercase;color:#fff;padding:0 12px;display:inline-flex;align-items:center;gap:7px;height:52px;white-space:nowrap;transition:color .15s;text-decoration:none}
+.mm-top .car{width:12px;height:12px;fill:none;stroke:var(--teal);stroke-width:3;stroke-linecap:round;stroke-linejoin:round;transition:transform .22s,stroke .15s}
+.mm-top:hover,.mm-top.on{color:var(--cream)}
+.mm-top.on .car{transform:rotate(180deg);stroke:var(--cream)}
+.mm-ink{position:absolute;bottom:0;height:4px;background:var(--coral);border-radius:3px 3px 0 0;transition:left .32s cubic-bezier(.4,.05,.15,1),width .32s cubic-bezier(.4,.05,.15,1),opacity .2s;opacity:0;pointer-events:none;left:0;width:0}
+.hdr.open .mm-ink{opacity:1}
+.mm-panel{position:absolute;left:0;right:0;top:100%;background:var(--navy-d);color:#fff;box-shadow:0 26px 50px rgba(0,16,32,.4);border-top:1px solid rgba(255,255,255,.1);opacity:0;visibility:hidden;transform:translateY(-14px);transition:opacity .26s ease,transform .3s cubic-bezier(.3,.05,.2,1),visibility .26s}
+.hdr.open .mm-panel{opacity:1;visibility:visible;transform:translateY(0)}
+.mm-panel::before{content:"";position:absolute;inset:0;background:radial-gradient(680px 260px at 18% 0%,rgba(66,190,159,.16),transparent 70%);pointer-events:none}
+.mm-inner{position:relative;max-width:1280px;margin:0 auto;padding:0 24px;display:grid;grid-template-columns:1fr minmax(352px,382px);gap:0}
+.mm-stage{position:relative;padding:28px 46px 30px 0;height:330px;transition:height .3s cubic-bezier(.3,.05,.2,1)}
+.mm-sec{position:absolute;left:0;right:46px;top:28px;bottom:30px;opacity:0;transform:translateX(14px);transition:opacity .24s ease,transform .3s cubic-bezier(.3,.05,.2,1);pointer-events:none;display:grid;grid-template-columns:repeat(3,1fr);gap:6px 30px;align-content:space-between}
+.mm-sec.on{opacity:1;transform:none;pointer-events:auto}
+.mm-col{display:flex;flex-direction:column}
+.mm-col h4{font-family:var(--disp);font-size:13px;letter-spacing:1.3px;text-transform:uppercase;color:var(--teal);margin:0 0 12px;padding-bottom:9px;border-bottom:1px solid rgba(255,255,255,.14)}
+.mm-link{display:flex;align-items:flex-start;gap:10px;font-family:var(--txt);font-size:14.5px;font-weight:500;color:#fff;text-decoration:none;padding:7px 8px 7px 2px;border-radius:8px;transition:background .15s,color .15s,padding-left .15s}
+.mm-link::before{content:"";flex:none;width:7px;height:7px;background:var(--coral);margin-top:7px;transition:background .15s}
+.mm-link:hover{background:rgba(255,255,255,.08);color:var(--cream);padding-left:7px}
+.mm-link:hover::before{background:var(--teal)}
+.mm-link small{display:block;font-size:12px;font-weight:400;color:#9FB9CC;margin-top:2px;line-height:1.35}
+.mm-link>span{display:block;min-width:0}
+.mm-foot{grid-column:1/-1;display:block;margin-top:16px;padding-top:15px;border-top:1px solid rgba(255,255,255,.13);font-size:13.5px;line-height:1.5;color:#9FB9CC}
+.mm-foot a{color:var(--teal);font-weight:700;text-decoration:none}
+.mm-foot a:hover{color:var(--cream)}
+.mm-cta{position:relative;background:linear-gradient(168deg,#0A4A7A,var(--navy) 58%,var(--navy-d));border-left:1px solid rgba(255,255,255,.12);padding:24px 34px 28px;display:flex;flex-direction:column;justify-content:center;overflow:hidden}
+.mm-cta-in{display:flex;flex-direction:column}
+.mm-cta::after{content:"";position:absolute;left:0;right:0;bottom:0;height:5px;background:var(--coral)}
+.mm-cta .van{width:210px;height:auto;display:block;margin:-6px -30px 6px auto;filter:drop-shadow(0 14px 22px rgba(0,10,25,.5));pointer-events:none}
+.mm-cta .rate{display:inline-flex;align-items:center;gap:7px;font-size:13px;color:#D6E4EF;margin:0 0 10px}
+.mm-cta .rate .stars{display:inline-flex;gap:2px;color:var(--cream)}
+.mm-cta .rate svg{width:13px;height:13px;fill:currentColor}
+.mm-cta .rate b{color:#fff}
+.mm-cta h3{font-family:var(--disp);font-size:25px;line-height:1.06;text-transform:uppercase;color:var(--cream);margin:0 0 9px;letter-spacing:.4px;max-width:15ch}
+.mm-cta p{font-size:13.5px;line-height:1.55;color:#C9DCEA;margin:0 0 16px;max-width:32ch}
+.mm-cta .stack{display:grid;gap:11px;justify-items:stretch}
+.mm-cta .stack .mmbtn{justify-content:center;font-size:14.5px;padding:15px 18px 13px}
+.mm-cta .hours{display:flex;align-items:center;gap:9px;font-size:12.5px;color:#9FB9CC;margin:14px 0 0}
+.mm-cta .hours a{color:var(--cream);font-weight:700;text-decoration:none}
+.mm-cta .hours a:hover{color:#fff}
+.mm-cta .hours svg{width:15px;height:15px;fill:var(--teal);flex:none}
+@media (max-width:1180px){.mm-sec{grid-template-columns:repeat(2,1fr);row-gap:26px}}
+@media (max-width:1090px){.mm-top{font-size:13.5px;padding:0 9px;height:48px}}
+@media (max-width:980px){.mm-inner{grid-template-columns:1fr}.mm-cta{border-left:0;border-top:1px solid rgba(255,255,255,.12);padding-top:22px}.mm-cta .van{margin:-4px auto 8px;width:190px}.mm-stage{padding-right:0;height:auto!important}.mm-sec{position:static;right:0;bottom:auto;opacity:1;transform:none;pointer-events:auto;display:none}.mm-sec.on{display:grid}}
+@media (max-width:900px){.mm-nav{display:none}.mm-panel{display:none}}
+@media (prefers-reduced-motion:reduce){.mm-ink,.mm-panel,.mm-sec,.mm-top .car{transition:none}}
 /* /v2 header */</style></head><body>
 
 <!-- HEADER -->
@@ -270,9 +319,10 @@ footer.site a:hover{color:#FEDFAE;text-decoration:underline}
 </div>
 <button class="burger" id="burger" aria-label="Open menu" aria-expanded="false" aria-controls="mmenu"><svg class="ico" aria-hidden="true"><use href="#i-menu"/></svg></button>
 </div>
-<nav class="nav" aria-label="Main"><div class="has-mega"><a class="top" href="../../pages/services/index.html#pool" aria-haspopup="true">Pool Repair <svg class="ico st car" aria-hidden="true"><use href="#i-chev"/></svg></a><div class="mega"><h4>Pool Repair Services</h4><div class="mega-in"><div class="mega-col"><a href="../../pages/services/swimming-pool-repair.html">Pool Repair</a><a href="../../pages/services/pool-pump-repair-installation.html">Pool Pump Repair &amp; Installation</a><a href="../../pages/services/pool-heater-repair-installation.html">Pool Heater &amp; Heat Pump Repair</a><a href="../../pages/services/pool-cleaning.html">Pool Cleaning Service</a><a href="../../pages/services/pool-leak-detection.html">Pool Leak Detection</a><a href="../../pages/services/pool-filter-repair-and-installation.html">Pool Filter Repair &amp; Replacement</a><a href="../../pages/services/salt-water-chlorinator-installation-repair.html">Salt System &amp; Salt Cell Repair</a><a href="../../pages/services/pool-automation-systems-installation-upgrades.html">Pool Automation</a><a href="../../pages/services/pool-light-repair.html">Pool Light Replacement &amp; Repair</a></div><div class="mega-col"><a href="../../pages/services/pool-electrical-repair-installation.html">Pool Electrician</a><a href="../../pages/services/pool-equipment-installation-upgrades.html">Pool Equipment Installation &amp; Upgrades</a><a href="../../pages/services/pool-resurfacing.html">Pool Resurfacing</a><a href="../../pages/services/pool-remodeling.html">Pool Remodeling</a><a href="../../pages/services/pool-acid-wash.html">Pool Acid Wash</a><a href="../../pages/services/emergency-pool-service.html">Emergency Pool Repair</a><a href="../../pages/services/pool-care-memberships.html">Pool Maintenance Plans</a><a href="../../pages/services/pool-builders.html">For Pool Builders</a><a href="../../pages/help/index.html">Troubleshooting Guides</a></div><img class="van" src="../../assets/van-side.png" alt="Perfect Catch service van" loading="lazy" decoding="async"></div></div></div><div class="has-mega"><a class="top" href="../../pages/services/index.html#electric" aria-haspopup="true">Electrical <svg class="ico st car" aria-hidden="true"><use href="#i-chev"/></svg></a><div class="mega"><h4>Electrical Services</h4><div class="mega-in"><div class="mega-col"><a href="../../pages/services/electrician.html">Electrician</a><a href="../../pages/services/electrical-panel-upgrade-replacement.html">Panel Upgrades &amp; Replacement</a><a href="../../pages/services/surge-protection.html">Surge Protection</a><a href="../../pages/services/emergency-electrician.html">Emergency Electrician</a><a href="../../pages/services/lighting-ceiling-fan-installation.html">Lighting &amp; Ceiling Fans</a><a href="../../pages/services/smoke-detector-installation.html">Smoke Detector Installation</a></div><div class="mega-col"><a href="../../pages/services/house-rewiring.html">House Rewiring</a><a href="../../pages/services/electrical-safety-inspection.html">Electrical Safety Inspection</a><a href="../../pages/services/ev-charger-installation.html">EV Charger Installation</a><a href="../../pages/services/whole-house-generator-installation-repair.html">Whole House Generators</a><a href="../../pages/services/commercial-electrician.html">Commercial Electrician</a><a href="../../pages/services/marine-electricians.html">Marine &amp; Dock Electrician</a></div><img class="van" src="../../assets/van-side.png" alt="Perfect Catch service van" loading="lazy" decoding="async"></div></div></div><div class="has-mega"><a class="top" href="../../pages/services/index.html#gas" aria-haspopup="true">Gas <svg class="ico st car" aria-hidden="true"><use href="#i-chev"/></svg></a><div class="mega"><h4>Gas Services</h4><div class="mega-in"><div class="mega-col"><a href="../../pages/services/gas-services.html">Gas Services</a><a href="../../pages/services/gas-leak-detection-repair.html">Gas Leak Detection &amp; Repair</a><a href="../../pages/services/gas-line-installation.html">Gas Line Installation &amp; Hookups</a><a href="../../pages/services/propane-tank-installation.html">Propane Tank Installation</a><a href="../../pages/services/pool-heater-repair-installation.html">Gas Pool Heaters</a></div><div class="mega-col"><a href="../../pages/services/whole-house-generator-installation-repair.html">Generators + Gas Line</a><a href="../../pages/services/outdoor-kitchens.html">Outdoor Kitchen Gas Lines</a><a href="../../pages/services/gas-line-installation.html">Fire Pits &amp; Grill Hookups</a><a href="../../pages/services/propane-tank-installation.html">Whole-Home Propane</a></div><img class="van" src="../../assets/van-side.png" alt="Perfect Catch service van" loading="lazy" decoding="async"></div></div></div><div><a class="top" href="../../pages/services/index.html#outdoor" aria-haspopup="true">Outdoor <svg class="ico st car" aria-hidden="true"><use href="#i-chev"/></svg></a><div class="dd"><a href="../../pages/services/outdoor-landscape-lighting-installation.html">Landscape Lighting</a><a href="../../pages/services/outdoor-living.html">Outdoor Living</a><a href="../../pages/services/pavers-and-driveways.html">Pavers &amp; Driveways</a><a href="../../pages/services/outdoor-kitchens.html">Outdoor Kitchens</a><a href="../../pages/services/pool-fence.html">Pool Fence</a><a href="../../pages/services/artificial-turf.html">Artificial Turf</a></div></div><div><a class="top" href="../../about-us.html" aria-haspopup="true">About <svg class="ico st car" aria-hidden="true"><use href="#i-chev"/></svg></a><div class="dd"><a href="../../about-us.html">About Us</a><a href="../../reviews.html">Reviews</a><a href="../../specials.html">Specials</a><a href="../../referral-program.html">Referral Program</a><a href="../../giving-back.html">Giving Back</a><a href="../../pages/blog/index.html">Blog</a></div></div><div><a class="top" href="../../pages/areas/index.html">Service Areas</a></div><div><a class="top" href="../../contact-us.html">Contact</a></div></nav>
+<nav class="mm-nav" id="mmNav" aria-label="Main"><button class="mm-top" data-sec="pool" aria-expanded="false">Pool Repair <svg class="car" aria-hidden="true"><use href="#i-chev"/></svg></button><button class="mm-top" data-sec="electric" aria-expanded="false">Electrical <svg class="car" aria-hidden="true"><use href="#i-chev"/></svg></button><button class="mm-top" data-sec="gas" aria-expanded="false">Gas <svg class="car" aria-hidden="true"><use href="#i-chev"/></svg></button><button class="mm-top" data-sec="outdoor" aria-expanded="false">Outdoor <svg class="car" aria-hidden="true"><use href="#i-chev"/></svg></button><button class="mm-top" data-sec="company" aria-expanded="false">About <svg class="car" aria-hidden="true"><use href="#i-chev"/></svg></button><a class="mm-top" href="../../pages/areas/index.html">Service Areas</a><a class="mm-top" href="../../contact-us.html">Contact</a><span class="mm-ink" id="mmInk" aria-hidden="true"></span></nav>
 </div>
 </header>
+<div class="mm-panel" id="mmPanel"><div class="mm-inner"><div class="mm-stage"><div class="mm-sec" data-sec="pool"><div class="mm-col"><h4>Equipment Repair</h4><a class="mm-link" href="../../pages/services/pool-pump-repair-installation.html">Pool Pump Repair &amp; Installation</a><a class="mm-link" href="../../pages/services/pool-filter-repair-and-installation.html">Pool Filter Repair &amp; Replacement</a><a class="mm-link" href="../../pages/services/pool-heater-repair-installation.html">Pool Heater &amp; Heat Pump Repair</a><a class="mm-link" href="../../pages/services/salt-water-chlorinator-installation-repair.html">Salt System &amp; Salt Cell Repair</a><a class="mm-link" href="../../pages/services/pool-light-repair.html">Pool Light Replacement</a><a class="mm-link" href="../../pages/services/pool-electrical-repair-installation.html">Pool Electrician</a></div><div class="mm-col"><h4>Install &amp; Upgrade</h4><a class="mm-link" href="../../pages/services/pool-equipment-installation-upgrades.html">Equipment Installation</a><a class="mm-link" href="../../pages/services/pool-automation-systems-installation-upgrades.html">Pool Automation</a><a class="mm-link" href="../../pages/services/pool-resurfacing.html">Pool Resurfacing</a><a class="mm-link" href="../../pages/services/pool-remodeling.html">Pool Remodeling</a><a class="mm-link" href="../../pages/services/pool-acid-wash.html">Pool Acid Wash</a><a class="mm-link" href="../../pages/services/pool-builders.html"><span>For Pool Builders<small>Bond, electrical, automation &amp; gas</small></span></a></div><div class="mm-col"><h4>Service &amp; Diagnostics</h4><a class="mm-link" href="../../pages/services/swimming-pool-repair.html">All Pool Repair</a><a class="mm-link" href="../../pages/services/pool-leak-detection.html">Pool Leak Detection</a><a class="mm-link" href="../../pages/services/pool-cleaning.html">Pool Cleaning Service</a><a class="mm-link" href="../../pages/services/emergency-pool-service.html">Emergency Pool Repair</a><a class="mm-link" href="../../pages/services/pool-care-memberships.html">Pool Maintenance Plans</a><a class="mm-link" href="../../pages/help/index.html"><span>Troubleshooting Guides<small>Fix-it articles by symptom</small></span></a></div><p class="mm-foot">Not sure what&rsquo;s failing? <a href="../../pages/help/index.html">Start with the symptom finder</a> &mdash; or call and we&rsquo;ll talk it through.</p></div><div class="mm-sec" data-sec="electric"><div class="mm-col"><h4>Service &amp; Power</h4><a class="mm-link" href="../../pages/services/electrician.html">Electrician</a><a class="mm-link" href="../../pages/services/electrical-panel-upgrade-replacement.html">Panel Upgrades &amp; Replacement</a><a class="mm-link" href="../../pages/services/house-rewiring.html">House Rewiring</a><a class="mm-link" href="../../pages/services/surge-protection.html">Surge Protection</a><a class="mm-link" href="../../pages/services/whole-house-generator-installation-repair.html">Whole House Generators</a></div><div class="mm-col"><h4>Install</h4><a class="mm-link" href="../../pages/services/ev-charger-installation.html">EV Charger Installation</a><a class="mm-link" href="../../pages/services/lighting-ceiling-fan-installation.html">Lighting &amp; Ceiling Fans</a><a class="mm-link" href="../../pages/services/outdoor-landscape-lighting-installation.html">Landscape Lighting</a><a class="mm-link" href="../../pages/services/smoke-detector-installation.html">Smoke Detector Installation</a><a class="mm-link" href="../../pages/services/marine-electricians.html">Marine &amp; Dock Electrician</a></div><div class="mm-col"><h4>Repair &amp; Inspection</h4><a class="mm-link" href="../../pages/services/emergency-electrician.html"><span>Emergency Electrician<small>24/7 dispatch</small></span></a><a class="mm-link" href="../../pages/services/electrical-safety-inspection.html">Electrical Safety Inspection</a><a class="mm-link" href="../../pages/services/commercial-electrician.html">Commercial Electrician</a><a class="mm-link" href="../../pages/services/pool-electrical-repair-installation.html">Pool Equipment Wiring</a></div><p class="mm-foot">Licensed electrical contractor <a href="../../about-us.html">EC13011994</a> &mdash; every job runs under our own license, never a sub.</p></div><div class="mm-sec" data-sec="gas"><div class="mm-col"><h4>Gas Lines</h4><a class="mm-link" href="../../pages/services/gas-line-installation.html">Gas Line Installation &amp; Hookups</a><a class="mm-link" href="../../pages/services/gas-line-installation.html">Fire Pits &amp; Grill Hookups</a><a class="mm-link" href="../../pages/services/outdoor-kitchens.html">Outdoor Kitchen Gas Lines</a><a class="mm-link" href="../../pages/services/whole-house-generator-installation-repair.html">Generator Fuel Lines</a></div><div class="mm-col"><h4>Appliances &amp; Fuel</h4><a class="mm-link" href="../../pages/services/pool-heater-repair-installation.html">Gas Pool Heaters</a><a class="mm-link" href="../../pages/services/propane-tank-installation.html">Propane Tank Installation</a><a class="mm-link" href="../../pages/services/propane-tank-installation.html">Whole-Home Propane</a></div><div class="mm-col"><h4>Safety</h4><a class="mm-link" href="../../pages/services/gas-leak-detection-repair.html">Gas Leak Detection &amp; Repair</a><a class="mm-link" href="../../pages/services/gas-services.html"><span>All Gas Services<small>Overview &amp; permits</small></span></a></div><p class="mm-foot">Smell gas? Leave the house and <a href="tel:7273165206">call 727-316-5206</a> &mdash; we dispatch after hours.</p></div><div class="mm-sec" data-sec="outdoor"><div class="mm-col"><h4>Hardscape</h4><a class="mm-link" href="../../pages/services/pavers-and-driveways.html">Pavers &amp; Driveways</a><a class="mm-link" href="../../pages/services/artificial-turf.html">Artificial Turf</a><a class="mm-link" href="../../pages/services/pool-fence.html">Pool Fence</a></div><div class="mm-col"><h4>Living Spaces</h4><a class="mm-link" href="../../pages/services/outdoor-living.html">Outdoor Living</a><a class="mm-link" href="../../pages/services/outdoor-kitchens.html">Outdoor Kitchens</a></div><div class="mm-col"><h4>Lighting</h4><a class="mm-link" href="../../pages/services/outdoor-landscape-lighting-installation.html">Landscape Lighting</a></div><p class="mm-foot">One crew for the whole backyard &mdash; <a href="../../pages/services/index.html">see every service</a>.</p></div><div class="mm-sec" data-sec="company"><div class="mm-col"><h4>Company</h4><a class="mm-link" href="../../about-us.html">About Us</a><a class="mm-link" href="../../giving-back.html">Giving Back</a><a class="mm-link" href="../../referral-program.html">Referral Program</a></div><div class="mm-col"><h4>Proof</h4><a class="mm-link" href="../../reviews.html">Reviews</a><a class="mm-link" href="../../specials.html">Current Specials</a><a class="mm-link" href="index.html#brands">Brands We Service</a></div><div class="mm-col"><h4>Resources</h4><a class="mm-link" href="../../pages/blog/index.html">Blog</a><a class="mm-link" href="../../pages/help/index.html">Troubleshooting Guides</a><a class="mm-link" href="../../pages/areas/index.html"><span>Service Areas<small>30 across Pinellas</small></span></a></div><p class="mm-foot">Family-owned in Largo since 2019 &mdash; <a href="../../about-us.html">four active licenses</a>, zero subcontractors.</p></div></div><aside class="mm-cta"><div class="mm-cta-in"><img class="van" src="../../assets/van-side.png" alt="" aria-hidden="true" loading="lazy" decoding="async"><p class="rate"><span class="stars" aria-hidden="true"><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg></span><b>5.0</b> on Google</p><h3>Same-Day Service Across Pinellas</h3><p>Tell us what the equipment is doing &mdash; a licensed tech shows up, never a sub.</p><div class="stack"><a class="mmbtn mmbtn-coral" href="../../contact-us.html">Request Service</a></div><p class="hours"><svg aria-hidden="true"><use href="#i-clock"/></svg>Mon&ndash;Fri 8&ndash;5 &middot; <a href="tel:7273165206">727-316-5206</a> 24/7</p></div></aside></div></div>
 </div>
 
 <div class="mmenu" id="mmenu" role="dialog" aria-modal="true" aria-label="Menu" data-screen-label="Mobile menu">
@@ -486,6 +536,7 @@ document.querySelectorAll('.rv').forEach(el=>io.observe(el));
 /* stat counters removed with guarantee-card redesign */
 
 /* review carousel: responsive pages, autoplay, swipe, keyboard */
+(function(){if(!document.getElementById('tview'))return; /* homepage-only — this script is ported to inner pages by headergen */
 const track=document.getElementById('ttrack'),dots=document.getElementById('tdots'),tview=document.getElementById('tview');
 let idx=0,timer=null;
 const pv=()=>innerWidth>980?3:innerWidth>640?2:1;
@@ -512,8 +563,9 @@ tview.addEventListener('pointerup',e=>{if(sx===null)return;const dx=e.clientX-sx
 /* keyboard on carousel region */
 tview.closest('section').addEventListener('keydown',e=>{if(e.key==='ArrowLeft'){tPrev();tStop()}if(e.key==='ArrowRight'){tNext();tStop()}});
 tRender();tStart();
-
+})();
 /* offers slider */
+(function(){if(!document.getElementById('oview'))return; /* homepage-only — this script is ported to inner pages by headergen */
 const otrack=document.getElementById('otrack'),odots=document.getElementById('odots'),oview=document.getElementById('oview');
 let oidx=0;
 const opv=()=>innerWidth>900?2:1;
@@ -532,8 +584,9 @@ let osx=null;
 oview.addEventListener('pointerdown',e=>osx=e.clientX);
 oview.addEventListener('pointerup',e=>{if(osx===null)return;const dx=e.clientX-osx;if(Math.abs(dx)>40){dx>0?document.getElementById('oprev').click():document.getElementById('onext').click()}osx=null});
 oRender();
-
+})();
 /* form: validity + loading + success message */
+(function(){if(!document.getElementById('miniform'))return; /* homepage-only — this script is ported to inner pages by headergen */
 const form=document.getElementById('miniform');
 form.addEventListener('submit',e=>{
 e.preventDefault();
@@ -546,4 +599,41 @@ b.textContent='Sent';
 form.querySelectorAll('input,textarea').forEach(i=>i.disabled=true);
 },600);
 });
+})();
+/* mega menu v2: one panel, sections crossfade, coral indicator slides */
+(function(){
+var root=document.getElementById('hdr'),nav=document.getElementById('mmNav'),
+    ink=document.getElementById('mmInk'),panel=document.getElementById('mmPanel');
+if(!root||!nav||!panel)return;
+var stage=panel.querySelector('.mm-stage'),ctaIn=panel.querySelector('.mm-cta-in');
+function natural(s){s.style.bottom='auto';var h=s.offsetHeight;s.style.bottom='';return h}
+var tops=[].slice.call(nav.querySelectorAll('.mm-top[data-sec]')),
+    secs=[].slice.call(panel.querySelectorAll('.mm-sec')),closeT=null,cur=null;
+function show(key){
+  if(closeT){clearTimeout(closeT);closeT=null}
+  cur=key;root.classList.add('open');
+  tops.forEach(function(b){var on=b.dataset.sec===key;b.classList.toggle('on',on);
+    b.setAttribute('aria-expanded',on?'true':'false');
+    if(on){ink.style.left=b.offsetLeft+'px';ink.style.width=b.offsetWidth+'px'}});
+  var act=null;
+  secs.forEach(function(s){var on=s.dataset.sec===key;s.classList.toggle('on',on);if(on)act=s});
+  if(act&&innerWidth>980)stage.style.height=Math.max(natural(act)+58,ctaIn.offsetHeight+52)+'px';
+}
+function hide(){
+  closeT=setTimeout(function(){cur=null;root.classList.remove('open');
+    tops.forEach(function(b){b.classList.remove('on');b.setAttribute('aria-expanded','false')});
+    secs.forEach(function(s){s.classList.remove('on')});},140);
+}
+tops.forEach(function(b){
+  b.addEventListener('mouseenter',function(){show(b.dataset.sec)});
+  b.addEventListener('focus',function(){show(b.dataset.sec)});
+  b.addEventListener('click',function(e){e.preventDefault();cur===b.dataset.sec?hide():show(b.dataset.sec)});
+});
+nav.querySelectorAll('.mm-top:not([data-sec])').forEach(function(a){a.addEventListener('mouseenter',hide)});
+root.addEventListener('mouseleave',hide);
+panel.addEventListener('mouseenter',function(){if(closeT){clearTimeout(closeT);closeT=null}});
+root.addEventListener('focusout',function(e){if(!root.contains(e.relatedTarget))hide()});
+document.addEventListener('keydown',function(e){if(e.key==='Escape'&&cur)hide()});
+addEventListener('resize',function(){if(cur)show(cur)});
+})();
 </script></body></html>
