@@ -142,7 +142,10 @@ h2{font-family:var(--disp);font-weight:700;font-size:clamp(28px,3.6vw,40px);line
 .scard h3 small{display:block;font-family:var(--txt);font-weight:700;font-size:12px;letter-spacing:3.5px;margin-top:7px;color:var(--ink)}
 .chips{display:flex;flex-wrap:wrap;gap:7px;justify-content:center;max-height:0;opacity:0;overflow:hidden;transition:max-height .35s ease,opacity .35s ease;margin:0;padding:0;list-style:none}
 .scard:hover .chips,.scard:focus-within .chips{max-height:140px;opacity:1}
-.chips li{background:rgba(255,255,255,.14);border:1px solid rgba(255,255,255,.55);color:#fff;font-size:12.5px;font-weight:500;border-radius:999px;padding:5px 12px}
+.chips li{display:flex}
+.chips a{background:rgba(255,255,255,.14);border:1px solid rgba(255,255,255,.55);color:#fff;font-size:12.5px;font-weight:500;border-radius:999px;padding:5px 12px;text-decoration:none;transition:background .18s ease,border-color .18s ease,color .18s ease}
+.chips a:hover,.chips a:focus-visible{background:#fff;border-color:#fff;color:var(--navy)}
+.chips a:focus-visible{outline:2px solid #fff;outline-offset:2px}
 @media (hover:none){.chips{max-height:none;opacity:1;transition:none}}
 .sbtn{margin-top:auto;display:flex;align-items:center;justify-content:center;gap:8px;font-family:var(--disp);font-weight:700;font-size:15px;text-transform:uppercase;letter-spacing:.8px;color:#fff;text-decoration:none;background:var(--navy);border:2px solid rgba(255,255,255,.5);border-radius:12px;padding:14px 10px 12px;transition:background .2s,color .2s}
 .sbtn:hover{background:#fff;color:var(--navy)}
@@ -404,25 +407,25 @@ footer a:hover{color:var(--cream);text-decoration:underline}
 <div class="scard rv" style="--d:.05s">
 <div class="white"><svg class="sico" style="color:var(--navy)" aria-hidden="true"><use href="#i-waves"/></svg>
 <h3>Pool Repair<small>Services</small></h3></div>
-<ul class="chips"><li>Pumps</li><li>Filters</li><li>Heaters</li><li>Salt Systems</li><li>Leaks</li></ul>
+<ul class="chips"><li><a href="pages/services/pool-pump-repair-installation.html" title="Pool Pump Repair &amp; Installation">Pumps</a></li><li><a href="pages/services/pool-filter-repair-and-installation.html" title="Pool Filter Repair &amp; Replacement">Filters</a></li><li><a href="pages/services/pool-heater-repair-installation.html" title="Pool Heater &amp; Heat Pump Repair">Heaters</a></li><li><a href="pages/services/salt-water-chlorinator-installation-repair.html" title="Salt System &amp; Salt Cell Repair">Salt Systems</a></li><li><a href="pages/services/pool-leak-detection.html" title="Pool Leak Detection">Leaks</a></li></ul>
 <a class="sbtn" href="pages/services/swimming-pool-repair.html">View Services <svg class="ico st" aria-hidden="true"><use href="#i-arrow"/></svg></a>
 </div>
 <div class="scard rv" style="--d:.12s">
 <div class="white"><svg class="sico" style="color:var(--coral)" aria-hidden="true"><use href="#i-bolt"/></svg>
 <h3>Electrical<small>Services</small></h3></div>
-<ul class="chips"><li>Panels</li><li>EV Chargers</li><li>Lighting</li><li>Generators</li></ul>
+<ul class="chips"><li><a href="pages/services/electrical-panel-upgrade-replacement.html" title="Panel Upgrades &amp; Replacement">Panels</a></li><li><a href="pages/services/ev-charger-installation.html" title="EV Charger Installation">EV Chargers</a></li><li><a href="pages/services/lighting-ceiling-fan-installation.html" title="Lighting &amp; Ceiling Fans">Lighting</a></li><li><a href="pages/services/whole-house-generator-installation-repair.html" title="Whole House Generators">Generators</a></li></ul>
 <a class="sbtn" href="pages/services/electrician.html">View Services <svg class="ico st" aria-hidden="true"><use href="#i-arrow"/></svg></a>
 </div>
 <div class="scard rv" style="--d:.19s">
 <div class="white"><svg class="sico" style="color:var(--coral)" aria-hidden="true"><use href="#i-flame"/></svg>
 <h3>Gas<small>Services</small></h3></div>
-<ul class="chips"><li>Pool Heaters</li><li>Gas Lines</li><li>Permits</li></ul>
-<a class="sbtn" href="pages/services/pool-heater-repair-installation.html">View Services <svg class="ico st" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+<ul class="chips"><li><a href="pages/services/pool-heater-repair-installation.html" title="Pool Heater &amp; Heat Pump Repair">Pool Heaters</a></li><li><a href="pages/services/gas-line-installation.html" title="Gas Line Installation &amp; Hookups">Gas Lines</a></li><li><a href="pages/services/gas-leak-detection-repair.html" title="Gas Leak Detection &amp; Repair">Leak Detection</a></li><li><a href="pages/services/propane-tank-installation.html" title="Propane Tank Installation">Propane</a></li></ul>
+<a class="sbtn" href="pages/services/gas-services.html">View Services <svg class="ico st" aria-hidden="true"><use href="#i-arrow"/></svg></a>
 </div>
 <div class="scard rv" style="--d:.26s">
 <div class="white"><svg class="sico" style="color:var(--navy)" aria-hidden="true"><use href="#i-umbrella"/></svg>
 <h3>Outdoor Living<small>Services</small></h3></div>
-<ul class="chips"><li>Kitchens</li><li>Pavers</li><li>Turf</li><li>Pool Fence</li></ul>
+<ul class="chips"><li><a href="pages/services/outdoor-kitchens.html" title="Outdoor Kitchens">Kitchens</a></li><li><a href="pages/services/pavers-and-driveways.html" title="Pavers &amp; Driveways">Pavers</a></li><li><a href="pages/services/artificial-turf.html" title="Artificial Turf">Turf</a></li><li><a href="pages/services/pool-fence.html" title="Pool Fence">Pool Fence</a></li></ul>
 <a class="sbtn" href="pages/services/outdoor-living.html">View Services <svg class="ico st" aria-hidden="true"><use href="#i-arrow"/></svg></a>
 </div>
 </div>
