@@ -1,0 +1,196 @@
+{
+    "version": "0.1.20260806",
+    "status_code": 20000,
+    "status_message": "Ok.",
+    "time": "0.1335 sec.",
+    "cost": 0.015,
+    "tasks_count": 1,
+    "tasks_error": 0,
+    "tasks": [
+        {
+            "id": "08190109-9988-0392-0000-f5c2735663bb",
+            "status_code": 20000,
+            "status_message": "Ok.",
+            "time": "0.0816 sec.",
+            "cost": 0.015,
+            "result_count": 1,
+            "path": [
+                "v3",
+                "dataforseo_labs",
+                "google",
+                "bulk_keyword_difficulty",
+                "live"
+            ],
+            "data": {
+                "api": "dataforseo_labs",
+                "function": "bulk_keyword_difficulty",
+                "se_type": "google",
+                "location_name": "United States",
+                "language_name": "English",
+                "keywords": [
+                    "pool pump repair",
+                    "pool pump repair near me",
+                    "pool repair near me",
+                    "pool repair largo fl",
+                    "pool heater repair",
+                    "pool heater repair near me",
+                    "pool cleaning service",
+                    "pool cleaning service near me",
+                    "pool leak detection",
+                    "pool leak detection near me",
+                    "pool resurfacing",
+                    "pool resurfacing near me",
+                    "pool filter repair",
+                    "salt water pool maintenance",
+                    "salt cell replacement",
+                    "pool automation",
+                    "pool light repair",
+                    "pool light replacement",
+                    "pool electrician",
+                    "pool electrician near me",
+                    "emergency pool repair",
+                    "pool equipment repair",
+                    "pool acid wash",
+                    "pool remodeling",
+                    "variable speed pool pump installation"
+                ]
+            },
+            "result": [
+                {
+                    "se_type": "google",
+                    "location_code": 2840,
+                    "language_code": "en",
+                    "total_count": 25,
+                    "items_count": 25,
+                    "items": [
+                        {
+                            "se_type": "google",
+                            "keyword": "emergency pool repair",
+                            "keyword_difficulty": 0
+                        },
+                        {
+                            "se_type": "google",
+                            "keyword": "pool acid wash",
+                            "keyword_difficulty": 0
+                        },
+                        {
+                            "se_type": "google",
+                            "keyword": "pool automation",
+                            "keyword_difficulty": 25
+                        },
+                        {
+                            "se_type": "google",
+                            "keyword": "pool cleaning service",
+                            "keyword_difficulty": 0
+                        },
+                        {
+                            "se_type": "google",
+                            "keyword": "pool cleaning service near me",
+                            "keyword_difficulty": 1
+                        },
+                        {
+                            "se_type": "google",
+                            "keyword": "pool electrician",
+                            "keyword_difficulty": 0
+                        },
+                        {
+                            "se_type": "google",
+                            "keyword": "pool electrician near me",
+                            "keyword_difficulty": 0
+                        },
+                        {
+                            "se_type": "google",
+                            "keyword": "pool equipment repair",
+                            "keyword_difficulty": 0
+                        },
+                        {
+                            "se_type": "google",
+                            "keyword": "pool filter repair",
+                            "keyword_difficulty": 0
+                        },
+                        {
+                            "se_type": "google",
+                            "keyword": "pool heater repair",
+                            "keyword_difficulty": 0
+                        },
+                        {
+                            "se_type": "google",
+                            "keyword": "pool heater repair near me",
+                            "keyword_difficulty": 0
+                        },
+                        {
+                            "se_type": "google",
+                            "keyword": "pool leak detection",
+                            "keyword_difficulty": 1
+                        },
+                        {
+                            "se_type": "google",
+                            "keyword": "pool leak detection near me",
+                            "keyword_difficulty": 0
+                        },
+                        {
+                            "se_type": "google",
+                            "keyword": "pool light repair",
+                            "keyword_difficulty": 0
+                        },
+                        {
+                            "se_type": "google",
+                            "keyword": "pool light replacement",
+                            "keyword_difficulty": 0
+                        },
+                        {
+                            "se_type": "google",
+                            "keyword": "pool pump repair",
+                            "keyword_difficulty": 0
+                        },
+                        {
+                            "se_type": "google",
+                            "keyword": "pool pump repair near me",
+                            "keyword_difficulty": 0
+                        },
+                        {
+                            "se_type": "google",
+                            "keyword": "pool remodeling",
+                            "keyword_difficulty": 1
+                        },
+                        {
+                            "se_type": "google",
+                            "keyword": "pool repair largo fl",
+                            "keyword_difficulty": null
+                        },
+                        {
+                            "se_type": "google",
+                            "keyword": "pool repair near me",
+                            "keyword_difficulty": 0
+                        },
+                        {
+                            "se_type": "google",
+                            "keyword": "pool resurfacing",
+                            "keyword_difficulty": 0
+                        },
+                        {
+                            "se_type": "google",
+                            "keyword": "pool resurfacing near me",
+                            "keyword_difficulty": 7
+                        },
+                        {
+                            "se_type": "google",
+                            "keyword": "salt cell replacement",
+                            "keyword_difficulty": 0
+                        },
+                        {
+                            "se_type": "google",
+                            "keyword": "salt water pool maintenance",
+                            "keyword_difficulty": 0
+                        },
+                        {
+                            "se_type": "google",
+                            "keyword": "variable speed pool pump installation",
+                            "keyword_difficulty": 0
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

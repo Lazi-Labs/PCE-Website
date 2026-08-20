@@ -1,0 +1,1099 @@
+{
+    "version": "0.1.20260806",
+    "status_code": 20000,
+    "status_message": "Ok.",
+    "time": "0.1010 sec.",
+    "cost": 0.01284,
+    "tasks_count": 2,
+    "tasks_error": 1,
+    "tasks": [
+        {
+            "id": "08190111-9988-0387-0000-76bf2888a375",
+            "status_code": 20000,
+            "status_message": "Ok.",
+            "time": "0.0431 sec.",
+            "cost": 0.01284,
+            "result_count": 1,
+            "path": [
+                "v3",
+                "dataforseo_labs",
+                "google",
+                "related_keywords",
+                "live"
+            ],
+            "data": {
+                "api": "dataforseo_labs",
+                "function": "related_keywords",
+                "se_type": "google",
+                "keyword": "pool heater repair",
+                "location_name": "United States",
+                "language_name": "English",
+                "depth": 1,
+                "limit": 30,
+                "order_by": [
+                    "keyword_data.keyword_info.search_volume,desc"
+                ]
+            },
+            "result": [
+                {
+                    "se_type": "google",
+                    "seed_keyword": "pool heater repair",
+                    "seed_keyword_data": null,
+                    "location_code": 2840,
+                    "language_code": "en",
+                    "total_count": 7,
+                    "items_count": 7,
+                    "items": [
+                        {
+                            "se_type": "google",
+                            "keyword_data": {
+                                "se_type": "google",
+                                "keyword": "pool heater repair",
+                                "location_code": 2840,
+                                "language_code": "en",
+                                "keyword_info": {
+                                    "se_type": "google",
+                                    "last_updated_time": "2026-07-13 14:17:45 +00:00",
+                                    "competition": 0.15,
+                                    "competition_level": "LOW",
+                                    "cpc": 10.72,
+                                    "search_volume": 12100,
+                                    "low_top_of_page_bid": 2.16,
+                                    "high_top_of_page_bid": 13.49,
+                                    "categories": [
+                                        10009,
+                                        10406,
+                                        11538
+                                    ],
+                                    "monthly_searches": [
+                                        {
+                                            "year": 2026,
+                                            "month": 6,
+                                            "search_volume": 18100
+                                        },
+                                        {
+                                            "year": 2026,
+                                            "month": 5,
+                                            "search_volume": 22200
+                                        },
+                                        {
+                                            "year": 2026,
+                                            "month": 4,
+                                            "search_volume": 12100
+                                        },
+                                        {
+                                            "year": 2026,
+                                            "month": 3,
+                                            "search_volume": 12100
+                                        },
+                                        {
+                                            "year": 2026,
+                                            "month": 2,
+                                            "search_volume": 8100
+                                        },
+                                        {
+                                            "year": 2026,
+                                            "month": 1,
+                                            "search_volume": 9900
+                                        },
+                                        {
+                                            "year": 2025,
+                                            "month": 12,
+                                            "search_volume": 9900
+                                        },
+                                        {
+                                            "year": 2025,
+                                            "month": 11,
+                                            "search_volume": 9900
+                                        },
+                                        {
+                                            "year": 2025,
+                                            "month": 10,
+                                            "search_volume": 8100
+                                        },
+                                        {
+                                            "year": 2025,
+                                            "month": 9,
+                                            "search_volume": 9900
+                                        },
+                                        {
+                                            "year": 2025,
+                                            "month": 8,
+                                            "search_volume": 12100
+                                        },
+                                        {
+                                            "year": 2025,
+                                            "month": 7,
+                                            "search_volume": 12100
+                                        }
+                                    ],
+                                    "search_volume_trend": {
+                                        "monthly": -18,
+                                        "quarterly": 50,
+                                        "yearly": -18
+                                    }
+                                },
+                                "keyword_info_normalized_with_bing": null,
+                                "keyword_info_normalized_with_clickstream": null,
+                                "clickstream_keyword_info": null,
+                                "keyword_properties": {
+                                    "se_type": "google",
+                                    "core_keyword": null,
+                                    "synonym_clustering_algorithm": "text_processing",
+                                    "keyword_difficulty": 0,
+                                    "detected_language": "en",
+                                    "is_another_language": false
+                                },
+                                "serp_info": {
+                                    "se_type": "google",
+                                    "check_url": "https:\/\/www.google.com\/search?q=pool%20heater%20repair&hl=en&gl=US&ie=UTF-8&uule=w+CAIQIFISCQs2MuSEtepUEUK33kOSuTsc",
+                                    "serp_item_types": [
+                                        "local_pack",
+                                        "people_also_ask",
+                                        "video",
+                                        "organic",
+                                        "related_searches",
+                                        "images"
+                                    ],
+                                    "se_results_count": 198,
+                                    "last_updated_time": "2026-07-30 09:40:59 +00:00",
+                                    "previous_updated_time": "2026-05-15 06:52:09 +00:00"
+                                },
+                                "avg_backlinks_info": {
+                                    "se_type": "google",
+                                    "backlinks": 0.1,
+                                    "dofollow": 0.1,
+                                    "referring_pages": 0.1,
+                                    "referring_domains": 0.1,
+                                    "referring_main_domains": 0.1,
+                                    "rank": 3.9,
+                                    "main_domain_rank": 310.1,
+                                    "last_updated_time": "2026-07-30 09:40:59 +00:00"
+                                },
+                                "search_intent_info": {
+                                    "se_type": "google",
+                                    "main_intent": "commercial",
+                                    "foreign_intent": [
+                                        "transactional"
+                                    ],
+                                    "last_updated_time": "2026-04-29 20:16:39 +00:00"
+                                }
+                            },
+                            "depth": 0,
+                            "related_keywords": [
+                                "pool heater repair near california",
+                                "pool heater repair near texas",
+                                "pool heater repair near me",
+                                "pool heater repair cost",
+                                "best pool heater repair near me",
+                                "gas pool heater repair",
+                                "gas pool heater repair near me",
+                                "hayward pool heater repair near me"
+                            ]
+                        },
+                        {
+                            "se_type": "google",
+                            "keyword_data": {
+                                "se_type": "google",
+                                "keyword": "pool heater repair near me",
+                                "location_code": 2840,
+                                "language_code": "en",
+                                "keyword_info": {
+                                    "se_type": "google",
+                                    "last_updated_time": "2026-07-14 03:49:23 +00:00",
+                                    "competition": 0.75,
+                                    "competition_level": "HIGH",
+                                    "cpc": 10.83,
+                                    "search_volume": 2900,
+                                    "low_top_of_page_bid": 2.13,
+                                    "high_top_of_page_bid": 11.22,
+                                    "categories": [
+                                        10009,
+                                        10406,
+                                        11538
+                                    ],
+                                    "monthly_searches": [
+                                        {
+                                            "year": 2026,
+                                            "month": 6,
+                                            "search_volume": 4400
+                                        },
+                                        {
+                                            "year": 2026,
+                                            "month": 5,
+                                            "search_volume": 3600
+                                        },
+                                        {
+                                            "year": 2026,
+                                            "month": 4,
+                                            "search_volume": 2400
+                                        },
+                                        {
+                                            "year": 2026,
+                                            "month": 3,
+                                            "search_volume": 1900
+                                        },
+                                        {
+                                            "year": 2026,
+                                            "month": 2,
+                                            "search_volume": 1300
+                                        },
+                                        {
+                                            "year": 2026,
+                                            "month": 1,
+                                            "search_volume": 1300
+                                        },
+                                        {
+                                            "year": 2025,
+                                            "month": 12,
+                                            "search_volume": 1000
+                                        },
+                                        {
+                                            "year": 2025,
+                                            "month": 11,
+                                            "search_volume": 2400
+                                        },
+                                        {
+                                            "year": 2025,
+                                            "month": 10,
+                                            "search_volume": 3600
+                                        },
+                                        {
+                                            "year": 2025,
+                                            "month": 9,
+                                            "search_volume": 3600
+                                        },
+                                        {
+                                            "year": 2025,
+                                            "month": 8,
+                                            "search_volume": 3600
+                                        },
+                                        {
+                                            "year": 2025,
+                                            "month": 7,
+                                            "search_volume": 5400
+                                        }
+                                    ],
+                                    "search_volume_trend": {
+                                        "monthly": 22,
+                                        "quarterly": 83,
+                                        "yearly": -19
+                                    }
+                                },
+                                "keyword_info_normalized_with_bing": null,
+                                "keyword_info_normalized_with_clickstream": null,
+                                "clickstream_keyword_info": null,
+                                "keyword_properties": {
+                                    "se_type": "google",
+                                    "core_keyword": null,
+                                    "synonym_clustering_algorithm": "text_processing",
+                                    "keyword_difficulty": 0,
+                                    "detected_language": "en",
+                                    "is_another_language": false
+                                },
+                                "serp_info": {
+                                    "se_type": "google",
+                                    "check_url": "https:\/\/www.google.com\/search?q=pool%20heater%20repair%20near%20me&hl=en&gl=US&ie=UTF-8&uule=w+CAIQIFISCQs2MuSEtepUEUK33kOSuTsc",
+                                    "serp_item_types": [
+                                        "local_pack",
+                                        "people_also_ask",
+                                        "organic",
+                                        "related_searches"
+                                    ],
+                                    "se_results_count": 197,
+                                    "last_updated_time": "2026-07-30 23:29:14 +00:00",
+                                    "previous_updated_time": "2026-05-17 19:29:40 +00:00"
+                                },
+                                "avg_backlinks_info": {
+                                    "se_type": "google",
+                                    "backlinks": 2390.4,
+                                    "dofollow": 1139,
+                                    "referring_pages": 1187.9,
+                                    "referring_domains": 1.4,
+                                    "referring_main_domains": 1.4,
+                                    "rank": 50.8,
+                                    "main_domain_rank": 287.6,
+                                    "last_updated_time": "2026-07-30 23:29:14 +00:00"
+                                },
+                                "search_intent_info": {
+                                    "se_type": "google",
+                                    "main_intent": "commercial",
+                                    "foreign_intent": [
+                                        "transactional"
+                                    ],
+                                    "last_updated_time": "2026-04-29 19:21:24 +00:00"
+                                }
+                            },
+                            "depth": 1,
+                            "related_keywords": [
+                                "pool heater repair near california",
+                                "pool heater repair near texas",
+                                "pool heater repair near me open now",
+                                "pool heater repair near me cost",
+                                "best pool heater repair near me",
+                                "above ground pool heater repair near me",
+                                "hayward pool heater repair near me",
+                                "raypak pool heater repair near me"
+                            ]
+                        },
+                        {
+                            "se_type": "google",
+                            "keyword_data": {
+                                "se_type": "google",
+                                "keyword": "pool heater repair cost",
+                                "location_code": 2840,
+                                "language_code": "en",
+                                "keyword_info": {
+                                    "se_type": "google",
+                                    "last_updated_time": "2026-07-11 20:05:56 +00:00",
+                                    "competition": 0.07,
+                                    "competition_level": "LOW",
+                                    "cpc": 8.04,
+                                    "search_volume": 390,
+                                    "low_top_of_page_bid": 1.29,
+                                    "high_top_of_page_bid": 9.95,
+                                    "categories": [
+                                        10009,
+                                        10406,
+                                        11538
+                                    ],
+                                    "monthly_searches": [
+                                        {
+                                            "year": 2026,
+                                            "month": 6,
+                                            "search_volume": 320
+                                        },
+                                        {
+                                            "year": 2026,
+                                            "month": 5,
+                                            "search_volume": 590
+                                        },
+                                        {
+                                            "year": 2026,
+                                            "month": 4,
+                                            "search_volume": 590
+                                        },
+                                        {
+                                            "year": 2026,
+                                            "month": 3,
+                                            "search_volume": 880
+                                        },
+                                        {
+                                            "year": 2026,
+                                            "month": 2,
+                                            "search_volume": 320
+                                        },
+                                        {
+                                            "year": 2026,
+                                            "month": 1,
+                                            "search_volume": 210
+                                        },
+                                        {
+                                            "year": 2025,
+                                            "month": 12,
+                                            "search_volume": 140
+                                        },
+                                        {
+                                            "year": 2025,
+                                            "month": 11,
+                                            "search_volume": 170
+                                        },
+                                        {
+                                            "year": 2025,
+                                            "month": 10,
+                                            "search_volume": 210
+                                        },
+                                        {
+                                            "year": 2025,
+                                            "month": 9,
+                                            "search_volume": 260
+                                        },
+                                        {
+                                            "year": 2025,
+                                            "month": 8,
+                                            "search_volume": 390
+                                        },
+                                        {
+                                            "year": 2025,
+                                            "month": 7,
+                                            "search_volume": 320
+                                        }
+                                    ],
+                                    "search_volume_trend": {
+                                        "monthly": -46,
+                                        "quarterly": -46,
+                                        "yearly": -46
+                                    }
+                                },
+                                "keyword_info_normalized_with_bing": null,
+                                "keyword_info_normalized_with_clickstream": null,
+                                "clickstream_keyword_info": null,
+                                "keyword_properties": {
+                                    "se_type": "google",
+                                    "core_keyword": null,
+                                    "synonym_clustering_algorithm": "text_processing",
+                                    "keyword_difficulty": 0,
+                                    "detected_language": "en",
+                                    "is_another_language": false
+                                },
+                                "serp_info": {
+                                    "se_type": "google",
+                                    "check_url": "https:\/\/www.google.com\/search?q=pool%20heater%20repair%20cost&hl=en&gl=US&ie=UTF-8&uule=w+CAIQIFISCQs2MuSEtepUEUK33kOSuTsc",
+                                    "serp_item_types": [
+                                        "ai_overview",
+                                        "organic",
+                                        "people_also_ask",
+                                        "perspectives",
+                                        "related_searches"
+                                    ],
+                                    "se_results_count": 172,
+                                    "last_updated_time": "2026-07-03 15:44:26 +00:00",
+                                    "previous_updated_time": "2026-05-22 17:40:51 +00:00"
+                                },
+                                "avg_backlinks_info": {
+                                    "se_type": "google",
+                                    "backlinks": 0.6,
+                                    "dofollow": 0.5,
+                                    "referring_pages": 0.6,
+                                    "referring_domains": 0.6,
+                                    "referring_main_domains": 0.6,
+                                    "rank": 9.9,
+                                    "main_domain_rank": 503.7,
+                                    "last_updated_time": "2026-07-03 15:45:16 +00:00"
+                                },
+                                "search_intent_info": {
+                                    "se_type": "google",
+                                    "main_intent": "informational",
+                                    "foreign_intent": null,
+                                    "last_updated_time": "2026-04-29 17:47:44 +00:00"
+                                }
+                            },
+                            "depth": 1,
+                            "related_keywords": [
+                                "pool heater repair cost near me",
+                                "pool heater repair cost calculator",
+                                "pool heater repair near me",
+                                "pool heater replacement cost calculator",
+                                "pentair pool heater",
+                                "gas pool heater",
+                                "how much to install electric pool heater",
+                                "hayward pool heater"
+                            ]
+                        },
+                        {
+                            "se_type": "google",
+                            "keyword_data": {
+                                "se_type": "google",
+                                "keyword": "hayward pool heater repair near me",
+                                "location_code": 2840,
+                                "language_code": "en",
+                                "keyword_info": {
+                                    "se_type": "google",
+                                    "last_updated_time": "2026-07-11 21:30:33 +00:00",
+                                    "competition": 0.63,
+                                    "competition_level": "MEDIUM",
+                                    "cpc": 8.79,
+                                    "search_volume": 210,
+                                    "low_top_of_page_bid": 1.79,
+                                    "high_top_of_page_bid": 6.46,
+                                    "categories": [
+                                        10009,
+                                        10009,
+                                        10406,
+                                        10412,
+                                        11527,
+                                        11538
+                                    ],
+                                    "monthly_searches": [
+                                        {
+                                            "year": 2026,
+                                            "month": 6,
+                                            "search_volume": 480
+                                        },
+                                        {
+                                            "year": 2026,
+                                            "month": 5,
+                                            "search_volume": 480
+                                        },
+                                        {
+                                            "year": 2026,
+                                            "month": 4,
+                                            "search_volume": 170
+                                        },
+                                        {
+                                            "year": 2026,
+                                            "month": 3,
+                                            "search_volume": 110
+                                        },
+                                        {
+                                            "year": 2026,
+                                            "month": 2,
+                                            "search_volume": 40
+                                        },
+                                        {
+                                            "year": 2026,
+                                            "month": 1,
+                                            "search_volume": 70
+                                        },
+                                        {
+                                            "year": 2025,
+                                            "month": 12,
+                                            "search_volume": 170
+                                        },
+                                        {
+                                            "year": 2025,
+                                            "month": 11,
+                                            "search_volume": 90
+                                        },
+                                        {
+                                            "year": 2025,
+                                            "month": 10,
+                                            "search_volume": 110
+                                        },
+                                        {
+                                            "year": 2025,
+                                            "month": 9,
+                                            "search_volume": 320
+                                        },
+                                        {
+                                            "year": 2025,
+                                            "month": 8,
+                                            "search_volume": 320
+                                        },
+                                        {
+                                            "year": 2025,
+                                            "month": 7,
+                                            "search_volume": 320
+                                        }
+                                    ],
+                                    "search_volume_trend": {
+                                        "monthly": 0,
+                                        "quarterly": 182,
+                                        "yearly": -19
+                                    }
+                                },
+                                "keyword_info_normalized_with_bing": null,
+                                "keyword_info_normalized_with_clickstream": null,
+                                "clickstream_keyword_info": null,
+                                "keyword_properties": {
+                                    "se_type": "google",
+                                    "core_keyword": null,
+                                    "synonym_clustering_algorithm": null,
+                                    "keyword_difficulty": 0,
+                                    "detected_language": "en",
+                                    "is_another_language": false
+                                },
+                                "serp_info": {
+                                    "se_type": "google",
+                                    "check_url": "https:\/\/www.google.com\/search?q=hayward%20pool%20heater%20repair%20near%20me&hl=en&gl=US&ie=UTF-8&uule=w+CAIQIFISCQs2MuSEtepUEUK33kOSuTsc",
+                                    "serp_item_types": [
+                                        "ai_overview",
+                                        "organic",
+                                        "local_pack",
+                                        "people_also_ask",
+                                        "related_searches"
+                                    ],
+                                    "se_results_count": 152,
+                                    "last_updated_time": "2026-07-06 18:39:12 +00:00",
+                                    "previous_updated_time": "2026-05-24 20:32:00 +00:00"
+                                },
+                                "avg_backlinks_info": {
+                                    "se_type": "google",
+                                    "backlinks": 1288.5,
+                                    "dofollow": 997.6,
+                                    "referring_pages": 1115,
+                                    "referring_domains": 74.3,
+                                    "referring_main_domains": 70.3,
+                                    "rank": 57.7,
+                                    "main_domain_rank": 515.5,
+                                    "last_updated_time": "2026-07-06 18:40:19 +00:00"
+                                },
+                                "search_intent_info": {
+                                    "se_type": "google",
+                                    "main_intent": "navigational",
+                                    "foreign_intent": null,
+                                    "last_updated_time": "2026-04-27 23:45:30 +00:00"
+                                }
+                            },
+                            "depth": 1,
+                            "related_keywords": [
+                                "hayward pool heater repair near california",
+                                "hayward pool heater repair near texas",
+                                "hayward authorized service center near me",
+                                "hayward pool heater repair near me reviews",
+                                "hayward pool heater repair near me cost",
+                                "hayward pool service",
+                                "hayward customer service residential",
+                                "hayward pool heater parts"
+                            ]
+                        },
+                        {
+                            "se_type": "google",
+                            "keyword_data": {
+                                "se_type": "google",
+                                "keyword": "gas pool heater repair",
+                                "location_code": 2840,
+                                "language_code": "en",
+                                "keyword_info": {
+                                    "se_type": "google",
+                                    "last_updated_time": "2026-07-12 01:16:28 +00:00",
+                                    "competition": 0.35,
+                                    "competition_level": "MEDIUM",
+                                    "cpc": 22.29,
+                                    "search_volume": 110,
+                                    "low_top_of_page_bid": 3.8,
+                                    "high_top_of_page_bid": 20.3,
+                                    "categories": [
+                                        10004,
+                                        10282,
+                                        11284,
+                                        13803
+                                    ],
+                                    "monthly_searches": [
+                                        {
+                                            "year": 2026,
+                                            "month": 6,
+                                            "search_volume": 140
+                                        },
+                                        {
+                                            "year": 2026,
+                                            "month": 5,
+                                            "search_volume": 210
+                                        },
+                                        {
+                                            "year": 2026,
+                                            "month": 4,
+                                            "search_volume": 140
+                                        },
+                                        {
+                                            "year": 2026,
+                                            "month": 3,
+                                            "search_volume": 140
+                                        },
+                                        {
+                                            "year": 2026,
+                                            "month": 2,
+                                            "search_volume": 90
+                                        },
+                                        {
+                                            "year": 2026,
+                                            "month": 1,
+                                            "search_volume": 90
+                                        },
+                                        {
+                                            "year": 2025,
+                                            "month": 12,
+                                            "search_volume": 90
+                                        },
+                                        {
+                                            "year": 2025,
+                                            "month": 11,
+                                            "search_volume": 70
+                                        },
+                                        {
+                                            "year": 2025,
+                                            "month": 10,
+                                            "search_volume": 90
+                                        },
+                                        {
+                                            "year": 2025,
+                                            "month": 9,
+                                            "search_volume": 110
+                                        },
+                                        {
+                                            "year": 2025,
+                                            "month": 8,
+                                            "search_volume": 110
+                                        },
+                                        {
+                                            "year": 2025,
+                                            "month": 7,
+                                            "search_volume": 90
+                                        }
+                                    ],
+                                    "search_volume_trend": {
+                                        "monthly": -33,
+                                        "quarterly": 0,
+                                        "yearly": -33
+                                    }
+                                },
+                                "keyword_info_normalized_with_bing": null,
+                                "keyword_info_normalized_with_clickstream": null,
+                                "clickstream_keyword_info": null,
+                                "keyword_properties": {
+                                    "se_type": "google",
+                                    "core_keyword": null,
+                                    "synonym_clustering_algorithm": "text_processing",
+                                    "keyword_difficulty": 0,
+                                    "detected_language": "en",
+                                    "is_another_language": false
+                                },
+                                "serp_info": {
+                                    "se_type": "google",
+                                    "check_url": "https:\/\/www.google.com\/search?q=gas%20pool%20heater%20repair&hl=en&gl=US&ie=UTF-8&uule=w+CAIQIFISCQs2MuSEtepUEUK33kOSuTsc",
+                                    "serp_item_types": [
+                                        "local_pack",
+                                        "video",
+                                        "organic",
+                                        "people_also_ask",
+                                        "popular_products",
+                                        "related_searches"
+                                    ],
+                                    "se_results_count": 212,
+                                    "last_updated_time": "2026-07-13 14:35:18 +00:00",
+                                    "previous_updated_time": "2026-05-02 00:04:05 +00:00"
+                                },
+                                "avg_backlinks_info": {
+                                    "se_type": "google",
+                                    "backlinks": 0.9,
+                                    "dofollow": 0.8,
+                                    "referring_pages": 0.8,
+                                    "referring_domains": 0.6,
+                                    "referring_main_domains": 0.6,
+                                    "rank": 17.5,
+                                    "main_domain_rank": 479.6,
+                                    "last_updated_time": "2026-07-13 14:35:20 +00:00"
+                                },
+                                "search_intent_info": {
+                                    "se_type": "google",
+                                    "main_intent": "commercial",
+                                    "foreign_intent": null,
+                                    "last_updated_time": "2026-04-27 19:41:58 +00:00"
+                                }
+                            },
+                            "depth": 1,
+                            "related_keywords": [
+                                "gas pool heater repair near california",
+                                "gas pool heater repair near texas",
+                                "gas pool heater repair near me",
+                                "gas pool heater repair service near me",
+                                "diy gas pool heater repair",
+                                "best gas pool heater repair",
+                                "pool heater repair near me",
+                                "hayward pool heater flame sensor replacement"
+                            ]
+                        },
+                        {
+                            "se_type": "google",
+                            "keyword_data": {
+                                "se_type": "google",
+                                "keyword": "gas pool heater repair near me",
+                                "location_code": 2840,
+                                "language_code": "en",
+                                "keyword_info": {
+                                    "se_type": "google",
+                                    "last_updated_time": "2026-07-13 07:41:08 +00:00",
+                                    "competition": 0.7,
+                                    "competition_level": "HIGH",
+                                    "cpc": 16.69,
+                                    "search_volume": 90,
+                                    "low_top_of_page_bid": 2.58,
+                                    "high_top_of_page_bid": 15.41,
+                                    "categories": [
+                                        10009,
+                                        10412,
+                                        11527
+                                    ],
+                                    "monthly_searches": [
+                                        {
+                                            "year": 2026,
+                                            "month": 6,
+                                            "search_volume": 140
+                                        },
+                                        {
+                                            "year": 2026,
+                                            "month": 5,
+                                            "search_volume": 110
+                                        },
+                                        {
+                                            "year": 2026,
+                                            "month": 4,
+                                            "search_volume": 90
+                                        },
+                                        {
+                                            "year": 2026,
+                                            "month": 3,
+                                            "search_volume": 90
+                                        },
+                                        {
+                                            "year": 2026,
+                                            "month": 2,
+                                            "search_volume": 50
+                                        },
+                                        {
+                                            "year": 2026,
+                                            "month": 1,
+                                            "search_volume": 50
+                                        },
+                                        {
+                                            "year": 2025,
+                                            "month": 12,
+                                            "search_volume": 70
+                                        },
+                                        {
+                                            "year": 2025,
+                                            "month": 11,
+                                            "search_volume": 50
+                                        },
+                                        {
+                                            "year": 2025,
+                                            "month": 10,
+                                            "search_volume": 70
+                                        },
+                                        {
+                                            "year": 2025,
+                                            "month": 9,
+                                            "search_volume": 70
+                                        },
+                                        {
+                                            "year": 2025,
+                                            "month": 8,
+                                            "search_volume": 50
+                                        },
+                                        {
+                                            "year": 2025,
+                                            "month": 7,
+                                            "search_volume": 110
+                                        }
+                                    ],
+                                    "search_volume_trend": {
+                                        "monthly": 27,
+                                        "quarterly": 56,
+                                        "yearly": -18
+                                    }
+                                },
+                                "keyword_info_normalized_with_bing": null,
+                                "keyword_info_normalized_with_clickstream": null,
+                                "clickstream_keyword_info": null,
+                                "keyword_properties": {
+                                    "se_type": "google",
+                                    "core_keyword": null,
+                                    "synonym_clustering_algorithm": "text_processing",
+                                    "keyword_difficulty": 0,
+                                    "detected_language": "en",
+                                    "is_another_language": false
+                                },
+                                "serp_info": {
+                                    "se_type": "google",
+                                    "check_url": "https:\/\/www.google.com\/search?q=gas%20pool%20heater%20repair%20near%20me&hl=en&gl=US&ie=UTF-8&uule=w+CAIQIFISCQs2MuSEtepUEUK33kOSuTsc",
+                                    "serp_item_types": [
+                                        "local_pack",
+                                        "people_also_ask",
+                                        "organic",
+                                        "related_searches"
+                                    ],
+                                    "se_results_count": 200,
+                                    "last_updated_time": "2026-07-16 05:37:44 +00:00",
+                                    "previous_updated_time": "2026-05-05 09:21:38 +00:00"
+                                },
+                                "avg_backlinks_info": {
+                                    "se_type": "google",
+                                    "backlinks": 0.9,
+                                    "dofollow": 0.7,
+                                    "referring_pages": 0.8,
+                                    "referring_domains": 0.7,
+                                    "referring_main_domains": 0.7,
+                                    "rank": 7.6,
+                                    "main_domain_rank": 350.3,
+                                    "last_updated_time": "2026-07-16 05:37:45 +00:00"
+                                },
+                                "search_intent_info": {
+                                    "se_type": "google",
+                                    "main_intent": "commercial",
+                                    "foreign_intent": [
+                                        "transactional"
+                                    ],
+                                    "last_updated_time": "2026-04-27 23:02:06 +00:00"
+                                }
+                            },
+                            "depth": 1,
+                            "related_keywords": [
+                                "gas pool heater repair near california",
+                                "gas pool heater repair near texas",
+                                "gas pool heater repair near me cost",
+                                "best gas pool heater repair near me",
+                                "raypak pool heater repair near me",
+                                "best pool heater repair near me",
+                                "electric gas pool heater repair near me",
+                                "hayward pool heater repair near me"
+                            ]
+                        },
+                        {
+                            "se_type": "google",
+                            "keyword_data": {
+                                "se_type": "google",
+                                "keyword": "best pool heater repair near me",
+                                "location_code": 2840,
+                                "language_code": "en",
+                                "keyword_info": {
+                                    "se_type": "google",
+                                    "last_updated_time": "2026-07-15 04:30:46 +00:00",
+                                    "competition": 0.9,
+                                    "competition_level": "HIGH",
+                                    "cpc": 10.84,
+                                    "search_volume": 30,
+                                    "low_top_of_page_bid": 2.18,
+                                    "high_top_of_page_bid": 12.82,
+                                    "categories": [
+                                        10009,
+                                        10406,
+                                        11538
+                                    ],
+                                    "monthly_searches": [
+                                        {
+                                            "year": 2026,
+                                            "month": 6,
+                                            "search_volume": 50
+                                        },
+                                        {
+                                            "year": 2026,
+                                            "month": 5,
+                                            "search_volume": 70
+                                        },
+                                        {
+                                            "year": 2026,
+                                            "month": 4,
+                                            "search_volume": 50
+                                        },
+                                        {
+                                            "year": 2026,
+                                            "month": 3,
+                                            "search_volume": 20
+                                        },
+                                        {
+                                            "year": 2026,
+                                            "month": 2,
+                                            "search_volume": 20
+                                        },
+                                        {
+                                            "year": 2026,
+                                            "month": 1,
+                                            "search_volume": 10
+                                        },
+                                        {
+                                            "year": 2025,
+                                            "month": 12,
+                                            "search_volume": 30
+                                        },
+                                        {
+                                            "year": 2025,
+                                            "month": 11,
+                                            "search_volume": 10
+                                        },
+                                        {
+                                            "year": 2025,
+                                            "month": 10,
+                                            "search_volume": 20
+                                        },
+                                        {
+                                            "year": 2025,
+                                            "month": 9,
+                                            "search_volume": 90
+                                        },
+                                        {
+                                            "year": 2025,
+                                            "month": 8,
+                                            "search_volume": 20
+                                        },
+                                        {
+                                            "year": 2025,
+                                            "month": 7,
+                                            "search_volume": 20
+                                        }
+                                    ],
+                                    "search_volume_trend": {
+                                        "monthly": -29,
+                                        "quarterly": 0,
+                                        "yearly": 67
+                                    }
+                                },
+                                "keyword_info_normalized_with_bing": null,
+                                "keyword_info_normalized_with_clickstream": null,
+                                "clickstream_keyword_info": null,
+                                "keyword_properties": {
+                                    "se_type": "google",
+                                    "core_keyword": null,
+                                    "synonym_clustering_algorithm": null,
+                                    "keyword_difficulty": 5,
+                                    "detected_language": "en",
+                                    "is_another_language": false
+                                },
+                                "serp_info": {
+                                    "se_type": "google",
+                                    "check_url": "https:\/\/www.google.com\/search?q=best%20pool%20heater%20repair%20near%20me&hl=en&gl=US&ie=UTF-8&uule=w+CAIQIFISCQs2MuSEtepUEUK33kOSuTsc",
+                                    "serp_item_types": [
+                                        "local_pack",
+                                        "people_also_ask",
+                                        "organic",
+                                        "people_also_search",
+                                        "related_searches"
+                                    ],
+                                    "se_results_count": 21100000,
+                                    "last_updated_time": "2025-12-24 18:52:16 +00:00",
+                                    "previous_updated_time": null
+                                },
+                                "avg_backlinks_info": {
+                                    "se_type": "google",
+                                    "backlinks": 3.3,
+                                    "dofollow": 2.1,
+                                    "referring_pages": 3.2,
+                                    "referring_domains": 3,
+                                    "referring_main_domains": 2.7,
+                                    "rank": 25.5,
+                                    "main_domain_rank": 465.8,
+                                    "last_updated_time": "2025-12-24 18:52:52 +00:00"
+                                },
+                                "search_intent_info": {
+                                    "se_type": "google",
+                                    "main_intent": "commercial",
+                                    "foreign_intent": null,
+                                    "last_updated_time": "2026-04-25 08:58:13 +00:00"
+                                }
+                            },
+                            "depth": 1,
+                            "related_keywords": [
+                                "best pool heater repair near california",
+                                "best pool heater repair near texas",
+                                "best pool heater repair near me reviews",
+                                "best pool heater repair near me cost",
+                                "gas pool heater repair near me",
+                                "raypak pool heater repair near me",
+                                "hayward pool heater repair",
+                                "hayward pool heater repair near me"
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "08190111-9988-0387-0000-119ccc983e37",
+            "status_code": 40000,
+            "status_message": "You can set only one task at a time.",
+            "time": "0 sec.",
+            "cost": 0,
+            "result_count": 0,
+            "path": [
+                "v3",
+                "dataforseo_labs",
+                "google",
+                "related_keywords",
+                "live"
+            ],
+            "data": {
+                "api": "dataforseo_labs",
+                "function": "related_keywords",
+                "se_type": "google",
+                "keyword": "pool leak detection",
+                "location_name": "United States",
+                "language_name": "English",
+                "depth": 1,
+                "limit": 20,
+                "order_by": [
+                    "keyword_data.keyword_info.search_volume,desc"
+                ]
+            },
+            "result": null
+        }
+    ]
+}
